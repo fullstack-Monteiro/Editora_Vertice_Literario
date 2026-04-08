@@ -143,10 +143,10 @@ const App = () => {
             className="max-w-3xl"
           >
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
-              {siteContent ? siteContent.hero.titulo.replace('florescer.', '') : 'A palavra é a semente, a nossa missão é fazê-la '}<span className="text-primary-blue">florescer.</span>
+              {siteContent?.hero?.titulo ? siteContent.hero.titulo.replace('florescer.', '') : 'A palavra é a semente, a nossa missão é fazê-la '}<span className="text-primary-blue">florescer.</span>
             </h1>
             <p className="text-base sm:text-xl text-slate-300 mb-8 leading-relaxed font-light">
-              {siteContent?.hero.subtitulo ?? 'Apoiamos autores e transformamos palavras em obras publicadas com excelência, ética e sofisticação cultural.'}
+              {siteContent?.hero?.subtitulo ?? 'Apoiamos autores e transformamos palavras em obras publicadas com excelência, ética e sofisticação cultural.'}
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
               <motion.a
@@ -261,7 +261,7 @@ const App = () => {
             <h2 className="text-2xl sm:text-4xl font-serif font-bold text-navy mb-6 leading-tight">Uma Instituição Moçambicana Dedicada à Excelência Literária</h2>
             <div className="space-y-5 text-slate-600 leading-relaxed">
               <p>
-                {siteContent?.sobre.texto ?? 'A Editora Vértice Literário, Lda. é uma instituição moçambicana dedicada à promoção e ao desenvolvimento da literatura no país e no espaço lusófono.'}
+                {siteContent?.sobre?.texto ?? 'A Editora Vértice Literário, Lda. é uma instituição moçambicana dedicada à promoção e ao desenvolvimento da literatura no país e no espaço lusófono.'}
               </p>              <button
                 onClick={() => setShowHistoryModal(true)}
                 className="text-[#4A90D9] font-bold text-xs tracking-widest hover:text-gold transition-colors flex items-center gap-1"
@@ -273,11 +273,11 @@ const App = () => {
             <div className="grid grid-cols-2 gap-8 mt-12">
               <div>
                 <h4 className="font-serif font-bold text-navy mb-3 text-lg border-l-4 border-gold pl-4">Missão</h4>
-                <p className="text-sm text-slate-500">{siteContent?.sobre.missao ?? 'Apoiar autores emergentes e consolidados, publicar obras de impacto literário, social e cultural.'}</p>
+                <p className="text-sm text-slate-500">{siteContent?.sobre?.missao ?? 'Apoiar autores emergentes e consolidados, publicar obras de impacto literário, social e cultural.'}</p>
               </div>
               <div>
                 <h4 className="font-serif font-bold text-navy mb-3 text-lg border-l-4 border-gold pl-4">Visão</h4>
-                <p className="text-sm text-slate-500">{siteContent?.sobre.visao ?? 'Ser uma das editoras de referência em Moçambique e no espaço lusófono.'}</p>
+                <p className="text-sm text-slate-500">{siteContent?.sobre?.visao ?? 'Ser uma das editoras de referência em Moçambique e no espaço lusófono.'}</p>
               </div>
             </div>
           </motion.div>
