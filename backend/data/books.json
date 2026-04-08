@@ -1,0 +1,21 @@
+[
+  { "id": 1, "title": "Primeiros Laços", "author": "Lídia Cumbane", "cover": "https://picsum.photos/seed/book1/400/533" },
+  { "id": 2, "title": "Psicologia de Aprendizagem", "author": "Herminigildo Santana Chimarizene", "cover": "https://picsum.photos/seed/book2/400/533" },
+  { "id": 3, "title": "Maré do Amor", "author": "José Bechane", "cover": "https://picsum.photos/seed/book3/400/533" },
+  { "id": 4, "title": "Amor & Dor em Terras Feridas", "author": "Gabriel M'Swache (BigaM)", "cover": "https://picsum.photos/seed/book4/400/533" },
+  { "id": 5, "title": "Ecos do Horizonte", "author": "Octávio Cumbe", "cover": "https://picsum.photos/seed/book5/400/533" },
+  { "id": 6, "title": "A Sombra da Violência", "author": "Antologia", "cover": "https://picsum.photos/seed/book6/400/533" },
+  { "id": 7, "title": "Poema Za Kwathu", "author": "Antologia Mista", "cover": "https://picsum.photos/seed/book7/400/533" },
+  { "id": 8, "title": "A Vida Atrás da Capa", "author": "Albino P. Sitoe", "cover": "https://picsum.photos/seed/book8/400/533" },
+  { "id": 9, "title": "O Som da Liberdade", "author": "Famas Redol Arne", "cover": "https://picsum.photos/seed/book9/400/533" },
+  { "id": 10, "title": "A Juventude e as Mídias Sociais", "author": "Bonifácio B. Fabião", "cover": "https://picsum.photos/seed/book10/400/533" },
+  { "id": 11, "title": "O Islão: Sua Veracidade", "author": "Issa Júnior", "cover": "https://picsum.photos/seed/book11/400/533" },
+  { "id": 12, "title": "A Dor da Escolha", "author": "Sara Anselmo Jacinto Nhacale", "cover": "https://picsum.photos/seed/book12/400/533" },
+  { "id": 13, "title": "Duas Paixões e a Espionagem dos Ancestrais", "author": "Sara Anselmo Jacinto Nhacale", "cover": "https://picsum.photos/seed/book13/400/533" },
+  { "id": 14, "title": "A Resiliência: A Jornada de Quem Não Desiste", "author": "João Bartolomeu", "cover": "https://picsum.photos/seed/book14/400/533" },
+  { "id": 15, "title": "África te Mata e te Nasce", "author": "Dalton Alfândiga", "cover": "https://picsum.photos/seed/book15/400/533" },
+  { "id": 16, "title": "Entre Ruínas e Nascença", "author": "Carimo Francisco Gome", "cover": "https://picsum.photos/seed/book16/400/533" },
+  { "id": 17, "title": "Sem Verba Não se Anuncia o Verbo", "author": "Ananias Combe", "cover": "https://picsum.photos/seed/book17/400/533" },
+  { "id": 18, "title": "Sustentabilidade da Igreja Católica", "author": "Ananias Combe", "cover": "https://picsum.photos/seed/book18/400/533" },
+  { "id": 19, "title": "eBooks & Antologias Internacionais", "author": "Vários Autores", "cover": "https://picsum.photos/seed/book19/400/533" }
+]
