@@ -117,7 +117,10 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
     }
   }, [token]);
 
-  const handleLogin = async (e: React.FormEvent) => {
+  // Carrega conteúdo quando muda para o tab content
+  useEffect(() => {
+    if (tab === 'content' && !content) fetchContent();
+  }, [tab]);
     e.preventDefault();
     setLoginError('');
     const res = await fetch(`${API}/api/login`, {
@@ -503,7 +506,15 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
         )}
 
         {/* ── CONTENT TAB ── */}
-        {tab === 'content' && content && (
+        {tab === 'content' && (
+          !content ? (
+            <div className="bg-white shadow-sm rounded-sm p-8 text-center">
+              <p className="text-slate-400 text-sm">A carregar conteúdo...</p>
+              <button onClick={fetchContent} className="mt-4 text-xs font-bold text-navy hover:text-gold transition-colors">
+                Tentar novamente
+              </button>
+            </div>
+          ) : (
           <div className="space-y-8">
             {/* Hero */}
             <div className="bg-white shadow-sm rounded-sm p-8">
@@ -582,6 +593,7 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
               <Save size={14} /> GUARDAR ALTERAÇÕES
             </button>
           </div>
+          )
         )}
 
         {/* ── MANUSCRIPTS TAB ── */}
