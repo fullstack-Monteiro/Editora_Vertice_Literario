@@ -19,7 +19,12 @@ const CONTACTS_FILE   = path.join(DATA, "contacts.json");
 const JWT_SECRET  = process.env.JWT_SECRET  || "vertice-secret-2024";
 const ADMIN_USER  = process.env.ADMIN_USER  || "admin";
 const ADMIN_PASS  = process.env.ADMIN_PASS  || "vertice2024";
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
+
+async function sendEmail(opts) {
+  if (!resend) return;
+  try { await resend.emails.send(opts); } catch(e) { console.error("Email error:", e); }
+}
 
 app.use(cors({ origin: "*" }));
 app.use(express.json());
@@ -137,7 +142,7 @@ app.post("/api/newsletter", async function(req, res) {
   if (subs.find(function(s) { return s.email === email; })) return res.status(409).json({ error: "Email ja subscrito." });
   subs.push({ email: email, date: new Date().toISOString() });
   writeJSON(SUBS_FILE, subs);
-  try { await resend.emails.send({ from: "Vertice Literario <onboarding@resend.dev>", to: email, subject: "Bem-vindo a Newsletter", html: "<p>Obrigado por subscrever a newsletter da Editora Vertice Literario!</p>" }); } catch(e) { console.error(e); }
+  try { await sendEmail({ from: "Vertice Literario <onboarding@resend.dev>", to: email, subject: "Bem-vindo a Newsletter", html: "<p>Obrigado por subscrever a newsletter da Editora Vertice Literario!</p>" }); } catch(e) { console.error(e); }
   res.json({ success: true });
 });
 app.get("/api/newsletter", auth, function(_q, res) { var s = readJSON(SUBS_FILE); res.json({ total: s.length, subscribers: s }); });
@@ -156,7 +161,7 @@ app.post("/api/manuscript", async function(req, res) {
     data: new Date().toISOString(), estado: "pendente" };
   items.unshift(entry); writeJSON(MANUSCRIPTS_FILE, items);
   try {
-    await resend.emails.send({ from: "Vertice Literario <onboarding@resend.dev>", to: process.env.EMAIL_TO, replyTo: b.email,
+    await sendEmail({ from: "Vertice Literario <onboarding@resend.dev>", to: process.env.EMAIL_TO, replyTo: b.email,
       subject: "[Manuscrito] " + b.genero + " - " + b.nome,
       html: "<div style='font-family:Arial'><h2>Nova Submissao</h2><p><b>Nome:</b> " + b.nome + "</p><p><b>Email:</b> " + b.email + "</p><p><b>Genero:</b> " + b.genero + "</p><p><b>Sinopse:</b> " + b.sinopse + "</p></div>" });
   } catch(e) { console.error(e); }
@@ -183,10 +188,10 @@ app.post("/api/contact", async function(req, res) {
     mensagem: b.mensagem, data: new Date().toISOString(), lida: false };
   items.unshift(entry); writeJSON(CONTACTS_FILE, items);
   try {
-    await resend.emails.send({ from: "Vertice Literario <onboarding@resend.dev>", to: process.env.EMAIL_TO, replyTo: b.email,
+    await sendEmail({ from: "Vertice Literario <onboarding@resend.dev>", to: process.env.EMAIL_TO, replyTo: b.email,
       subject: "[Vertice] " + b.servico + " - " + b.nome,
       html: "<div style='font-family:Arial'><p><b>Nome:</b> " + b.nome + "</p><p><b>Email:</b> " + b.email + "</p><p><b>Servico:</b> " + b.servico + "</p><p><b>Mensagem:</b> " + b.mensagem + "</p></div>" });
-    await resend.emails.send({ from: "Vertice Literario <onboarding@resend.dev>", to: b.email,
+    await sendEmail({ from: "Vertice Literario <onboarding@resend.dev>", to: b.email,
       subject: "Recebemos a sua mensagem - Editora Vertice Literario",
       html: "<div style='font-family:Arial;max-width:600px'><div style='background:#1B2A4A;padding:24px;text-align:center'><h2 style='color:#F5A623'>Editora Vertice Literario</h2></div><div style='padding:32px;background:#f9f9f9'><p>Caro/a <b>" + b.nome + "</b>,</p><p>Recebemos a sua mensagem e entraremos em contacto brevemente.</p></div></div>" });
   } catch(e) { console.error(e); }
