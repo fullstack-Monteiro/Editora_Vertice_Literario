@@ -65,7 +65,9 @@ const App = () => {
     const fetchSiteContent = () => {
       fetch(`${API_URL}/api/content`)
         .then(r => r.json())
-        .then(data => { if (data) setSiteContent(data); })
+        .then(data => {
+          if (data && data.hero && data.sobre && data.contacto) setSiteContent(data);
+        })
         .catch(() => {});
     };
     fetchPosts();
