@@ -86,7 +86,7 @@ export const FEATURED_BOOKS = [
   { title: "A Sombra da Violência", author: "Antologia", cover: "https://picsum.photos/seed/book6/400/533" },
   { title: "Poema Za Kwathu", author: "Antologia Mista", cover: "https://picsum.photos/seed/book7/400/533" },
   { title: "A Vida Atrás da Capa", author: "Albino P. Sitoe", cover: "https://picsum.photos/seed/book8/400/533" },
-  { title: "O Som da Liberdade", author: "Famas Redol Arne", cover: "https://picsum.photos/seed/book9/400/533" },
+  { title: "Sons de Liberdade", author: "Famas Redol Arne", cover: "https://picsum.photos/seed/book9/400/533" },
   { title: "A Juventude e as Mídias Sociais", author: "Bonifácio B. Fabião", cover: "https://picsum.photos/seed/book10/400/533" },
   { title: "O Islão: Sua Veracidade", author: "Issa Júnior", cover: "https://picsum.photos/seed/book11/400/533" },
   { title: "A Dor da Escolha", author: "Sara Anselmo Jacinto Nhacale", cover: "https://picsum.photos/seed/book12/400/533" },

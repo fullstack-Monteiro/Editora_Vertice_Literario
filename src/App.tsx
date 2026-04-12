@@ -182,12 +182,12 @@ const App = () => {
       </section>
 
       {/* Featured Books Section */}
-      <section className="bg-white py-16 md:py-24 px-5 md:px-12">
+      <section id="catalogo" className="bg-white py-16 md:py-24 px-5 md:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
             <div className="max-w-2xl">
               <span className="text-gold font-bold tracking-widest text-xs mb-4 block">CATÁLOGO SELECIONADO</span>
-              <h2 className="text-2xl sm:text-4xl font-serif font-bold text-navy leading-tight">Obras que Definem a Nossa Identidade Cultural</h2>
+              <h2 className="text-2xl sm:text-4xl font-serif font-bold text-navy leading-tight">Obras Publicadas e Disponíveis para Aquisição</h2>
             </div>
           </div>
 
@@ -320,42 +320,10 @@ const App = () => {
               A Editora Vértice Literário orienta-se por uma filosofia que privilegia a cooperação, a inclusão e a promoção equitativa das expressões literárias moçambicanas e lusófonas. A nossa actuação editorial pauta-se pela convicção de que a literatura constitui um património colectivo e que o ambiente cultural se robustece quando as instituições trabalham em convergência, e não em oposição. Não integramos o mercado editorial com o propósito de competir, rivalizar ou disputar protagonismos. A nossa presença assenta na defesa de um ecossistema literário plural, democrático e aberto, onde diversas editoras, autores, iniciativas e sensibilidades possam coexistir e florescer em benefício da cultura nacional.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { title: "Princípio da Cooperação Interinstitucional", desc: "A Editora Vértice Literário reconhece que o desenvolvimento da literatura moçambicana depende de relações institucionais baseadas na colaboração e no respeito mútuo. Assim, assumimos o compromisso de estabelecer práticas que estimulem parcerias, diálogos intereditoriais, intercâmbios culturais e acções conjuntas com actores públicos e privados do sector." },
-              { title: "Princípio da Democratização do Acesso Editorial", desc: "A nossa filosofia estabelece a democratização da publicação como pilar essencial. Defendemos que todos os autores, independentemente da sua posição social, experiência ou notoriedade, devem ter acesso a processos editoriais transparentes, dignos e profissionalizados. Trabalhamos no sentido de garantir oportunidades a escritores emergentes, jovens criadores e vozes oriundas de contextos frequentemente marginalizados." },
-              { title: "Princípio da Valorização da Diversidade Literária", desc: "A Editora Vértice Literário considera a multiplicidade de estilos, temas, perspectivas e trajectórias autorais como um bem cultural de elevado valor. Comprometemo-nos a acolher produções literárias que reflitam a diversidade sociocultural do país, contribuindo para o enriquecimento do panorama literário e para a preservação da memória colectiva." },
-              { title: "Princípio da Ética Editorial", desc: "Toda a nossa actuação é regida por elevados padrões éticos, que incluem a integridade nos procedimentos, a transparência nas decisões, o respeito absoluto pelos direitos de autor, a honestidade no relacionamento com escritores e parceiros, e a recusa de práticas que fomentem rivalidades ou disputas inadequadas no sector editorial." },
-              { title: "Princípio da Promoção Cultural", desc: "A Editora Vértice Literário compromete-se a contribuir para o desenvolvimento cultural de Moçambique através da edição, divulgação e valorização de obras literárias que reforcem o pensamento crítico, promovam o diálogo social e enriqueçam o imaginário colectivo. Este compromisso estende-se às actividades formativas que potenciem o surgimento de novos talentos e fortaleçam a educação literária." },
-              { title: "Declaração Final", desc: "A presença da Editora Vértice Literário no cenário editorial moçambicano fundamenta-se numa visão não competitiva, orientada pela cooperação, pela democracia e pela responsabilidade cultural. Procuramos actuar como uma instituição que soma, que edifica e que contribui para a consolidação de um ambiente literário saudável, diversificado e humanamente comprometido com o futuro da palavra escrita." },
-            ].map((item, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.08 }}
-                viewport={{ once: true }}
-                className="border border-white/10 p-8 hover:border-gold/50 transition-all duration-300 flex flex-col"
-              >
-                <div className="w-8 h-1 bg-gold mb-6"></div>
-                <h4 className="font-serif font-bold text-white text-base mb-3">{item.title}</h4>
-                <p className="text-slate-400 text-sm leading-relaxed flex-1">
-                  {item.desc.substring(0, 100)}...
-                </p>
-                <button
-                  onClick={() => setSelectedPhilosophy(item)}
-                  className="mt-4 text-[#4A90D9] text-xs font-bold tracking-widest hover:text-gold transition-colors text-left"
-                >
-                  LER MAIS →
-                </button>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Estrutura Interna - dentro do Sobre */}
       <section className="bg-slate-50 py-16 md:py-24 px-5 md:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
@@ -415,7 +383,7 @@ const App = () => {
           <div className="max-w-4xl mx-auto">
             <h3 className="font-serif font-bold text-navy text-xl mb-6 text-center">Colaboradores</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-              {["Sheila Khan", "Solene Santos Almoço", "Samila Simões Manuel António", "Augusto Mambasse"].map((name, index) => (
+              {["Sheila Khan", "Solene Santos Almoço", "Samila Simões Manuel António", "Stephen Pinto"].map((name, index) => (
                 <div key={index} className="bg-white p-6 text-center shadow-sm border border-slate-100">
                   <div className="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Users className="text-gold" size={18} />
