@@ -88,7 +88,7 @@ app.put("/api/content", auth, function(req, res) {
 app.get("/api/posts", function(_q, res) { res.json(readJSON(POSTS_FILE)); });
 app.post("/api/posts", auth, function(req, res) {
   var b = req.body;
-  if (!b.title || !b.content) return res.status(400).json({ error: "Titulo e conteudo obrigatorios." });
+  if (!b.title || !b.content) return res.status(400).json({ error: "Título e conteúdo obrigatórios." });
   var posts = readJSON(POSTS_FILE);
   var p = { id: Date.now(), title: b.title, author: b.author || "Redacao Vertice",
     date: b.date || new Date().toLocaleDateString("pt-PT", { day: "2-digit", month: "long", year: "numeric" }),
@@ -113,7 +113,7 @@ app.delete("/api/posts/:id", auth, function(req, res) {
 app.get("/api/books", function(_q, res) { res.json(readJSON(BOOKS_FILE)); });
 app.post("/api/books", auth, function(req, res) {
   var b = req.body;
-  if (!b.title || !b.author) return res.status(400).json({ error: "Titulo e autor obrigatorios." });
+  if (!b.title || !b.author) return res.status(400).json({ error: "Título e autor obrigatórios." });
   var books = readJSON(BOOKS_FILE);
   var nb = { id: Date.now(), title: b.title, author: b.author,
     cover: b.cover || "https://picsum.photos/seed/newbook/400/533",
@@ -137,9 +137,9 @@ app.delete("/api/books/:id", auth, function(req, res) {
 // ── Newsletter ────────────────────────────────────────────
 app.post("/api/newsletter", async function(req, res) {
   var email = req.body.email;
-  if (!email) return res.status(400).json({ error: "Email obrigatorio." });
+  if (!email) return res.status(400).json({ error: "Email obrigatório." });
   var subs = readJSON(SUBS_FILE);
-  if (subs.find(function(s) { return s.email === email; })) return res.status(409).json({ error: "Email ja subscrito." });
+  if (subs.find(function(s) { return s.email === email; })) return res.status(409).json({ error: "Email já subscrito." });
   subs.push({ email: email, date: new Date().toISOString() });
   writeJSON(SUBS_FILE, subs);
   try { await sendEmail({ from: "Vertice Literario <onboarding@resend.dev>", to: email, subject: "Bem-vindo a Newsletter", html: "<p>Obrigado por subscrever a newsletter da Editora Vertice Literario!</p>" }); } catch(e) { console.error(e); }
@@ -154,7 +154,7 @@ app.delete("/api/newsletter/:email", auth, function(req, res) {
 // ── Manuscripts ───────────────────────────────────────────
 app.post("/api/manuscript", async function(req, res) {
   var b = req.body;
-  if (!b.nome || !b.email || !b.genero || !b.sinopse) return res.status(400).json({ error: "Campos obrigatorios em falta." });
+  if (!b.nome || !b.email || !b.genero || !b.sinopse) return res.status(400).json({ error: "Campos obrigatórios em falta." });
   var items = readJSON(MANUSCRIPTS_FILE);
   var entry = { id: Date.now(), nome: b.nome, email: b.email, telefone: b.telefone || "",
     genero: b.genero, sinopse: b.sinopse, observacoes: b.observacoes || "",
@@ -182,7 +182,7 @@ app.delete("/api/manuscripts/:id", auth, function(req, res) {
 // ── Contacts ──────────────────────────────────────────────
 app.post("/api/contact", async function(req, res) {
   var b = req.body;
-  if (!b.nome || !b.email || !b.mensagem) return res.status(400).json({ error: "Campos obrigatorios em falta." });
+  if (!b.nome || !b.email || !b.mensagem) return res.status(400).json({ error: "Campos obrigatórios em falta." });
   var items = readJSON(CONTACTS_FILE);
   var entry = { id: Date.now(), nome: b.nome, email: b.email, servico: b.servico || "",
     mensagem: b.mensagem, data: new Date().toISOString(), lida: false };

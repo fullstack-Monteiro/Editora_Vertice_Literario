@@ -121,6 +121,8 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
   useEffect(() => {
     if (tab === 'content' && !content) fetchContent();
   }, [tab]);
+
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoginError('');
     const res = await fetch(`${API}/api/login`, {
@@ -151,7 +153,7 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
     const method = editing ? 'PUT' : 'POST';
     const res = await fetch(url, { method, headers, body: JSON.stringify(form) });
     if (res.ok) {
-      setMsg(editing ? 'Notícia atualizada!' : 'Notícia publicada!');
+      setMsg(editing ? 'Notícia actualizada!' : 'Notícia publicada!');
       setForm(emptyPost); setEditing(null); fetchPosts();
     } else { setMsg('Erro ao guardar.'); }
     setLoading(false);
@@ -178,7 +180,7 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
     const method = editingBook ? 'PUT' : 'POST';
     const res = await fetch(url, { method, headers, body: JSON.stringify(bookForm) });
     if (res.ok) {
-      setMsg(editingBook ? 'Livro atualizado!' : 'Livro adicionado!');
+      setMsg(editingBook ? 'Livro actualizado!' : 'Livro adicionado!');
       setBookForm(emptyBook); setEditingBook(null); fetchBooks();
     } else { setMsg('Erro ao guardar.'); }
     setLoading(false);
@@ -209,7 +211,7 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
           <div>
             <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Utilizador</label>
             <input required value={loginForm.username} onChange={e => setLoginForm({...loginForm, username: e.target.value})}
-              className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm" placeholder="admin" />
+              className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm" placeholder="Utilizador" />
           </div>
           <div>
             <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Palavra-passe</label>
@@ -288,7 +290,7 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
                 <div>
                   <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Autor</label>
                   <input value={form.author} onChange={e => setForm({...form, author: e.target.value})}
-                    className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm" placeholder="Redação Vértice" />
+                    className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm" placeholder="Redacção Vértice" />
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -326,7 +328,7 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
               <div className="flex gap-3">
                 <button type="submit" disabled={loading}
                   className="flex items-center gap-2 bg-navy text-white px-6 py-3 text-xs font-bold tracking-widest hover:bg-gold transition-colors rounded-sm disabled:opacity-60">
-                  <Save size={14} /> {loading ? 'A guardar...' : editing ? 'Atualizar' : 'Publicar'}
+                  <Save size={14} /> {loading ? 'A guardar...' : editing ? 'Actualizar' : 'Publicar'}
                 </button>
                 {editing && (
                   <button type="button" onClick={() => { setEditing(null); setForm(emptyPost); }}
@@ -426,7 +428,7 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
               <div className="flex gap-3">
                 <button type="submit" disabled={loading}
                   className="flex items-center gap-2 bg-navy text-white px-6 py-3 text-xs font-bold tracking-widest hover:bg-gold transition-colors rounded-sm disabled:opacity-60">
-                  <Save size={14} /> {loading ? 'A guardar...' : editingBook ? 'Atualizar' : 'Adicionar'}
+                  <Save size={14} /> {loading ? 'A guardar...' : editingBook ? 'Actualizar' : 'Adicionar'}
                 </button>
                 {editingBook && (
                   <button type="button" onClick={() => { setEditingBook(null); setBookForm(emptyBook); }}
@@ -515,84 +517,84 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
               </button>
             </div>
           ) : (
-          <div className="space-y-8">
-            {/* Hero */}
-            <div className="bg-white shadow-sm rounded-sm p-8">
-              <h2 className="font-serif font-bold text-navy text-xl mb-6 flex items-center gap-2">
-                <Settings size={18} className="text-gold" /> Secção Principal (Hero)
-              </h2>
-              <div className="space-y-4">
-                <div>
-                  <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Título</label>
-                  <textarea rows={2} value={content.hero.titulo}
-                    onChange={e => setContent({...content, hero: {...content.hero, titulo: e.target.value}})}
-                    className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm resize-none" />
-                </div>
-                <div>
-                  <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Subtítulo</label>
-                  <textarea rows={2} value={content.hero.subtitulo}
-                    onChange={e => setContent({...content, hero: {...content.hero, subtitulo: e.target.value}})}
-                    className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm resize-none" />
-                </div>
-              </div>
-            </div>
-
-            {/* Sobre */}
-            <div className="bg-white shadow-sm rounded-sm p-8">
-              <h2 className="font-serif font-bold text-navy text-xl mb-6">Secção Sobre Nós</h2>
-              <div className="space-y-4">
-                <div>
-                  <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Texto Principal</label>
-                  <textarea rows={4} value={content.sobre.texto}
-                    onChange={e => setContent({...content, sobre: {...content.sobre, texto: e.target.value}})}
-                    className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm resize-none" />
-                </div>
-                <div>
-                  <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Missão</label>
-                  <textarea rows={3} value={content.sobre.missao}
-                    onChange={e => setContent({...content, sobre: {...content.sobre, missao: e.target.value}})}
-                    className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm resize-none" />
-                </div>
-                <div>
-                  <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Visão</label>
-                  <textarea rows={3} value={content.sobre.visao}
-                    onChange={e => setContent({...content, sobre: {...content.sobre, visao: e.target.value}})}
-                    className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm resize-none" />
-                </div>
-              </div>
-            </div>
-
-            {/* Contacto */}
-            <div className="bg-white shadow-sm rounded-sm p-8">
-              <h2 className="font-serif font-bold text-navy text-xl mb-6">Informações de Contacto</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                {[
-                  { label: 'Morada', key: 'morada' },
-                  { label: 'Telefone', key: 'telefone' },
-                  { label: 'Email', key: 'email' },
-                  { label: 'WhatsApp (só números)', key: 'whatsapp' },
-                  { label: 'Facebook URL', key: 'facebook' },
-                  { label: 'Instagram URL', key: 'instagram' },
-                ].map(({ label, key }) => (
-                  <div key={key}>
-                    <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">{label}</label>
-                    <input value={(content.contacto as Record<string, string>)[key]}
-                      onChange={e => setContent({...content, contacto: {...content.contacto, [key]: e.target.value}})}
-                      className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm" />
+            <div className="space-y-8">
+              {/* Hero */}
+              <div className="bg-white shadow-sm rounded-sm p-8">
+                <h2 className="font-serif font-bold text-navy text-xl mb-6 flex items-center gap-2">
+                  <Settings size={18} className="text-gold" /> Secção Principal (Hero)
+                </h2>
+                <div className="space-y-4">
+                  <div>
+                    <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Título</label>
+                    <textarea rows={2} value={content.hero.titulo}
+                      onChange={e => setContent({...content, hero: {...content.hero, titulo: e.target.value}})}
+                      className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm resize-none" />
                   </div>
-                ))}
+                  <div>
+                    <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Subtítulo</label>
+                    <textarea rows={2} value={content.hero.subtitulo}
+                      onChange={e => setContent({...content, hero: {...content.hero, subtitulo: e.target.value}})}
+                      className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm resize-none" />
+                  </div>
+                </div>
               </div>
-            </div>
 
-            {contentMsg && <p className={`text-sm font-medium ${contentMsg.includes('Erro') ? 'text-red-500' : 'text-green-600'}`}>{contentMsg}</p>}
-            <button onClick={async () => {
-              const res = await fetch(`${API}/api/content`, { method: 'PUT', headers, body: JSON.stringify(content) });
-              if (res.ok) { setContentMsg('Conteúdo guardado!'); setTimeout(() => setContentMsg(''), 3000); }
-              else setContentMsg('Erro ao guardar.');
-            }} className="flex items-center gap-2 bg-navy text-white px-8 py-3 text-xs font-bold tracking-widest hover:bg-gold transition-colors rounded-sm">
-              <Save size={14} /> GUARDAR ALTERAÇÕES
-            </button>
-          </div>
+              {/* Sobre */}
+              <div className="bg-white shadow-sm rounded-sm p-8">
+                <h2 className="font-serif font-bold text-navy text-xl mb-6">Secção Sobre Nós</h2>
+                <div className="space-y-4">
+                  <div>
+                    <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Texto Principal</label>
+                    <textarea rows={4} value={content.sobre.texto}
+                      onChange={e => setContent({...content, sobre: {...content.sobre, texto: e.target.value}})}
+                      className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm resize-none" />
+                  </div>
+                  <div>
+                    <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Missão</label>
+                    <textarea rows={3} value={content.sobre.missao}
+                      onChange={e => setContent({...content, sobre: {...content.sobre, missao: e.target.value}})}
+                      className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm resize-none" />
+                  </div>
+                  <div>
+                    <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Visão</label>
+                    <textarea rows={3} value={content.sobre.visao}
+                      onChange={e => setContent({...content, sobre: {...content.sobre, visao: e.target.value}})}
+                      className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm resize-none" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Contacto */}
+              <div className="bg-white shadow-sm rounded-sm p-8">
+                <h2 className="font-serif font-bold text-navy text-xl mb-6">Informações de Contacto</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {[
+                    { label: 'Morada', key: 'morada' },
+                    { label: 'Telefone', key: 'telefone' },
+                    { label: 'Email', key: 'email' },
+                    { label: 'WhatsApp (só números)', key: 'whatsapp' },
+                    { label: 'Facebook URL', key: 'facebook' },
+                    { label: 'Instagram URL', key: 'instagram' },
+                  ].map(({ label, key }) => (
+                    <div key={key}>
+                      <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">{label}</label>
+                      <input value={(content.contacto as Record<string, string>)[key]}
+                        onChange={e => setContent({...content, contacto: {...content.contacto, [key]: e.target.value}})}
+                        className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm" />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {contentMsg && <p className={`text-sm font-medium ${contentMsg.includes('Erro') ? 'text-red-500' : 'text-green-600'}`}>{contentMsg}</p>}
+              <button onClick={async () => {
+                const res = await fetch(`${API}/api/content`, { method: 'PUT', headers, body: JSON.stringify(content) });
+                if (res.ok) { setContentMsg('Conteúdo guardado!'); setTimeout(() => setContentMsg(''), 3000); }
+                else setContentMsg('Erro ao guardar.');
+              }} className="flex items-center gap-2 bg-navy text-white px-8 py-3 text-xs font-bold tracking-widest hover:bg-gold transition-colors rounded-sm">
+                <Save size={14} /> GUARDAR ALTERAÇÕES
+              </button>
+            </div>
           )
         )}
 

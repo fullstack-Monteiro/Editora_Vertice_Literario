@@ -286,7 +286,7 @@ const App = () => {
         {/* Values Sub-section */}
         <div className="max-w-7xl mx-auto mt-16 md:mt-32">
           <div className="text-center mb-16">
-            <h3 className="text-3xl font-serif font-bold text-navy mb-4">Nossos Valores Fundamentais</h3>
+            <h3 className="text-3xl font-serif font-bold text-navy mb-4">Os Nossos Valores Fundamentais</h3>
             <div className="w-20 h-1 bg-gold mx-auto"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
