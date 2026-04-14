@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
-import { Plus, Pencil, Trash2, X, LogOut, Save, BookOpen, Newspaper, Upload, Mail, Settings, FileText, MessageSquare } from 'lucide-react';
+import { Plus, Pencil, Trash2, X, LogOut, Save, BookOpen, Newspaper, Upload, Mail, Settings, FileText, MessageSquare, Users } from 'lucide-react';
 
 const API = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
@@ -17,7 +17,7 @@ const emptyPost = { title: '', author: '', date: '', image: '', excerpt: '', con
 const emptyBook = { title: '', author: '', cover: '', sinopse: '', genero: '', ano: '', isbn: '' };
 
 const AdminPanel = ({ onClose }: { onClose: () => void }) => {
-  const [tab, setTab] = useState<'posts' | 'books' | 'newsletter' | 'content' | 'manuscripts' | 'contacts'>('posts');
+  const [tab, setTab] = useState<'posts' | 'books' | 'authors' | 'newsletter' | 'content' | 'manuscripts' | 'contacts'>('posts');
   const [token, setToken] = useState('');
   const [loginForm, setLoginForm] = useState({ username: '', password: '' });
   const [loginError, setLoginError] = useState('');
@@ -34,6 +34,12 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
 
   interface Subscriber { email: string; date: string; }
   const [subscribers, setSubscribers] = useState<Subscriber[]>([]);
+
+  interface Author { id: number; nome: string; foto: string; bio: string; obras: string[]; genero: string; }
+  const [authors, setAuthors] = useState<Author[]>([]);
+  const [authorForm, setAuthorForm] = useState({ nome: '', foto: '', bio: '', obras: '', genero: '' });
+  const [editingAuthor, setEditingAuthor] = useState<number | null>(null);
+  const authorPhotoRef = useRef<HTMLInputElement>(null);
 
   interface Manuscript { id: number; nome: string; email: string; telefone: string; genero: string; sinopse: string; observacoes: string; data: string; estado: string; }
   const [manuscripts, setManuscripts] = useState<Manuscript[]>([]);
@@ -89,6 +95,10 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
     const res = await fetch(`${API}/api/newsletter`, { headers });
     if (res.ok) { const data = await res.json(); setSubscribers(data.subscribers || []); }
   };
+  const fetchAuthors = async () => {
+    const res = await fetch(`${API}/api/authors`);
+    if (res.ok) setAuthors(await res.json());
+  };
   const fetchContent = async () => {
     const res = await fetch(`${API}/api/content`);
     if (res.ok) setContent(await res.json());
@@ -113,7 +123,7 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
           return;
         }
       } catch { localStorage.removeItem('admin_token'); setToken(''); return; }
-      fetchPosts(); fetchBooks(); fetchSubscribers(); fetchContent(); fetchManuscripts(); fetchContacts();
+      fetchPosts(); fetchBooks(); fetchSubscribers(); fetchContent(); fetchManuscripts(); fetchContacts(); fetchAuthors();
     }
   }, [token]);
 
@@ -199,6 +209,35 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
     fetchBooks();
   };
 
+  // ── Authors handlers ─────────────────────────────────────
+  const handleAuthorSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    const url = editingAuthor ? `${API}/api/authors/${editingAuthor}` : `${API}/api/authors`;
+    const method = editingAuthor ? 'PUT' : 'POST';
+    const payload = { ...authorForm, obras: authorForm.obras.split(',').map(o => o.trim()).filter(Boolean) };
+    const res = await fetch(url, { method, headers, body: JSON.stringify(payload) });
+    if (res.ok) {
+      setMsg(editingAuthor ? 'Autor actualizado!' : 'Autor adicionado!');
+      setAuthorForm({ nome: '', foto: '', bio: '', obras: '', genero: '' });
+      setEditingAuthor(null); fetchAuthors();
+    } else { setMsg('Erro ao guardar.'); }
+    setLoading(false);
+    setTimeout(() => setMsg(''), 3000);
+  };
+
+  const handleEditAuthor = (a: Author) => {
+    setEditingAuthor(a.id);
+    setAuthorForm({ nome: a.nome, foto: a.foto, bio: a.bio, obras: a.obras.join(', '), genero: a.genero });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleDeleteAuthor = async (id: number) => {
+    if (!confirm('Apagar este autor?')) return;
+    await fetch(`${API}/api/authors/${id}`, { method: 'DELETE', headers });
+    fetchAuthors();
+  };
+
   // ── Login ────────────────────────────────────────────────
   if (!token) return (
     <div className="min-h-screen bg-navy flex items-center justify-center px-4">
@@ -252,6 +291,10 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
           <button onClick={() => setTab('books')}
             className={`flex items-center gap-2 px-4 py-4 text-xs font-bold tracking-widest border-b-2 transition-colors whitespace-nowrap ${tab === 'books' ? 'border-gold text-navy' : 'border-transparent text-slate-400 hover:text-navy'}`}>
             <BookOpen size={14} /> LIVROS
+          </button>
+          <button onClick={() => setTab('authors')}
+            className={`flex items-center gap-2 px-4 py-4 text-xs font-bold tracking-widest border-b-2 transition-colors whitespace-nowrap ${tab === 'authors' ? 'border-gold text-navy' : 'border-transparent text-slate-400 hover:text-navy'}`}>
+            <Users size={14} /> AUTORES ({authors.length})
           </button>
           <button onClick={() => setTab('newsletter')}
             className={`flex items-center gap-2 px-4 py-4 text-xs font-bold tracking-widest border-b-2 transition-colors whitespace-nowrap ${tab === 'newsletter' ? 'border-gold text-navy' : 'border-transparent text-slate-400 hover:text-navy'}`}>
@@ -468,6 +511,98 @@ const AdminPanel = ({ onClose }: { onClose: () => void }) => {
             )}
           </div>
         </>)}
+        {/* ── AUTHORS TAB ── */}
+        {tab === 'authors' && (<>
+          <div className="bg-white shadow-sm rounded-sm p-8">
+            <h2 className="font-serif font-bold text-navy text-xl mb-6 flex items-center gap-2">
+              {editingAuthor ? <><Pencil size={18} className="text-gold" /> Editar Autor</> : <><Plus size={18} className="text-gold" /> Novo Autor</>}
+            </h2>
+            <form onSubmit={handleAuthorSubmit} className="space-y-5">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div>
+                  <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Nome Completo *</label>
+                  <input required value={authorForm.nome} onChange={e => setAuthorForm({...authorForm, nome: e.target.value})}
+                    className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm" placeholder="Nome do autor" />
+                </div>
+                <div>
+                  <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Género Literário</label>
+                  <input value={authorForm.genero} onChange={e => setAuthorForm({...authorForm, genero: e.target.value})}
+                    className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm" placeholder="Poesia, Romance, Não-Ficção..." />
+                </div>
+              </div>
+              <div>
+                <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">URL da Foto</label>
+                <div className="flex gap-2">
+                  <input value={authorForm.foto} onChange={e => setAuthorForm({...authorForm, foto: e.target.value})}
+                    className="flex-1 border border-slate-200 p-3 text-sm outline-none rounded-sm" placeholder="https://..." />
+                  <button type="button" onClick={() => authorPhotoRef.current?.click()}
+                    className="flex items-center gap-1 border border-slate-200 px-3 text-xs font-bold text-slate-500 hover:border-gold hover:text-gold transition-colors rounded-sm">
+                    <Upload size={13} /> {uploading ? '...' : 'Upload'}
+                  </button>
+                </div>
+                <input ref={authorPhotoRef} type="file" accept="image/*" className="hidden"
+                  onChange={e => e.target.files?.[0] && uploadImage(e.target.files[0], url => setAuthorForm(f => ({...f, foto: url})))} />
+                {authorForm.foto && <img src={authorForm.foto} alt="preview" className="mt-2 w-20 h-20 object-cover rounded-full" referrerPolicy="no-referrer" />}
+              </div>
+              <div>
+                <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Biografia *</label>
+                <textarea required rows={5} value={authorForm.bio} onChange={e => setAuthorForm({...authorForm, bio: e.target.value})}
+                  className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm resize-none" placeholder="Biografia do autor..." />
+              </div>
+              <div>
+                <label className="text-[10px] font-bold tracking-widest text-slate-400 uppercase block mb-1">Obras (separadas por vírgula)</label>
+                <input value={authorForm.obras} onChange={e => setAuthorForm({...authorForm, obras: e.target.value})}
+                  className="w-full border border-slate-200 p-3 text-sm outline-none rounded-sm" placeholder="Primeiros Laços, Maré do Amor..." />
+              </div>
+              {msg && <p className={`text-sm font-medium ${msg.includes('Erro') ? 'text-red-500' : 'text-green-600'}`}>{msg}</p>}
+              <div className="flex gap-3">
+                <button type="submit" disabled={loading}
+                  className="flex items-center gap-2 bg-navy text-white px-6 py-3 text-xs font-bold tracking-widest hover:bg-gold transition-colors rounded-sm disabled:opacity-60">
+                  <Save size={14} /> {loading ? 'A guardar...' : editingAuthor ? 'Actualizar' : 'Adicionar'}
+                </button>
+                {editingAuthor && (
+                  <button type="button" onClick={() => { setEditingAuthor(null); setAuthorForm({ nome: '', foto: '', bio: '', obras: '', genero: '' }); }}
+                    className="flex items-center gap-2 border border-slate-200 text-slate-600 px-6 py-3 text-xs font-bold tracking-widest hover:bg-slate-50 transition-colors rounded-sm">
+                    <X size={14} /> Cancelar
+                  </button>
+                )}
+              </div>
+            </form>
+          </div>
+
+          <div>
+            <h2 className="font-serif font-bold text-navy text-xl mb-6">Autores ({authors.length})</h2>
+            {authors.length === 0 ? <p className="text-slate-400 text-sm">Nenhum autor adicionado ainda.</p> : (
+              <div className="space-y-4">
+                {authors.map(a => (
+                  <motion.div key={a.id} initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+                    className="bg-white shadow-sm rounded-sm p-5 flex items-start gap-4">
+                    <div className="w-14 h-14 rounded-full overflow-hidden shrink-0 bg-slate-100">
+                      {a.foto ? <img src={a.foto} alt={a.nome} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                        : <div className="w-full h-full flex items-center justify-center text-slate-400 font-bold text-lg">{a.nome.charAt(0)}</div>}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-serif font-bold text-navy text-sm mb-1">{a.nome}</h3>
+                      <p className="text-xs text-gold font-bold tracking-widest uppercase mb-1">{a.genero}</p>
+                      <p className="text-xs text-slate-400 truncate">{a.bio.substring(0, 80)}...</p>
+                    </div>
+                    <div className="flex gap-2 shrink-0">
+                      <button onClick={() => handleEditAuthor(a)}
+                        className="w-8 h-8 flex items-center justify-center border border-slate-200 hover:border-gold hover:text-gold transition-colors rounded-sm">
+                        <Pencil size={14} />
+                      </button>
+                      <button onClick={() => handleDeleteAuthor(a.id)}
+                        className="w-8 h-8 flex items-center justify-center border border-slate-200 hover:border-red-400 hover:text-red-400 transition-colors rounded-sm">
+                        <Trash2 size={14} />
+                      </button>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            )}
+          </div>
+        </>)}
+
         {/* ── NEWSLETTER TAB ── */}
         {tab === 'newsletter' && (
           <div>

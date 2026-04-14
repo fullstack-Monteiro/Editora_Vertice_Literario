@@ -27,6 +27,7 @@ import HistoryModal from './components/HistoryModal';
 import PhilosophyModal from './components/PhilosophyModal';
 import ManuscriptModal from './components/ManuscriptModal';
 import Newsletter from './components/Newsletter';
+import AuthorsSection from './components/AuthorsSection';
 import { SERVICES, VALUES, BLOG_POSTS, FEATURED_BOOKS } from './constants';
 
 const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:3001';
@@ -37,6 +38,7 @@ const App = () => {
   const [showAdmin, setShowAdmin] = React.useState(false);
   const [apiPosts, setApiPosts] = React.useState<typeof BLOG_POSTS>([]);
   const [apiBooks, setApiBooks] = React.useState<typeof FEATURED_BOOKS>([]);
+  const [apiAuthors, setApiAuthors] = React.useState<{id:number;nome:string;foto:string;bio:string;obras:string[];genero:string}[]>([]);
   const [selectedBook, setSelectedBook] = React.useState<typeof FEATURED_BOOKS[0] | null>(null);
   const [siteContent, setSiteContent] = React.useState<{
     hero: { titulo: string; subtitulo: string };
@@ -62,6 +64,12 @@ const App = () => {
         .then(data => { if (Array.isArray(data)) setApiBooks(data); })
         .catch(() => {});
     };
+    const fetchAuthors = () => {
+      fetch(`${API_URL}/api/authors`)
+        .then(r => r.json())
+        .then(data => { if (Array.isArray(data)) setApiAuthors(data); })
+        .catch(() => {});
+    };
     const fetchSiteContent = () => {
       fetch(`${API_URL}/api/content`)
         .then(r => r.json())
@@ -72,8 +80,9 @@ const App = () => {
     };
     fetchPosts();
     fetchBooks();
+    fetchAuthors();
     fetchSiteContent();
-    const interval = setInterval(() => { fetchPosts(); fetchBooks(); fetchSiteContent(); }, 30000);
+    const interval = setInterval(() => { fetchPosts(); fetchBooks(); fetchAuthors(); fetchSiteContent(); }, 30000);
     return () => clearInterval(interval);
   }, []);
 
@@ -456,6 +465,9 @@ const App = () => {
           </div>
         </div>
       </section>
+
+      {/* Authors Section */}
+      <AuthorsSection authors={apiAuthors} />
 
       {/* Blog Section */}
       <section id="blog" className="bg-white py-16 md:py-24 px-5 md:px-12">
