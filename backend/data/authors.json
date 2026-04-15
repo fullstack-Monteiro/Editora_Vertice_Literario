@@ -2,9 +2,97 @@
   {
     "id": 1,
     "nome": "Moséstia David Machava",
-    "foto": "",
+    "foto": "/authors/Mosestia.jpeg",
     "genero": "Não-Ficção",
-    "bio": "Nascida a 11 de outubro de 1990 em Maputo, Moséstia Machava é médica licenciada em Medicina Geral e mestre em Saúde Pública pela Universidade Eduardo Mondlane e Pós-Graduanda em One Health (Saúde Única) pela Universidade de Nova Lisboa. Com uma carreira consolidada que abrange a prática clínica, investigação científica, consultoria em saúde pública e saúde & bem-estar corporativo, é também empreendedora e fundadora da MM CONSULTY (especializada em consultoria empresarial e treinamento) e da SATTIS (focada em consultoria em Saúde Pública). Ao longo da sua trajectória, combina o rigor científico com uma visão prática, humanizada e integral do cuidado à pessoa. Desenvolveu uma paixão profunda pelo universo corporativo, pela compreensão da mente humana, pelo desenvolvimento pessoal e pela inteligência emocional. Essa evolução levou-a a explorar não apenas a saúde física, mas também o equilíbrio emocional e mental no ambiente de trabalho e na vida quotidiana. Encontra na maternidade uma fonte inesgotável de inspiração e aprendizado, reforçando a sua convicção mais profunda: o bem-estar integral, físico, emocional e relacional é o verdadeiro alicerce de uma vida plena, resiliente e significativa.",
+    "bio": "Nascida a 11 de outubro de 1990 em Maputo, Moséstia Machava é médica licenciada em Medicina Geral e mestre em Saúde Pública pela Universidade Eduardo Mondlane e Pós-Graduanda em One Health (Saúde Única) pela Universidade de Nova Lisboa. Com uma carreira consolidada que abrange a prática clínica, investigação científica, consultoria em saúde pública e saúde & bem-estar corporativo, é também empreendedora e fundadora da MM CONSULTY e da SATTIS. Ao longo da sua trajectória, combina o rigor científico com uma visão prática, humanizada e integral do cuidado à pessoa.",
     "obras": []
+  },
+  {
+    "id": 2,
+    "nome": "Vasco Adérito Castigo Sambo",
+    "foto": "/authors/Vasco.jpeg",
+    "genero": "Autobiografia",
+    "bio": "Nascido a 2 de Novembro de 1990, na Cidade de Maputo. Terminou o curso de Enfermagem Geral em 2018 no Instituto de Ciências de Saúde de Maputo. Trabalhou com vários grupos corais dentro da Igreja Congregacional Unida de Moçambique. Actualmente, enfermeiro geral no Hospital Provincial da Matola, estudante na Universidade Pedagógica de Maputo, Maestro e Professor domiciliar de Música.",
+    "obras": []
+  },
+  {
+    "id": 3,
+    "nome": "Katia Robledo Querol",
+    "foto": "/authors/Katia.jpeg",
+    "genero": "Biografia",
+    "bio": "Cidadã cubana, nascida a 23 de setembro de 1996. Médica especialista em Medicina Legal, exerce também a docência como professora auxiliar na Universidade de Ciências Médicas de Matanzas, em Cuba. Dedica-se ao ensino e à investigação na área da Medicina Legal. Actualmente, desempenha funções docentes no Hospital Central da Beira, em Moçambique, onde contribui para a formação de profissionais de saúde e para o fortalecimento do ensino médico na região.",
+    "obras": []
+  },
+  {
+    "id": 4,
+    "nome": "Lídia Codo",
+    "foto": "/authors/Lidia.jpeg",
+    "genero": "Poesia",
+    "bio": "Poeta e escritora, cuja relação com a palavra se constrói desde cedo como gesto de escuta, elaboração e transfiguração do sensível. Em 2016 publica Verossímil, obra de poesia concreta. A maturação da sua voz poética manifesta-se na trilogia Carente (2017), Patente (2019) e Ululante (2023). Em 2025 lança Escandalossíssima, obra em que se debruça sobre o Haikai. Ao longo do seu percurso integrou diversas antologias, participou de eventos literários e desenvolveu acções formativas em escolas, reafirmando a poesia como prática de partilha, escuta e permanência.",
+    "obras": ["Verossímil", "Carente", "Patente", "Ululante", "Escandalossíssima"]
+  },
+  {
+    "id": 5,
+    "nome": "Assmá Aridás",
+    "foto": "/authors/Assma.jpeg",
+    "genero": "Psicologia",
+    "bio": "Psicóloga clínica interventiva, evolutiva e educacional, docente universitária e especialista em prevenção do burnout e parentalidade positiva. Actua na área da saúde mental com experiência em diagnóstico e intervenção psicológica, dedicando-se à promoção do equilíbrio emocional e do desenvolvimento pessoal. A sua prática profissional combina conhecimento científico e uma abordagem humanizada, valorizando a escuta activa e a singularidade de cada indivíduo. Reconhecida como psicóloga anti-burnout, tem centrado a sua actuação na prevenção do esgotamento profissional e na promoção de uma relação saudável com o trabalho.",
+    "obras": []
+  },
+  {
+    "id": 6,
+    "nome": "Bonifácio B. Fabião",
+    "foto": "/authors/Bonifacio.jpeg",
+    "genero": "Literatura",
+    "bio": "Natural da vila de Songo, distrito de Cahora Bassa, província de Tete, em Moçambique. Licenciado em Ensino de Biologia, com habilitações em Química, conjugando o rigor da ciência com a sensibilidade da arte literária. Autor de A Juventude e as Mídias Sociais e O Canto do Planeta Ferido, publicado no Brasil. Tem textos publicados em diversas antologias nacionais e internacionais. Em 2024, sagrou-se vencedor da 1.ª Edição das Olimpíadas Camonianas. Tornou-se o primeiro estudante licenciado em Ensino de Biologia pela Universidade Púnguè — Extensão de Tete a publicar um livro. É membro da Associação dos Poetas da Província de Tete e vice-presidente da Associação Humanitária Tafika.",
+    "obras": ["A Juventude e as Mídias Sociais", "O Canto do Planeta Ferido"]
+  },
+  {
+    "id": 7,
+    "nome": "Samila Simões Manuel António",
+    "foto": "/authors/Samila.jpeg",
+    "genero": "Poesia",
+    "bio": "Nascida a 28 de maio de 2001, de nacionalidade moçambicana e natural da província de Tete. Usa o pseudónimo literário Samy da Sandra. Formada em Gestão Ambiental e Desenvolvimento Comunitário, com competências em Ecoturismo, pela Universidade Púnguè. Autora de A Carpintaria dos Meus Sonhos (2023) e Tudo o que Sobra de um Coração Intenso (2025). É membro da Associação Provincial dos Poetas da Província de Tete e do Clube de Leitura e Livros da mesma província.",
+    "obras": ["A Carpintaria dos Meus Sonhos", "Tudo o que Sobra de um Coração Intenso"]
+  },
+  {
+    "id": 8,
+    "nome": "Arquilito Maurício André Silambo",
+    "foto": "/authors/Arquilito.jpeg",
+    "genero": "Literatura",
+    "bio": "Nascido a 11 de março de 1998, natural da província de Inhambane, tendo crescido nas cidades da Maxixe e de Inhambane. Licenciado em Contabilidade e Auditoria pela Universidade Save. Empreendedor por vocação, concilia a actividade empresarial com uma profunda paixão pela literatura. Foi finalista do Prémio Literário Carlos Morgado – III Edição (2025) e participou da coletânea Novas Vozes, Novas Estórias com o texto 'Sonhos não se Medem pela Origem', publicado pela Fundação Carlos Morgado em 2025.",
+    "obras": ["Sonhos não se Medem pela Origem"]
+  },
+  {
+    "id": 9,
+    "nome": "Franklin Alberto Gravata",
+    "foto": "/authors/Franklin.jpeg",
+    "genero": "Literatura",
+    "bio": "Nasceu em 1991, na cidade de Chimoio. Licenciado em Relações Internacionais e Diplomacia (2014) pela Universidade Joaquim Chissano. Autor de A Sereia do Zambeze, publicada pela Kulera em 2020, e de Oxigéniozia, publicada em 2025 pela Mapeta Editora.",
+    "obras": ["A Sereia do Zambeze", "Oxigéniozia"]
+  },
+  {
+    "id": 10,
+    "nome": "Pérola da Celina Levene",
+    "foto": "/authors/Perola.jpeg",
+    "genero": "Poesia",
+    "bio": "Nasceu a 24 de fevereiro de 1990, na cidade de Chimoio, província de Manica. Funcionária bancária há 16 anos, vive dentro dela uma alma literária — uma mulher que transforma sentimentos em palavras e emoções em poesia. Sensível e intensamente romântica, destaca-se pela sua forma poética de sentir e interpretar a vida. O seu maior sonho é tornar-se uma grande escritora, tocar corações, despertar sentimentos e eternizar pensamentos através da arte da palavra.",
+    "obras": []
+  },
+  {
+    "id": 11,
+    "nome": "Ernesto Levene Nhamande",
+    "foto": "/authors/Ernesto.jpeg",
+    "genero": "Biografia",
+    "bio": "Nasceu a 2 de maio de 1962, em Báruè. Eletrotécnico de profissão, dedicou grande parte da sua vida profissional à Hidroeléctrica de Cahora Bassa. Em 1979 partiu para Cuba, onde frequentou o ensino básico no âmbito de uma bolsa de estudos, formando-se em manutenção de equipamentos de produção elétrica e especializando-se em eletrotécnica. Para além do profissional exemplar, é acima de tudo homem de família — amoroso, de coração puro, defensor da união e da harmonia familiar. Reformado, permanece activo naquilo que realmente importa: o amor, a presença e o exemplo.",
+    "obras": []
+  },
+  {
+    "id": 12,
+    "nome": "Carimo Francisco Gome",
+    "foto": "/authors/Camiro.jpeg",
+    "genero": "Literatura",
+    "bio": "Conhecido pelo pseudónimo Carimo Escritor Sem Limites, nasceu a 2 de julho de 2003, no distrito de Inharrime, província de Inhambane. Frequentou o Ensino Superior em Gestão de Recursos Humanos na Universidade Save. Activista comunitário na área de saúde sexual e reprodutiva de jovens. Em 2025, foi vencedor do Concurso Literário Sonhos de Natal, realizado em Lisboa, Portugal. Coautor de Sombra da Violência e Poemas do Fim do Mundo. Publicou em 2025 a obra Entre Ruínas e Renascença.",
+    "obras": ["Entre Ruínas e Renascença", "Sombra da Violência", "Poemas do Fim do Mundo"]
   }
 ]

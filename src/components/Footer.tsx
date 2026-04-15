@@ -42,7 +42,7 @@ const Footer = ({ onAdmin, contacto }: { onAdmin?: () => void; contacto?: { mora
           <ul className="space-y-4 text-sm text-slate-400">
             <li><a href="#home" className="hover:text-white transition-colors">Início</a></li>
             <li><a href="#catalogo" className="hover:text-white transition-colors">Catálogo</a></li>
-            <li><a href="#autores" className="hover:text-white transition-colors">Autores</a></li>
+            <li><a href="/autores" className="hover:text-white transition-colors">Autores</a></li>
             <li><a href="#blog" className="hover:text-white transition-colors">Blog</a></li>
             <li><a href="#sobre" className="hover:text-white transition-colors">Sobre</a></li>
             <li><a href="#contacto" className="hover:text-white transition-colors">Contacto</a></li>

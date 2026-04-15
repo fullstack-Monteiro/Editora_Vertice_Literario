@@ -17,7 +17,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'INÍCIO', href: '#home' },
     { name: 'CATÁLOGO', href: '#catalogo' },
-    { name: 'AUTORES', href: '#autores' },
+    { name: 'AUTORES', href: '/autores' },
     { name: 'BLOG', href: '#blog' },
     { name: 'SOBRE', href: '#sobre' },
     { name: 'CONTACTO', href: '#contacto' },

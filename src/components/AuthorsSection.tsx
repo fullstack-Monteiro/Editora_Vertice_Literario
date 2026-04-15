@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
+import AuthorModal from './AuthorModal';
 
 interface Author {
   id: number;
@@ -10,15 +11,15 @@ interface Author {
   genero: string;
 }
 
-interface AuthorsSectionProps {
-  authors: Author[];
-}
+const AuthorsSection = ({ authors }: { authors: Author[] }) => {
+  const [selected, setSelected] = useState<Author | null>(null);
 
-const AuthorsSection = ({ authors }: AuthorsSectionProps) => {
   if (authors.length === 0) return null;
 
   return (
     <section id="autores" className="bg-slate-50 py-16 md:py-24 px-5 md:px-12">
+      <AuthorModal author={selected} onClose={() => setSelected(null)} />
+
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-gold font-bold tracking-widest text-xs mb-4 block">EDITORA VÉRTICE LITERÁRIO</span>
@@ -33,14 +34,16 @@ const AuthorsSection = ({ authors }: AuthorsSectionProps) => {
               key={author.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.08 }}
               viewport={{ once: true }}
-              className="text-center"
+              className="text-center cursor-pointer group"
+              onClick={() => setSelected(author)}
             >
-              {/* Foto circular */}
-              <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg">
+              <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg group-hover:shadow-xl transition-all duration-300">
                 {author.foto ? (
-                  <img src={author.foto} alt={author.nome} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" referrerPolicy="no-referrer" />
+                  <img src={author.foto} alt={author.nome}
+                    className="w-full h-full object-cover transition-all duration-500"
+                    referrerPolicy="no-referrer" />
                 ) : (
                   <div className="w-full h-full bg-slate-200 flex items-center justify-center">
                     <span className="text-4xl font-serif font-bold text-slate-400">{author.nome.charAt(0)}</span>
@@ -48,23 +51,17 @@ const AuthorsSection = ({ authors }: AuthorsSectionProps) => {
                 )}
               </div>
 
-              <h3 className="font-serif font-bold text-navy text-xl mb-2">{author.nome}</h3>
+              <h3 className="font-serif font-bold text-navy text-xl mb-2 group-hover:text-gold transition-colors duration-300">{author.nome}</h3>
 
               {author.genero && (
                 <span className="text-gold text-xs font-bold tracking-widest uppercase block mb-4">{author.genero}</span>
               )}
 
-              <p className="text-slate-500 text-sm leading-relaxed text-center line-clamp-4">{author.bio}</p>
+              <p className="text-slate-500 text-sm leading-relaxed line-clamp-3">{author.bio}</p>
 
-              {author.obras.length > 0 && (
-                <div className="mt-4 flex flex-wrap justify-center gap-2">
-                  {author.obras.map((obra, i) => (
-                    <span key={i} className="text-[10px] font-bold tracking-widest bg-navy/5 text-navy px-3 py-1 rounded-sm">
-                      {obra}
-                    </span>
-                  ))}
-                </div>
-              )}
+              <button className="mt-4 text-xs font-bold tracking-widest text-navy hover:text-gold transition-colors">
+                LER MAIS →
+              </button>
             </motion.div>
           ))}
         </div>
