@@ -77,7 +77,8 @@ Na Editora Vértice Literário, recebemos submissões por email e estamos sempre
   }
 ];
 
-export const FEATURED_BOOKS = [
+// Arquivo de livros anteriores (não mostrados no site)
+export const ARCHIVED_BOOKS = [
   { title: "Primeiros Laços", author: "Lídia Cumbane", cover: "https://picsum.photos/seed/book1/400/533" },
   { title: "Psicologia de Aprendizagem", author: "Herminigildo Santana Chimarizene", cover: "https://picsum.photos/seed/book2/400/533" },
   { title: "Maré do Amor", author: "José Bechane", cover: "https://picsum.photos/seed/book3/400/533" },
@@ -97,6 +98,13 @@ export const FEATURED_BOOKS = [
   { title: "Sem Verba Não se Anuncia o Verbo", author: "Ananias Combe", cover: "https://picsum.photos/seed/book17/400/533" },
   { title: "Sustentabilidade da Igreja Católica", author: "Ananias Combe", cover: "https://picsum.photos/seed/book18/400/533" },
   { title: "eBooks & Antologias Internacionais", author: "Vários Autores", cover: "https://picsum.photos/seed/book19/400/533" },
+];
+
+export const FEATURED_BOOKS = [
+  { title: "O Pranto das Palavras", author: "Issa Tarmamade Júnior", cover: "/covers/pranto-das-palavras.png", genero: "Poesia", ano: "2025" },
+  { title: "Carente / Patente / Ululante", author: "Lídia Codo", cover: "/covers/Carente-patente-ululante.png", genero: "Poesia", ano: "2023" },
+  { title: "O Talento que a Crise Releva", author: "Moséstia Machava", cover: "/covers/O-talento-que-a-crise-releva.png", genero: "Não-Ficção", ano: "2025" },
+  { title: "Riscos e Remédios", author: "Maurício Arquilito Silambo", cover: "/covers/Riscos-e-remedios.png", genero: "Literatura", ano: "2025" },
 ];
 
 export const AUTHORS = [

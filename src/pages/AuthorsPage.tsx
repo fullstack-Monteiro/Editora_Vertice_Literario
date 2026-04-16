@@ -11,7 +11,7 @@ const AuthorsPage = () => {
 
   return (
     <div className="min-h-screen bg-[#f5f0e8]">
-      <Navbar />
+      <Navbar forceScrolled />
       <AuthorModal author={selected} onClose={() => setSelected(null)} />
 
       <div className="pt-32 pb-8 px-5 md:px-12 text-center">
@@ -52,6 +52,9 @@ const AuthorsPage = () => {
               <p className="text-slate-500 text-sm leading-relaxed line-clamp-4 text-left">
                 {author.bio}
               </p>
+              <button className="mt-3 text-xs font-bold tracking-widest text-gold hover:text-navy transition-colors">
+                LER MAIS →
+              </button>
             </motion.div>
           ))}
         </div>
