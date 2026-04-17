@@ -22,7 +22,6 @@ import WhatsAppButton from './components/WhatsAppButton';
 import ShareButton from './components/ShareButton';
 import BlogModal from './components/BlogModal';
 import BookModal from './components/BookModal';
-import AdminPanel from './components/AdminPanel';
 import HistoryModal from './components/HistoryModal';
 import PhilosophyModal from './components/PhilosophyModal';
 import ManuscriptModal from './components/ManuscriptModal';
@@ -34,7 +33,6 @@ const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:30
 const App = () => {
   const [showAllBooks, setShowAllBooks] = React.useState(false);
   const [selectedPost, setSelectedPost] = React.useState<typeof BLOG_POSTS[0] | null>(null);
-  const [showAdmin, setShowAdmin] = React.useState(false);
   const [apiPosts, setApiPosts] = React.useState<typeof BLOG_POSTS>([]);
   const [apiBooks, setApiBooks] = React.useState<typeof FEATURED_BOOKS>([]);
   const [selectedBook, setSelectedBook] = React.useState<typeof FEATURED_BOOKS[0] | null>(null);
@@ -113,7 +111,6 @@ const App = () => {
     GraduationCap: <GraduationCap />,
   };
 
-  if (showAdmin) return <AdminPanel onClose={() => setShowAdmin(false)} />;
 
   return (
     <div className="min-h-screen">
@@ -619,7 +616,6 @@ const App = () => {
         </div>
       </section>
 
-      <Footer onAdmin={() => setShowAdmin(true)} contacto={siteContent?.contacto} />
     </div>
   );
 };
