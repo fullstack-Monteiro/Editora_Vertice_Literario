@@ -39,7 +39,7 @@ const CatalogPage = () => {
       <Navbar forceScrolled />
       <BookModal book={selected} onClose={() => setSelected(null)} />
 
-      <div className="pt-28 pb-16 max-w-7xl mx-auto px-5 md:px-12 flex flex-col md:flex-row gap-8">
+      <div className="pt-24 sm:pt-28 pb-16 max-w-7xl mx-auto px-4 sm:px-12 flex flex-col md:flex-row gap-6">
 
         {/* Sidebar filtros */}
         <aside className="w-full md:w-56 shrink-0">
@@ -96,7 +96,7 @@ const CatalogPage = () => {
           {filtered.length === 0 ? (
             <p className="text-slate-400 text-center py-20">Nenhum livro encontrado.</p>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {filtered.map((book, index) => (
                 <motion.div key={book.id}
                   initial={{ opacity: 0, y: 20 }}

@@ -48,7 +48,7 @@ const Navbar = ({ forceScrolled = false }: { forceScrolled?: boolean }) => {
           animate={{ opacity: 1 }}
           className="flex items-center gap-3 group"
         >
-          <div className="h-20 flex items-center overflow-visible">
+          <div className="h-14 sm:h-20 flex items-center overflow-visible">
             <img src="/logo.png" alt="Editora Vértice Literário" className="h-full w-auto object-contain" />
           </div>
           <div className="hidden sm:block">
@@ -82,7 +82,7 @@ const Navbar = ({ forceScrolled = false }: { forceScrolled?: boolean }) => {
         {isOpen && (
           <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}
             className="absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-xl md:hidden">
-            <div className="flex flex-col p-8 gap-6">
+            <div className="flex flex-col p-5 sm:p-8 gap-5">
               {navLinks.map((link) => (
                 <button key={link.name} onClick={() => handleNav(link)}
                   className="text-sm font-bold tracking-widest text-navy hover:text-gold text-left">

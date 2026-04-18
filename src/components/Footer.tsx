@@ -13,7 +13,7 @@ const Footer = ({ contacto }: { contacto?: { morada: string; telefone: string; e
   };
   return (
     <footer className="bg-navy text-white pt-8 pb-10">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         <div className="space-y-6">
           <div className="flex items-center gap-2">
             <div className="relative h-24 flex items-center">
@@ -101,7 +101,7 @@ const Footer = ({ contacto }: { contacto?: { morada: string; telefone: string; e
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
         <p>© {new Date().getFullYear()} Editora Vértice Literário, Lda. Todos os direitos reservados.</p>
         <div className="flex items-center gap-4">
           <p>Desenvolvido por <a href="https://bluevisiontech.site/ai" target="_blank" rel="noopener noreferrer" className="text-primary-blue font-semibold hover:text-gold transition-colors">Bluevision Tech</a></p>

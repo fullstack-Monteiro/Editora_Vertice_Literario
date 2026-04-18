@@ -14,14 +14,14 @@ const AuthorsPage = () => {
       <Navbar forceScrolled />
       <AuthorModal author={selected} onClose={() => setSelected(null)} />
 
-      <div className="pt-32 pb-8 px-5 md:px-12 text-center">
+      <div className="pt-24 sm:pt-32 pb-8 px-4 sm:px-12 text-center">
         <h1 className="text-3xl sm:text-4xl font-serif font-bold text-navy mb-3">Os Nossos Autores</h1>
         <p className="text-slate-500 text-sm">As mentes brilhantes que dão vida ao nosso catálogo.</p>
         <div className="w-16 h-0.5 bg-gold mx-auto mt-4"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-5 md:px-12 py-10 pb-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-12 py-8 pb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[...AUTHORS].sort((a, b) => a.nome.localeCompare(b.nome, 'pt')).map((author, index) => (
             <motion.div key={author.id}
               initial={{ opacity: 0, y: 20 }}

@@ -14,7 +14,7 @@ const WhatsAppButton = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
             transition={{ duration: 0.2 }}
-            className="bg-white rounded-2xl shadow-2xl w-72 overflow-hidden"
+            className="bg-white rounded-2xl shadow-2xl w-[calc(100vw-3rem)] max-w-[288px] overflow-hidden"
           >
             {/* Header */}
             <div className="bg-[#25D366] px-5 py-4 flex items-center gap-3">

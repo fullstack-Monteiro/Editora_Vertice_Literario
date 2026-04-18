@@ -26,8 +26,8 @@ const AboutPage = () => {
               <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&q=80&w=1000"
                 alt="Office" className="rounded-sm shadow-2xl" referrerPolicy="no-referrer" />
             </div>
-            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-gold/10 -z-0 hidden md:block"></div>
-            <div className="absolute -top-10 -left-10 p-8 bg-navy text-white z-20 hidden md:block">
+            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-gold/10 -z-0 hidden lg:block"></div>
+            <div className="absolute -top-10 -left-10 p-8 bg-navy text-white z-20 hidden lg:block">
               <span className="text-4xl font-serif font-bold block mb-2">185809</span>
               <span className="text-[10px] tracking-widest uppercase font-bold text-gold">Registo Oficial</span>
             </div>
