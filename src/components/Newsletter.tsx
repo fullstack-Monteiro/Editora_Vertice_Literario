@@ -30,7 +30,7 @@ const Newsletter = () => {
       {status === 'success' ? (
         <p className="text-green-600 font-bold text-sm">Subscrito com sucesso! Verifique o seu email.</p>
       ) : (
-        <form onSubmit={handleSubmit} className="flex gap-2">
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
           <input
             required type="email" value={email}
             onChange={e => { setEmail(e.target.value); setStatus('idle'); }}
@@ -38,7 +38,7 @@ const Newsletter = () => {
             className="flex-1 border border-slate-200 p-3 text-sm outline-none rounded-sm focus:border-gold"
           />
           <button type="submit" disabled={status === 'sending'}
-            className="flex items-center gap-2 bg-navy text-white px-5 py-3 text-xs font-bold tracking-widest hover:bg-gold transition-colors rounded-sm disabled:opacity-60 whitespace-nowrap">
+            className="flex items-center justify-center gap-2 bg-navy text-white px-5 py-3 text-xs font-bold tracking-widest hover:bg-gold transition-colors rounded-sm disabled:opacity-60 whitespace-nowrap">
             <Send size={13} /> {status === 'sending' ? '...' : 'SUBSCREVER'}
           </button>
         </form>
