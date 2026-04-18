@@ -30,7 +30,7 @@ const AuthorsPage = () => {
               className="text-center cursor-pointer group"
               onClick={() => setSelected(author)}
             >
-              <div className="w-44 h-44 mx-auto mb-5 rounded-full overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 border-4 border-white">
+              <div className="w-32 h-32 sm:w-44 sm:h-44 mx-auto mb-5 rounded-full overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 border-4 border-white">
                 {author.foto ? (
                   <img src={author.foto} alt={author.nome}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

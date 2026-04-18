@@ -43,9 +43,11 @@ const CatalogPage = () => {
 
         {/* Sidebar filtros */}
         <aside className="w-full md:w-56 shrink-0">
-          <h2 className="flex items-center gap-2 font-serif font-bold text-navy text-lg mb-6">
-            <Filter size={18} className="text-gold" /> Filtros
-          </h2>
+          <details className="md:open" open>
+            <summary className="flex items-center gap-2 font-serif font-bold text-navy text-lg mb-4 cursor-pointer md:cursor-default list-none">
+              <Filter size={18} className="text-gold" /> Filtros
+              <span className="ml-auto md:hidden text-slate-400 text-sm">▼</span>
+            </summary>
 
           {/* Search */}
           <div className="relative mb-6">
@@ -84,6 +86,7 @@ const CatalogPage = () => {
               ))}
             </div>
           </div>
+          </details>
         </aside>
 
         {/* Grid livros */}
