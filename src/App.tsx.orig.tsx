@@ -22,7 +22,6 @@ import WhatsAppButton from './components/WhatsAppButton';
 import ShareButton from './components/ShareButton';
 import BlogModal from './components/BlogModal';
 import BookModal from './components/BookModal';
-import AdminPanel from './components/AdminPanel';
 import HistoryModal from './components/HistoryModal';
 import PhilosophyModal from './components/PhilosophyModal';
 import ManuscriptModal from './components/ManuscriptModal';
@@ -34,8 +33,8 @@ const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:30
 const App = () => {
   const [showAllBooks, setShowAllBooks] = React.useState(false);
   const [selectedPost, setSelectedPost] = React.useState<typeof BLOG_POSTS[0] | null>(null);
-  const [showAdmin, setShowAdmin] = React.useState(false);
   const [apiPosts, setApiPosts] = React.useState<typeof BLOG_POSTS>([]);
+  const [apiBooks, setApiBooks] = React.useState<typeof FEATURED_BOOKS>([]);
   const [selectedBook, setSelectedBook] = React.useState<typeof FEATURED_BOOKS[0] | null>(null);
   const [siteContent, setSiteContent] = React.useState<{
     hero: { titulo: string; subtitulo: string };
@@ -55,6 +54,12 @@ const App = () => {
         .then(data => { if (Array.isArray(data)) setApiPosts(data); })
         .catch(() => {});
     };
+    const fetchBooks = () => {
+      fetch(`${API_URL}/api/books`)
+        .then(r => r.json())
+        .then(data => { if (Array.isArray(data)) setApiBooks(data); })
+        .catch(() => {});
+    };
     const fetchSiteContent = () => {
       fetch(`${API_URL}/api/content`)
         .then(r => r.json())
@@ -64,8 +69,9 @@ const App = () => {
         .catch(() => {});
     };
     fetchPosts();
+    fetchBooks();
     fetchSiteContent();
-    const interval = setInterval(() => { fetchPosts(); fetchSiteContent(); }, 30000);
+    const interval = setInterval(() => { fetchPosts(); fetchBooks(); fetchSiteContent(); }, 30000);
     return () => clearInterval(interval);
   }, []);
 
@@ -105,7 +111,6 @@ const App = () => {
     GraduationCap: <GraduationCap />,
   };
 
-  if (showAdmin) return <AdminPanel onClose={() => setShowAdmin(false)} />;
 
   return (
     <div className="min-h-screen">
@@ -186,7 +191,7 @@ const App = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {(showAllBooks ? FEATURED_BOOKS : FEATURED_BOOKS.slice(0, 4)).map((book, index) => (
+            {(showAllBooks ? (apiBooks.length ? apiBooks : FEATURED_BOOKS) : (apiBooks.length ? apiBooks : FEATURED_BOOKS).slice(0, 4)).map((book, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -216,7 +221,7 @@ const App = () => {
               onClick={() => setShowAllBooks(!showAllBooks)}
               className="inline-flex items-center gap-2 bg-navy text-white px-8 py-4 text-xs font-bold tracking-widest hover:bg-gold transition-all duration-300 rounded-sm"
             >
-              {showAllBooks ? 'VER MENOS' : `VER TODAS AS ${FEATURED_BOOKS.length} OBRAS`}
+              {showAllBooks ? 'VER MENOS' : `VER TODAS AS ${(apiBooks.length ? apiBooks : FEATURED_BOOKS).length} OBRAS`}
             </button>
           </div>
         </div>
@@ -611,7 +616,6 @@ const App = () => {
         </div>
       </section>
 
-      <Footer onAdmin={() => setShowAdmin(true)} contacto={siteContent?.contacto} />
     </div>
   );
 };
