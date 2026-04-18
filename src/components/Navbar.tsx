@@ -22,14 +22,14 @@ const Navbar = ({ forceScrolled = false }: { forceScrolled?: boolean }) => {
     { name: 'INÍCIO', href: '#home', path: '/' },
     { name: 'CATÁLOGO', href: '#catalogo', path: '/catalogo' },
     { name: 'AUTORES', href: '/autores', path: '/autores' },
-    { name: 'BLOG', href: '#blog', path: '/#blog' },
+    { name: 'BLOG', href: '#blog', path: '/blog' },
     { name: 'SOBRE', href: '#sobre', path: '/sobre' },
     { name: 'CONTACTO', href: '#contacto', path: '/#contacto' },
   ];
 
   const handleNav = (link: typeof navLinks[0]) => {
     setIsOpen(false);
-    if (link.path === '/autores' || link.path === '/catalogo' || link.path === '/sobre') {
+    if (link.path === '/autores' || link.path === '/catalogo' || link.path === '/sobre' || link.path === '/blog') {
       navigate(link.path);
     } else if (isHome) {
       const id = link.href.replace('#', '');

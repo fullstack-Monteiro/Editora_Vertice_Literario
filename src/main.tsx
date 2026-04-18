@@ -5,6 +5,7 @@ import App from './App.tsx';
 import AuthorsPage from './pages/AuthorsPage.tsx';
 import CatalogPage from './pages/CatalogPage.tsx';
 import AboutPage from './pages/AboutPage.tsx';
+import BlogPage from './pages/BlogPage.tsx';
 import { ErrorBoundary } from './ErrorBoundary.tsx';
 import './index.css';
 
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')!).render(
           <Route path="/autores" element={<AuthorsPage />} />
           <Route path="/catalogo" element={<CatalogPage />} />
           <Route path="/sobre" element={<AboutPage />} />
+          <Route path="/blog" element={<BlogPage />} />
         </Routes>
       </BrowserRouter>
     </ErrorBoundary>
