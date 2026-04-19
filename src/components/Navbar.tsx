@@ -51,9 +51,12 @@ const Navbar = ({ forceScrolled = false }: { forceScrolled?: boolean }) => {
           <div className="h-14 sm:h-20 flex items-center overflow-visible">
             <img src="/logo.png" alt="Editora Vértice Literário" className="h-full w-auto object-contain" />
           </div>
-          <div className="hidden sm:block">
-            <span className={`font-serif font-bold text-sm leading-tight block ${isScrolled ? 'text-navy' : 'text-white'}`}>Editora Vértice</span>
-            <span className="font-serif text-xs leading-tight block text-gold">Literário</span>
+          <div className="block">
+            <span className="font-serif font-bold text-[9px] leading-tight block text-gold tracking-widest uppercase text-left pl-0">Editora</span>
+            <div className="flex items-baseline gap-1.5">
+              <span className="font-serif font-bold text-sm leading-tight text-[#4A90D9]">VÉRTICE</span>
+              <span className={`font-serif text-xs leading-tight font-bold ${isScrolled ? 'text-navy' : 'text-white/80'}`}>LITERÁRIO</span>
+            </div>
           </div>
         </motion.button>
 
