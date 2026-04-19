@@ -68,7 +68,8 @@ const BookModal = ({ book, onClose }: BookModalProps) => {
                   </div>
                 )}
 
-                <a href="#contacto" onClick={onClose}
+                <a href={`https://wa.me/258834698880?text=${encodeURIComponent(`Olá! Tenho interesse em adquirir a obra "${book.title}" de ${book.author}. Poderia fornecer mais informações sobre disponibilidade e preço?`)}`}
+                  target="_blank" rel="noopener noreferrer"
                   className="mt-8 inline-flex items-center gap-2 bg-navy text-white px-6 py-3 text-xs font-bold tracking-widest hover:bg-gold transition-colors rounded-sm">
                   ADQUIRIR ESTA OBRA
                 </a>

@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion } from 'motion/react';
-import { Filter, Search } from 'lucide-react';
+import { Search } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import BookModal from '../components/BookModal';
 import { FEATURED_BOOKS } from '../constants';
@@ -16,117 +16,86 @@ const ALL_BOOKS = FEATURED_BOOKS.map((b, i) => ({
 
 const CatalogPage = () => {
   const [search, setSearch] = useState('');
-  const [generoFilter, setGeneroFilter] = useState('Todos');
-  const [autorFilter, setAutorFilter] = useState('Todos');
   const [selected, setSelected] = useState<typeof ALL_BOOKS[0] | null>(null);
 
-  const generos = ['Todos', ...Array.from(new Set(ALL_BOOKS.map(b => b.genero).filter(Boolean)))];
-  const autores = ['Todos', ...Array.from(new Set(ALL_BOOKS.map(b => b.author).filter(Boolean))).sort((a, b) => a.localeCompare(b, 'pt'))];
-
   const filtered = useMemo(() => {
-    return ALL_BOOKS.filter(b => {
-      const matchSearch = search === '' ||
-        b.title.toLowerCase().includes(search.toLowerCase()) ||
-        b.author.toLowerCase().includes(search.toLowerCase());
-      const matchGenero = generoFilter === 'Todos' || b.genero === generoFilter;
-      const matchAutor = autorFilter === 'Todos' || b.author === autorFilter;
-      return matchSearch && matchGenero && matchAutor;
-    });
-  }, [search, generoFilter, autorFilter]);
+    const q = search.toLowerCase().trim();
+    if (!q) return ALL_BOOKS;
+    return ALL_BOOKS.filter(b =>
+      b.title.toLowerCase().includes(q) ||
+      b.author.toLowerCase().includes(q) ||
+      b.genero.toLowerCase().includes(q)
+    );
+  }, [search]);
 
   return (
     <div className="min-h-screen bg-[#f5f0e8]">
       <Navbar forceScrolled />
       <BookModal book={selected} onClose={() => setSelected(null)} />
 
-      <div className="pt-24 sm:pt-28 pb-16 max-w-7xl mx-auto px-4 sm:px-12 flex flex-col md:flex-row gap-6">
+      {/* Header */}
+      <div className="pt-24 sm:pt-32 pb-8 px-5 md:px-12 text-center">
+        <span className="text-gold font-bold tracking-widest text-xs mb-4 block">EDITORA VÉRTICE LITERÁRIO</span>
+        <h1 className="text-3xl sm:text-4xl font-serif font-bold text-navy mb-3">Catálogo de Obras</h1>
+        <p className="text-slate-500 text-sm mb-6">Obras publicadas e disponíveis para aquisição.</p>
+        <div className="w-16 h-0.5 bg-gold mx-auto mb-8"></div>
 
-        {/* Sidebar filtros */}
-        <aside className="w-full md:w-56 shrink-0">
-          <details className="md:open" open>
-            <summary className="flex items-center gap-2 font-serif font-bold text-navy text-lg mb-4 cursor-pointer md:cursor-default list-none">
-              <Filter size={18} className="text-gold" /> Filtros
-              <span className="ml-auto md:hidden text-slate-400 text-sm">▼</span>
-            </summary>
-
-          {/* Search */}
-          <div className="relative mb-6">
-            <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
-            <input value={search} onChange={e => setSearch(e.target.value)}
-              placeholder="Buscar livro ou autor..."
-              className="w-full pl-8 pr-3 py-2 text-sm border border-slate-200 rounded-sm bg-white outline-none focus:border-gold" />
-          </div>
-
-          {/* Género */}
-          <div className="mb-6">
-            <p className="text-[10px] font-bold tracking-widest text-slate-400 uppercase mb-3">Género</p>
-            <div className="space-y-2">
-              {generos.map(g => (
-                <label key={g} className="flex items-center gap-2 cursor-pointer">
-                  <input type="radio" name="genero" checked={generoFilter === g}
-                    onChange={() => setGeneroFilter(g)}
-                    className="accent-gold" />
-                  <span className={`text-sm ${generoFilter === g ? 'font-bold text-navy' : 'text-slate-500'}`}>{g}</span>
-                </label>
-              ))}
-            </div>
-          </div>
-
-          {/* Autor */}
-          <div>
-            <p className="text-[10px] font-bold tracking-widest text-slate-400 uppercase mb-3">Autor</p>
-            <div className="space-y-2 max-h-48 overflow-y-auto pr-1">
-              {autores.map(a => (
-                <label key={a} className="flex items-center gap-2 cursor-pointer">
-                  <input type="radio" name="autor" checked={autorFilter === a}
-                    onChange={() => setAutorFilter(a)}
-                    className="accent-gold" />
-                  <span className={`text-sm ${autorFilter === a ? 'font-bold text-navy' : 'text-slate-500'}`}>{a}</span>
-                </label>
-              ))}
-            </div>
-          </div>
-          </details>
-        </aside>
-
-        {/* Grid livros */}
-        <div className="flex-1">
-          <p className="text-sm text-slate-400 mb-6">Mostrando {filtered.length} resultado{filtered.length !== 1 ? 's' : ''}</p>
-
-          {filtered.length === 0 ? (
-            <p className="text-slate-400 text-center py-20">Nenhum livro encontrado.</p>
-          ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filtered.map((book, index) => (
-                <motion.div key={book.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.05 }}
-                  className="cursor-pointer group"
-                  onClick={() => setSelected(book)}
-                >
-                  {/* Capa */}
-                  <div className="aspect-[3/4] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 mb-4 bg-slate-100">
-                    <img src={book.cover} alt={book.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      referrerPolicy="no-referrer" />
-                  </div>
-
-                  {/* Info */}
-                  {book.genero && (
-                    <p className="text-gold text-[10px] font-bold tracking-widest uppercase mb-1">
-                      {book.genero}{book.ano ? ` • ${book.ano}` : ''}
-                    </p>
-                  )}
-                  <h3 className="font-serif font-bold text-navy text-xl leading-snug group-hover:text-gold transition-colors mb-1">
-                    {book.title}
-                  </h3>
-                  <p className="text-slate-500 text-sm italic">{book.author}</p>
-                </motion.div>
-              ))}
-            </div>
-          )}
+        {/* Barra de pesquisa */}
+        <div className="relative max-w-md mx-auto">
+          <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
+          <input
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            placeholder="Pesquisar por título, autor ou género..."
+            className="w-full pl-11 pr-4 py-3 text-sm bg-white border border-slate-200 text-navy placeholder-slate-400 rounded-sm outline-none focus:border-gold transition-all shadow-sm"
+          />
         </div>
+        {search && (
+          <p className="text-sm text-slate-400 mt-3">
+            {filtered.length} resultado{filtered.length !== 1 ? 's' : ''} para
+            <span className="text-gold font-bold"> "{search}"</span>
+            <button onClick={() => setSearch('')} className="ml-2 text-slate-400 hover:text-navy underline text-xs">limpar</button>
+          </p>
+        )}
+      </div>
+
+      {/* Grid */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-12 py-8 pb-20">
+        {filtered.length === 0 ? (
+          <div className="text-center py-20">
+            <p className="text-slate-400 text-lg mb-2">Nenhuma obra encontrada.</p>
+            <button onClick={() => setSearch('')} className="text-gold text-sm font-bold hover:underline">
+              Limpar pesquisa
+            </button>
+          </div>
+        ) : (
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+            {filtered.map((book, index) => (
+              <motion.div key={book.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.05 }}
+                className="cursor-pointer group text-center"
+                onClick={() => setSelected(book)}
+              >
+                <div className="aspect-[3/4] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 mb-3 bg-slate-100 rounded-sm">
+                  <img src={book.cover} alt={book.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    referrerPolicy="no-referrer" />
+                </div>
+                {book.genero && (
+                  <p className="text-gold text-[9px] font-bold tracking-widest uppercase mb-0.5">
+                    {book.genero}{book.ano ? ` • ${book.ano}` : ''}
+                  </p>
+                )}
+                <h3 className="font-serif font-bold text-navy text-sm leading-snug group-hover:text-gold transition-colors mb-0.5">
+                  {book.title}
+                </h3>
+                <p className="text-slate-500 text-xs italic">{book.author}</p>
+              </motion.div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
