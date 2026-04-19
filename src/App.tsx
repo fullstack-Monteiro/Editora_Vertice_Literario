@@ -55,7 +55,7 @@ const App = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const previewPosts = [...apiPosts, ...BLOG_POSTS].slice(0, 3);
+  const previewPosts = [...apiPosts, ...BLOG_POSTS].slice(0, 2);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

@@ -21,7 +21,7 @@ const BlogPage = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const allPosts = [...apiPosts, ...BLOG_POSTS];
+  const allPosts = [...apiPosts, ...BLOG_POSTS].slice(0, 2);
 
   const filtered = allPosts;
 
