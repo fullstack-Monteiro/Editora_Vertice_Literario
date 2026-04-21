@@ -2,9 +2,18 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import AuthorModal from '../components/AuthorModal';
 import Navbar from '../components/Navbar';
-import { AUTHORS } from '../constants';
+import authorsData from '../../backend/data/authors.json';
 
-type Author = typeof AUTHORS[0];
+type Author = {
+  id: number;
+  nome: string;
+  foto: string;
+  bio: string;
+  obras: string[];
+  genero: string;
+};
+
+const AUTHORS: Author[] = authorsData as Author[];
 
 const AuthorsPage = () => {
   const [selected, setSelected] = useState<Author | null>(null);

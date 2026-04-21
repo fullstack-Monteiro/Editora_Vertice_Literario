@@ -1,27 +1,19 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Users } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import BlogModal from '../components/BlogModal';
 import { BLOG_POSTS } from '../constants';
-
-const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:3001';
+import postsData from '../../backend/data/posts.json';
 
 type Post = typeof BLOG_POSTS[0];
 
 const BlogPage = () => {
-  const [apiPosts, setApiPosts] = useState<Post[]>([]);
   const [selected, setSelected] = useState<Post | null>(null);
 
-  useEffect(() => {
-    fetch(`${API_URL}/api/posts`)
-      .then(r => r.json())
-      .then(data => { if (Array.isArray(data)) setApiPosts(data); })
-      .catch(() => {});
-    window.scrollTo(0, 0);
-  }, []);
-
-  const allPosts = [...apiPosts, ...BLOG_POSTS].slice(0, 2);
+  const allPosts = postsData.length > 0
+    ? [...(postsData as Post[]), ...BLOG_POSTS]
+    : BLOG_POSTS;
 
   const filtered = allPosts;
 
