@@ -13,14 +13,14 @@ import BlogModal from './components/BlogModal';
 import BookModal from './components/BookModal';
 import ManuscriptModal from './components/ManuscriptModal';
 import Newsletter from './components/Newsletter';
-import { SERVICES, BLOG_POSTS, FEATURED_BOOKS } from './constants';
+import { SERVICES, FEATURED_BOOKS } from './constants';
 
 const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:3001';
 
 const App = () => {
   const navigate = useNavigate();
-  const [selectedPost, setSelectedPost] = React.useState<typeof BLOG_POSTS[0] | null>(null);
-  const [apiPosts, setApiPosts] = React.useState<typeof BLOG_POSTS>([]);
+  const [selectedPost, setSelectedPost] = React.useState<{id:number;title:string;author:string;date:string;image:string;excerpt:string;content:string} | null>(null);
+  const [apiPosts, setApiPosts] = React.useState<typeof selectedPost[]>([]);
   const [selectedBook, setSelectedBook] = React.useState<typeof FEATURED_BOOKS[0] | null>(null);
   const [siteContent, setSiteContent] = React.useState<{
     hero: { titulo: string; subtitulo: string };
@@ -55,7 +55,7 @@ const App = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const previewPosts = [...apiPosts, ...BLOG_POSTS].slice(0, 2);
+  const previewPosts = apiPosts.slice(0, 2);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

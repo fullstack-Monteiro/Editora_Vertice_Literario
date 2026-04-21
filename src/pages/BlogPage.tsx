@@ -1,20 +1,23 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Users } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import BlogModal from '../components/BlogModal';
-import { BLOG_POSTS } from '../constants';
 import postsData from '../../backend/data/posts.json';
 
-type Post = typeof BLOG_POSTS[0];
+type Post = {
+  id: number;
+  title: string;
+  author: string;
+  date: string;
+  image: string;
+  excerpt: string;
+  content: string;
+};
 
 const BlogPage = () => {
   const [selected, setSelected] = useState<Post | null>(null);
-
-  const allPosts = postsData.length > 0
-    ? [...(postsData as Post[]), ...BLOG_POSTS]
-    : BLOG_POSTS;
-
+  const allPosts = postsData as Post[];
   const filtered = allPosts;
 
   return (
