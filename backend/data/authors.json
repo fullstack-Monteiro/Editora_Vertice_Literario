@@ -88,6 +88,14 @@
     "obras": []
   },
   {
+    "id": 13,
+    "nome": "José Bechane",
+    "foto": "/authors/jose.jpeg",
+    "genero": "Não-Ficção",
+    "bio": "José Bechane é graduado em Ensino de Língua Portuguesa pela Universidade Pedagógica (2010), Mestre em Educação pela Universidade Europeia de Atlântica (2017) e Mestre em Letras pela Universidade Licungo – Extensão da Beira (2025). Foi Instrutor Técnico Pedagógico no Instituto Médio de Geologia e Minas em Moatize e no Instituto de Formação de Professores em Tete (2022). É docente e membro da AMOREL (Associação Moçambicana de Revisores Linguísticos) desde 2025. É escritor com uma obra publicada, Maré do Amor (2025). Pesquisa e escreve sobre os seguintes temas: Didáctica, Formação pedagógica de professores e análise da produção de conhecimentos sobre formação de professores no contexto moçambicano. Actualmente desenvolve pesquisas sobre profissionalização dos professores do ensino médio, com ênfase no diagnóstico de necessidades formativas de carácter didáctico-pedagógicas, bem como sobre o lugar da leitura e escrita.",
+    "obras": ["Maré do Amor"]
+  },
+  {
     "id": 12,
     "nome": "Carimo Francisco Gome",
     "foto": "/authors/Camiro.jpeg",

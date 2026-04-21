@@ -1,32 +1,43 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Search } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import BookModal from '../components/BookModal';
-import { FEATURED_BOOKS } from '../constants';
 
-const ALL_BOOKS = FEATURED_BOOKS.map((b, i) => ({
-  ...b,
-  id: i + 1,
-  genero: (b as any).genero || '',
-  sinopse: (b as any).sinopse || '',
-  ano: (b as any).ano || '',
-  isbn: (b as any).isbn || '',
-}));
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+
+type Book = {
+  id: number;
+  title: string;
+  author: string;
+  cover: string;
+  genero?: string;
+  sinopse?: string;
+  ano?: string;
+  isbn?: string;
+};
 
 const CatalogPage = () => {
+  const [books, setBooks] = useState<Book[]>([]);
   const [search, setSearch] = useState('');
-  const [selected, setSelected] = useState<typeof ALL_BOOKS[0] | null>(null);
+  const [selected, setSelected] = useState<Book | null>(null);
+
+  useEffect(() => {
+    fetch(`${API_URL}/api/books`)
+      .then(r => r.json())
+      .then(setBooks)
+      .catch(() => {});
+  }, []);
 
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();
-    if (!q) return ALL_BOOKS;
-    return ALL_BOOKS.filter(b =>
+    if (!q) return books;
+    return books.filter(b =>
       b.title.toLowerCase().includes(q) ||
       b.author.toLowerCase().includes(q) ||
-      b.genero.toLowerCase().includes(q)
+      (b.genero || '').toLowerCase().includes(q)
     );
-  }, [search]);
+  }, [search, books]);
 
   return (
     <div className="min-h-screen bg-[#f5f0e8]">
@@ -61,7 +72,7 @@ const CatalogPage = () => {
 
       {/* Grid */}
       <div className="max-w-6xl mx-auto px-4 sm:px-12 py-8 pb-20">
-        {filtered.length === 0 ? (
+        {filtered.length === 0 && books.length > 0 ? (
           <div className="text-center py-20">
             <p className="text-slate-400 text-lg mb-2">Nenhuma obra encontrada.</p>
             <button onClick={() => setSearch('')} className="text-gold text-sm font-bold hover:underline">
