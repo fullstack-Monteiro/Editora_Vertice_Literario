@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Users } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import BlogModal from '../components/BlogModal';
-import postsData from '../../backend/data/posts.json';
+import { Facebook, Instagram } from 'lucide-react';
+import ShareButton from '../components/ShareButton';
+
+const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:3001';
 
 type Post = {
   id: number;
@@ -16,9 +19,20 @@ type Post = {
 };
 
 const BlogPage = () => {
+  const [posts, setPosts] = useState<Post[]>([]);
+  const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState<Post | null>(null);
-  const allPosts = postsData as Post[];
-  const filtered = allPosts;
+
+  useEffect(() => {
+    fetch(`${API_URL}/api/posts`)
+      .then(r => r.json())
+      .then(data => {
+        if (Array.isArray(data)) setPosts(data);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#f5f0e8]">
@@ -33,16 +47,18 @@ const BlogPage = () => {
         <div className="w-16 h-0.5 bg-gold mx-auto mb-8"></div>
       </div>
 
-      {/* Posts Grid */}
+      {/* Posts */}
       <div className="max-w-6xl mx-auto px-4 sm:px-12 py-8 pb-20">
-        {filtered.length === 0 ? (
+        {loading ? (
+          <p className="text-center text-slate-400 py-20">A carregar...</p>
+        ) : posts.length === 0 ? (
           <div className="text-center py-20">
-            <p className="text-slate-400 text-lg mb-2">Nenhum artigo encontrado.</p>
-            <button onClick={() => {}} className="text-gold text-sm font-bold hover:underline">Limpar pesquisa</button>
+            <p className="text-slate-400 text-lg mb-2">Sem publicações de momento.</p>
+            <p className="text-slate-400 text-sm">Volte em breve para novos artigos.</p>
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filtered.map((post, index) => (
+            {posts.map((post, index) => (
               <motion.article key={post.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -66,9 +82,16 @@ const BlogPage = () => {
                     {post.title}
                   </h3>
                   <p className="text-slate-500 text-xs leading-relaxed line-clamp-3 mb-4">{post.excerpt}</p>
-                  <span className="text-xs font-bold tracking-widest text-navy group-hover:text-gold transition-colors flex items-center gap-1 uppercase">
-                    Ler Mais <ArrowRight size={12} />
-                  </span>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold tracking-widest text-navy group-hover:text-gold transition-colors flex items-center gap-1 uppercase">
+                      Ler Mais <ArrowRight size={12} />
+                    </span>
+                    <div className="flex gap-2 text-slate-400">
+                      <a href="https://www.facebook.com/profile.php?id=61569927223809" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors"><Facebook size={14} /></a>
+                      <a href="https://www.instagram.com/edit.oraverticeliterario/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors"><Instagram size={14} /></a>
+                      <ShareButton url={`${window.location.origin}/blog`} title={post.title} />
+                    </div>
+                  </div>
                 </div>
               </motion.article>
             ))}

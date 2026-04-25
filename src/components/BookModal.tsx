@@ -11,6 +11,7 @@ interface Book {
   genero?: string;
   ano?: string;
   isbn?: string;
+  preco?: number;
 }
 
 interface BookModalProps {
@@ -54,10 +55,11 @@ const BookModal = ({ book, onClose }: BookModalProps) => {
                 <h2 className="text-2xl font-serif font-bold text-navy mb-1 leading-tight">{book.title}</h2>
                 <p className="text-slate-500 text-sm italic mb-6">{book.author}</p>
 
-                {(book.ano || book.isbn) && (
+                {(book.ano || book.isbn || book.preco) && (
                   <div className="flex gap-6 mb-6 text-xs text-slate-400">
                     {book.ano && <span><span className="font-bold text-navy">Ano:</span> {book.ano}</span>}
                     {book.isbn && <span><span className="font-bold text-navy">ISBN:</span> {book.isbn}</span>}
+                    {book.preco && <span className="text-gold font-bold text-base">{book.preco} MZN</span>}
                   </div>
                 )}
 

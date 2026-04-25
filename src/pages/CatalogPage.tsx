@@ -13,6 +13,7 @@ type Book = {
   genero?: string;
   sinopse?: string;
   ano?: string;
+  preco?: number;
   isbn?: string;
 };
 
@@ -95,7 +96,8 @@ const CatalogPage = () => {
                 <h3 className="font-serif font-bold text-navy text-sm leading-snug group-hover:text-gold transition-colors mb-0.5">
                   {book.title}
                 </h3>
-                <p className="text-slate-500 text-xs italic">{book.author}</p>
+                <p className="text-slate-500 text-xs italic mb-1">{book.author}</p>
+                {book.preco && <p className="text-gold text-xs font-bold">{book.preco} MZN</p>}
               </motion.div>
             ))}
           </div>

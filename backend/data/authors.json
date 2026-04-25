@@ -102,5 +102,69 @@
     "genero": "Literatura",
     "bio": "Conhecido pelo pseudónimo Carimo Escritor Sem Limites, nasceu a 2 de julho de 2003, no distrito de Inharrime, província de Inhambane. Frequentou o Ensino Superior em Gestão de Recursos Humanos na Universidade Save. Activista comunitário na área de saúde sexual e reprodutiva de jovens. Em 2025, foi vencedor do Concurso Literário Sonhos de Natal, realizado em Lisboa, Portugal. Coautor de Sombra da Violência e Poemas do Fim do Mundo. Publicou em 2025 a obra Entre Ruínas e Renascença.",
     "obras": ["Entre Ruínas e Renascença", "Sombra da Violência", "Poemas do Fim do Mundo"]
+  },
+  {
+    "id": 14,
+    "nome": "Hassane Bacião Raúl",
+    "foto": "/authors/Hassane Raul.png",
+    "genero": "Poesia",
+    "bio": "Pseudónimo: Farmacêutico Poeta. Nascido a 12 de agosto de 1990, natural da cidade da Beira, província de Sofala. Funcionário do Ministério da Saúde (MISAU), exercendo a função de Farmacêutico Formador no Serviço Provincial de Saúde de Tete e afeto ao Instituto de Ciências de Saúde de Tete (ICSTETE). Membro da Associação dos Farmacêuticos de Moçambique e Formador Sénior em Procedimentos de Gestão e Cadeia de Abastecimento de Medicamentos. Licenciado em Farmácia pela Universidade Lúrio (UniLúrio). No campo literário, é Escritor, Poeta e Presidente do Conselho Fiscal da Associação Provincial dos Poetas de Tete. Participa em diversos movimentos e grupos literários e poéticos internacionais.",
+    "obras": ["Bacião do Mundo"]
+  },
+  {
+    "id": 15,
+    "nome": "Dalton Xavier João",
+    "foto": "/authors/Dalton Xavier Joao.png",
+    "genero": "Poesia",
+    "bio": "Nascido aos 17 de Maio, natural de Moatize, Professor, licenciando-se em Ensino de Geografia. Com o pseudónimo DALTON ALFÂNDEGA, participou em várias antologias nacionais e internacionais, entre as quais: Centenário de Eduardo Mondlane, O Centenário de José Craveirinha; Poema za Kwathu; A Sombra da Violência; Poemas do Fim da Humanidade; Antologia Poética Mista: Tete, Terra dos Seis Cs; Antologia Vozes do Ensino; e África Novos Poetas 2021. Possui manuscritos não publicados em novela, romance e contos.",
+    "obras": ["África te Mata e te Nasce"]
+  },
+  {
+    "id": 16,
+    "nome": "João Bartolomeu Sixpence",
+    "foto": "/authors/Joao Bartolomeu.png",
+    "genero": "Biografia",
+    "bio": "Nasceu a 25 de fevereiro de 1972, na cidade da Beira. É Mestre em Saúde Pública, com especialização em Ciências da Saúde e Saúde da Criança e do Adolescente pela Universidade Federal de Minas Gerais, no Brasil. Graduado em Ciências Agrárias, com especialização em Sociologia e Comunicação Rural, pela Universidade Eduardo Mondlane. Fundador e CEO do Grupo Nunisa. Possui certificação em Business Edge pelo IFC – International Finance Corporation. Membro do Conselho Empresarial Nacional (CEN), da APME e do Conselho Empresarial Provincial. Já foi funcionário das Nações Unidas e conferencista em fóruns internacionais.",
+    "obras": ["A Resiliência: A Jornada de Quem Não Desiste"]
+  },
+  {
+    "id": 17,
+    "nome": "Guido Basílio Awir",
+    "foto": "/authors/Guido Basilio.png",
+    "genero": "Literatura",
+    "bio": "Mais conhecido como Guy Awir, nasceu em 7 de setembro de 1997, no distrito de Cuamba, província do Niassa. Desde jovem demonstrou forte paixão pela leitura e pela tecnologia. Formou-se como técnico informático. Em 2016, iniciou a sua jornada como escritor, partilhando frases motivacionais nas redes sociais. A boa receção das suas mensagens encorajou-o a aprofundar-se na escrita literária, produzindo obras que abordam temas como resiliência, superação, consciência social e crescimento pessoal.",
+    "obras": ["Me Enterrem Logo"]
+  },
+  {
+    "id": 18,
+    "nome": "Profeta Carlos Goba",
+    "foto": "/authors/Carlos Adelino.png",
+    "genero": "Biografia",
+    "bio": "Carlos Adelino Raul Manuel Goba, natural da cidade de Chimoio, Província de Manica, é o missionário fundador da Igreja Ministerial de Deus Impactando Nações, a serviço de Deus e da sua igreja desde 2017. Pai de quatro filhos, casado, dedicado ao ministério e à família. Realizou cruzadas por Moçambique, Zimbabué, África do Sul, Angola e Brasil, com igrejas nas cidades de Tete, Chimoio, Maputo e Beira. Acredita que somente Deus tem o poder de transformar vidas.",
+    "obras": ["Vida e Obra do Profeta Goba"]
+  },
+  {
+    "id": 19,
+    "nome": "Florescêncio Luís Tumbo",
+    "foto": "/authors/Florescencio Luis Tumbo.png",
+    "genero": "Não-Ficção",
+    "bio": "Natural de Xai-Xai (Gaza), é Mestre em Educação de Adultos pela Universidade Eduardo Mondlane e licenciado em Psicologia pela Universidade Pedagógica de Maputo. Professor desde 2005, atuou em vários níveis de ensino e na formação de professores. Participou em projetos sobre qualidade da educação e alfabetização de adultos. É docente na Universidade Eduardo Mondlane e no Instituto Superior de Gestão e Empreendedorismo Gwaza Muthini, sendo membro da Associação de Psicologia de Moçambique e autor de artigos científicos.",
+    "obras": ["Jovens e Adultos"]
+  },
+  {
+    "id": 20,
+    "nome": "Jacinto Nhancale",
+    "foto": "/authors/Jacinto Nhancale.png",
+    "genero": "Literatura",
+    "bio": "Nascido a 31 de Janeiro de 1984, é licenciado em História e mestre em Saúde Pública, com experiência nas áreas de comunicação corporativa e pesquisa qualitativa. Residente na cidade de Maputo, destaca-se como um verdadeiro contador de histórias vivas, dedicando-se à preservação de memórias e vivências que espelham a riqueza humana e social do seu tempo. Com sensibilidade e compromisso, constrói pontes entre o passado e o presente, revelando a profundidade das experiências humanas.",
+    "obras": ["A Dor da Escolha"]
+  },
+  {
+    "id": 21,
+    "nome": "Sara Anselmo",
+    "foto": "/authors/Sara Anselmo.png",
+    "genero": "Literatura",
+    "bio": "Nascida a 12 de maio de 1999, em Nacala-Porto, província de Nampula, Moçambique, é médica-dentista, pesquisadora em Saúde, docente e escritora. Autora do romance \"O Amor da Bata Branca\", destaca-se pela sensibilidade com que entrelaça ciência, arte e humanidade no seu percurso profissional e literário. Atualmente reside na cidade de Tete, onde exerce com dedicação as suas funções clínicas, académicas e criativas.",
+    "obras": ["A Dor da Escolha"]
   }
 ]

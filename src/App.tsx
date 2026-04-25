@@ -91,8 +91,8 @@ const App = () => {
       <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-navy">
         <div className="absolute inset-0 z-0">
           <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80&w=2000"
-            alt="Library background" className="w-full h-full object-cover opacity-30" referrerPolicy="no-referrer" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-transparent"></div>
+            alt="Library background" className="w-full h-full object-cover opacity-80" referrerPolicy="no-referrer" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/50 to-navy/10"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-12 w-full py-20 md:py-0">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-3xl">
@@ -194,7 +194,12 @@ const App = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {previewPosts.map((post, index) => (
+            {previewPosts.length === 0 ? (
+              <div className="col-span-3 text-center py-10">
+                <p className="text-slate-400 text-base">Sem publicações de momento.</p>
+                <p className="text-slate-400 text-sm mt-1">Volte em breve para novos artigos.</p>
+              </div>
+            ) : previewPosts.map((post, index) => (
               <motion.article key={post.id} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.2 }} viewport={{ once: true }} className="flex flex-col group">
                 <div className="relative overflow-hidden aspect-video mb-6 shadow-lg">

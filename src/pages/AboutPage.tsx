@@ -137,7 +137,7 @@ const AboutPage = () => {
           <div className="max-w-4xl mx-auto">
             <h3 className="font-serif font-bold text-navy text-xl mb-6 text-center">Colaboradores</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-              {["Sheila Khan", "Solene Santos Almoço", "Samila Simões Manuel António", "Stephen Pinto"].map((name, index) => (
+              {["Sheila Khan", "João Baptista Caetano", "Stefany Virgílio", "Samila Simões Manuel António", "Stephen Pinto"].map((name, index) => (
                 <div key={index} className="bg-white p-6 text-center shadow-sm border border-slate-100">
                   <div className="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-3">
                     <Users className="text-gold" size={18} />
