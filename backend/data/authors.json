@@ -166,5 +166,13 @@
     "genero": "Literatura",
     "bio": "Nascida a 12 de maio de 1999, em Nacala-Porto, província de Nampula, Moçambique, é médica-dentista, pesquisadora em Saúde, docente e escritora. Autora do romance \"O Amor da Bata Branca\", destaca-se pela sensibilidade com que entrelaça ciência, arte e humanidade no seu percurso profissional e literário. Atualmente reside na cidade de Tete, onde exerce com dedicação as suas funções clínicas, académicas e criativas.",
     "obras": ["A Dor da Escolha"]
+  },
+  {
+    "id": 22,
+    "nome": "Érica Celina Chambe",
+    "foto": "/authors/Erica Celina.jpeg",
+    "genero": "Literatura",
+    "bio": "Finalista do curso de Engenharia Termotécnica no Instituto Superior Politécnico de Songo. Natural da cidade de Inhambane, nasceu no dia 14 de fevereiro de 2000. Para além da sua dedicação às ciências e à engenharia, Érica nutre uma profunda paixão pela escrita, vendo na literatura uma extensão da sua sensibilidade, criatividade e capacidade de reflexão.",
+    "obras": []
   }
 ]
