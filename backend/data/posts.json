@@ -1,1 +1,17 @@
-[]
+[
+  { "id": 1, "title": "Exposição de Livros: Celebrando a Literatura Moçambicana", "author": "Redação Vértice", "date": "20 Abril, 2025", "image": "/blog/Exposicao de livros.jpeg", "excerpt": "", "content": "" },
+  { "id": 2, "title": "Momentos que Inspiram: Bastidores da Editora", "author": "Equipa Editorial", "date": "15 Abril, 2025", "image": "/blog/imagem 2.jpeg", "excerpt": "", "content": "" },
+  { "id": 3, "title": "A Força da Palavra: Encontro de Autores", "author": "Redação Vértice", "date": "10 Abril, 2025", "image": "/blog/imagem 3.jpeg", "excerpt": "", "content": "" },
+  { "id": 4, "title": "Lançamento de Obra: Uma Noite Inesquecível", "author": "Equipa Editorial", "date": "05 Abril, 2025", "image": "/blog/imagem 4.jpeg", "excerpt": "", "content": "" },
+  { "id": 5, "title": "Poesia em Movimento: A Arte de Dar Voz às Emoções", "author": "Consultoria Literária", "date": "28 Março, 2025", "image": "/blog/imagem 5.jpeg", "excerpt": "", "content": "" },
+  { "id": 6, "title": "Autores em Destaque: Histórias que Transformam", "author": "Redação Vértice", "date": "20 Março, 2025", "image": "/blog/imagem 6.jpeg", "excerpt": "", "content": "" },
+  { "id": 7, "title": "Cultura e Identidade: O Papel do Livro na Sociedade", "author": "Equipa Editorial", "date": "15 Março, 2025", "image": "/blog/imagem 7.jpeg", "excerpt": "", "content": "" },
+  { "id": 8, "title": "Sessão de Autógrafos: O Encontro entre Autor e Leitor", "author": "Redação Vértice", "date": "08 Março, 2025", "image": "/blog/imagem 8.jpeg", "excerpt": "", "content": "" },
+  { "id": 9, "title": "Novos Talentos: A Próxima Geração de Escritores Moçambicanos", "author": "Consultoria Literária", "date": "01 Março, 2025", "image": "/blog/imagem 9.jpeg", "excerpt": "", "content": "" },
+  { "id": 10, "title": "Literatura e Educação: O Livro como Ferramenta de Aprendizagem", "author": "Equipa Editorial", "date": "20 Fevereiro, 2025", "image": "/blog/imagem 10.jpeg", "excerpt": "", "content": "" },
+  { "id": 11, "title": "Antologias: A Força da Escrita Coletiva", "author": "Redação Vértice", "date": "10 Fevereiro, 2025", "image": "/blog/imagem 11.jpeg", "excerpt": "", "content": "" },
+  { "id": 12, "title": "Design Editorial: A Arte de Criar uma Capa", "author": "Equipa Editorial", "date": "01 Fevereiro, 2025", "image": "/blog/imagem 12.jpeg", "excerpt": "", "content": "" },
+  { "id": 13, "title": "Escrita Criativa: Como Transformar Experiências em Literatura", "author": "Consultoria Literária", "date": "20 Janeiro, 2025", "image": "/blog/imagem 13.jpeg", "excerpt": "", "content": "" },
+  { "id": 14, "title": "Memória e Identidade: A Literatura como Arquivo Vivo", "author": "Redação Vértice", "date": "10 Janeiro, 2025", "image": "/blog/imagem 14.jpeg", "excerpt": "", "content": "" },
+  { "id": 15, "title": "O Futuro da Editora Vértice Literário: Novos Horizontes", "author": "Equipa Editorial", "date": "01 Janeiro, 2025", "image": "/blog/imagem 15.jpeg", "excerpt": "", "content": "" }
+]

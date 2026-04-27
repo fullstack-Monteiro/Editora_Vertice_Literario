@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar';
 import BlogModal from '../components/BlogModal';
 import { Facebook, Instagram } from 'lucide-react';
 import ShareButton from '../components/ShareButton';
+import postsData from '../../backend/data/posts.json';
 
 const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:3001';
 
@@ -19,18 +20,10 @@ type Post = {
 };
 
 const BlogPage = () => {
-  const [posts, setPosts] = useState<Post[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [posts] = useState<Post[]>(postsData as Post[]);
   const [selected, setSelected] = useState<Post | null>(null);
 
   useEffect(() => {
-    fetch(`${API_URL}/api/posts`)
-      .then(r => r.json())
-      .then(data => {
-        if (Array.isArray(data)) setPosts(data);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
     window.scrollTo(0, 0);
   }, []);
 
@@ -49,9 +42,7 @@ const BlogPage = () => {
 
       {/* Posts */}
       <div className="max-w-6xl mx-auto px-4 sm:px-12 py-8 pb-20">
-        {loading ? (
-          <p className="text-center text-slate-400 py-20">A carregar...</p>
-        ) : posts.length === 0 ? (
+        {posts.length === 0 ? (
           <div className="text-center py-20">
             <p className="text-slate-400 text-lg mb-2">Sem publicações de momento.</p>
             <p className="text-slate-400 text-sm">Volte em breve para novos artigos.</p>
@@ -68,7 +59,7 @@ const BlogPage = () => {
               >
                 <div className="relative overflow-hidden aspect-video">
                   <img src={post.image} alt={post.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                     referrerPolicy="no-referrer" />
                   <div className="absolute top-3 left-3 bg-navy text-white text-[10px] font-bold tracking-widest px-2 py-1 uppercase">
                     {post.date}
