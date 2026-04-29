@@ -24,12 +24,13 @@ const CatalogPage = () => {
   const [selected, setSelected] = useState<Book | null>(null);
 
   const filtered = useMemo(() => {
-    const q = search.toLowerCase().trim();
+    const normalize = (s: string) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    const q = normalize(search.trim());
     if (!q) return ALL_BOOKS;
     return ALL_BOOKS.filter(b =>
-      b.title.toLowerCase().includes(q) ||
-      b.author.toLowerCase().includes(q) ||
-      (b.genero || '').toLowerCase().includes(q)
+      normalize(b.title).includes(q) ||
+      normalize(b.author).includes(q) ||
+      normalize(b.genero || '').includes(q)
     );
   }, [search]);
 
