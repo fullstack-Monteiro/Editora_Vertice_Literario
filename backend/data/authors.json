@@ -168,11 +168,11 @@
     "obras": ["A Dor da Escolha"]
   },
   {
-    "id": 22,
-    "nome": "Érica Celina Chambe",
-    "foto": "/authors/Erica Celina.jpeg",
-    "genero": "Literatura",
-    "bio": "Finalista do curso de Engenharia Termotécnica no Instituto Superior Politécnico de Songo. Natural da cidade de Inhambane, nasceu no dia 14 de fevereiro de 2000. Para além da sua dedicação às ciências e à engenharia, Érica nutre uma profunda paixão pela escrita, vendo na literatura uma extensão da sua sensibilidade, criatividade e capacidade de reflexão.",
-    "obras": []
+    "id": 23,
+    "nome": "Ananias Combe Milissão",
+    "foto": "/authors/Ananias.jpeg",
+    "genero": "Não-Ficção",
+    "bio": "Nasceu a 21 de março de 1992 na vila de Songo, distrito de Cahora-Bassa, província de Tete (Moçambique). É sacerdote católico da Diocese de Tete. Estudou Filosofia no Seminário Interdiocesano Santo Agostinho da Matola e Teologia no Seminário Teológico Interdiocesano São Pio X de Maputo. É licenciado em Filosofia pela Universidade São Tomás de Moçambique (USTM) e mestre em Gestão e Administração Educacional pela Universidade Católica de Moçambique (UCM).",
+    "obras": ["Sem Verba Não se Anuncia o Verbo"]
   }
 ]
