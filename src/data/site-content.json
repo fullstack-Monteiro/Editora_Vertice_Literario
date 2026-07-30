@@ -1,0 +1,19 @@
+{
+  "hero": {
+    "titulo": "A palavra é a semente, a nossa missão é fazê-la florescer.",
+    "subtitulo": "Apoiamos autores e transformamos palavras em obras publicadas com excelência, ética e sofisticação cultural."
+  },
+  "sobre": {
+    "texto": "A Editora Vértice Literário, Lda. é uma instituição moçambicana dedicada à promoção e ao desenvolvimento da literatura no país e no espaço lusófono. Está sediada em Tete, na área da Paragem Juventude, ao pé do Mercado Cambinde, na Estrada Nacional nº 7, funcionando como um ponto de referência para autores, leitores e demais interessados no fomento literário.",
+    "missao": "Apoiar autores emergentes e consolidados, publicar obras de impacto literário, social e cultural, promover o acesso à leitura e expandir as fronteiras da literatura moçambicana para o mundo.",
+    "visao": "Ser uma das editoras de referência em Moçambique e no espaço lusófono, reconhecida pela valorização de novos talentos, pela inovação editorial e pelo compromisso com a identidade cultural."
+  },
+  "contacto": {
+    "morada": "Cidade de Tete, Moçambique. Paragem Juventude, Mercado Cambinde.",
+    "telefone": "(+258) 83 46 98 880",
+    "email": "editoraverticeliterario@gmail.com",
+    "facebook": "https://www.facebook.com/profile.php?id=61569927223809",
+    "instagram": "https://www.instagram.com/edit.oraverticeliterario/",
+    "whatsapp": "258834698880"
+  }
+}

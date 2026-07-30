@@ -5,10 +5,6 @@ import Navbar from '../components/Navbar';
 import BlogModal from '../components/BlogModal';
 import { Facebook, Instagram } from 'lucide-react';
 import ShareButton from '../components/ShareButton';
-import postsData from '../../backend/data/posts.json';
-
-const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:3001';
-
 type Post = {
   id: number;
   title: string;
@@ -20,8 +16,15 @@ type Post = {
 };
 
 const BlogPage = () => {
-  const [posts] = useState<Post[]>(postsData as Post[]);
+  const [posts, setPosts] = useState<Post[]>([]);
   const [selected, setSelected] = useState<Post | null>(null);
+
+  useEffect(() => {
+    fetch('/data/posts.json')
+      .then(res => res.json())
+      .then(data => setPosts(data as Post[]))
+      .catch(err => console.error('Erro ao carregar posts:', err));
+  }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -61,9 +64,6 @@ const BlogPage = () => {
                   <img src={post.image} alt={post.title}
                     className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                     referrerPolicy="no-referrer" />
-                  <div className="absolute top-3 left-3 bg-navy text-white text-[10px] font-bold tracking-widest px-2 py-1 uppercase">
-                    {post.date}
-                  </div>
                 </div>
                 <div className="p-5">
                   <div className="flex items-center gap-2 text-[10px] font-bold text-gold tracking-widest mb-2 uppercase">

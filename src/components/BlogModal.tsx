@@ -61,7 +61,6 @@ const BlogModal = ({ post, onClose }: BlogModalProps) => {
             {/* Content */}
             <div className="p-8 md:p-12">
               <div className="flex items-center gap-3 mb-4">
-                <span className="bg-navy text-white text-[10px] font-bold tracking-widest px-3 py-1 uppercase">{post.date}</span>
                 <span className="flex items-center gap-1 text-[10px] font-bold text-gold tracking-widest uppercase">
                   <Users size={11} /> {post.author}
                 </span>
