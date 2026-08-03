@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { ArrowRight, Users } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import BlogModal from '../components/BlogModal';
+import SEOHead from '../components/SEOHead';
 import { Facebook, Instagram } from 'lucide-react';
 import ShareButton from '../components/ShareButton';
 type Post = {
@@ -32,6 +33,12 @@ const BlogPage = () => {
 
   return (
     <div className="min-h-screen bg-[#f5f0e8]">
+      <SEOHead 
+        title="Blog Vértice Literário"
+        description="Leia artigos sobre literatura moçambicana, edição profissional, escrita criativa e reflexões sobre o mundo literário. Blog da Editora Vértice Literário."
+        keywords="blog literatura, artigos sobre escrita, literatura moçambicana, edição de livros, dicas de escrita, editora tete"
+        url="https://editoraverticeliterario.vercel.app/blog"
+      />
       <Navbar forceScrolled />
       <BlogModal post={selected} onClose={() => setSelected(null)} />
 
@@ -61,7 +68,7 @@ const BlogPage = () => {
                 onClick={() => setSelected(post)}
               >
                 <div className="relative overflow-hidden aspect-video">
-                  <img src={post.image} alt={post.title}
+                  <img src={post.image} alt={`Artigo: "${post.title}" - Blog Editora Vértice Literário`}
                     className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-110"
                     referrerPolicy="no-referrer" />
                 </div>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import AuthorModal from '../components/AuthorModal';
 import Navbar from '../components/Navbar';
+import SEOHead from '../components/SEOHead';
 
 type Author = {
   id: number;
@@ -25,6 +26,12 @@ const AuthorsPage = () => {
 
   return (
     <div className="min-h-screen bg-[#f5f0e8]">
+      <SEOHead 
+        title="Os Nossos Autores"
+        description="Conheça os 31 autores moçambicanos publicados pela Editora Vértice Literário. Explore perfis, biografias e obras de escritores de poesia, ficção e não-ficção."
+        keywords="autores moçambicanos, escritores tete, literatura moçambicana, autores publicados, perfis de autores"
+        url="https://editoraverticeliterario.vercel.app/autores"
+      />
       <Navbar forceScrolled />
       <AuthorModal author={selected} onClose={() => setSelected(null)} />
 
@@ -46,7 +53,7 @@ const AuthorsPage = () => {
             >
               <div className="w-32 h-32 sm:w-44 sm:h-44 mx-auto mb-5 rounded-full overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 border-4 border-white">
                 {author.foto ? (
-                  <img src={author.foto} alt={author.nome}
+                  <img src={author.foto} alt={`Foto de ${author.nome}, ${author.genero} - Editora Vértice Literário`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer" />
                 ) : (

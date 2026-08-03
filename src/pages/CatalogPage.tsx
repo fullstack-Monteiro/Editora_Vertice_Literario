@@ -3,7 +3,8 @@ import { motion } from 'motion/react';
 import { Search } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import BookModal from '../components/BookModal';
-
+import SEOHead from '../components/SEOHead';
+import { generateBookSchema } from '../utils/seoSchema';
 type Book = {
   id: number;
   title: string;
@@ -41,6 +42,12 @@ const CatalogPage = () => {
 
   return (
     <div className="min-h-screen bg-[#f5f0e8]">
+      <SEOHead 
+        title="Catálogo de Obras Publicadas"
+        description="Explore nosso catálogo com 28 obras publicadas pela Editora Vértice Literário. Literatura moçambicana, poesia, ficção e não-ficção. Descubra novos autores e histórias."
+        keywords="catálogo de livros, obras publicadas, literatura moçambicana, poesia, ficção, não-ficção, editora tete"
+        url="https://editoraverticeliterario.vercel.app/catalogo"
+      />
       <Navbar forceScrolled />
       <BookModal book={selected} onClose={() => setSelected(null)} />
 
