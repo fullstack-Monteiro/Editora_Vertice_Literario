@@ -87,7 +87,7 @@ const App = () => {
       <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-navy">
         <div className="absolute inset-0 z-0">
           <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80&w=2000"
-            alt="Library background" className="w-full h-full object-cover opacity-80" referrerPolicy="no-referrer" />
+            alt="Biblioteca com livros - Editora Vértice Literário" className="w-full h-full object-cover opacity-80" referrerPolicy="no-referrer" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/50 to-navy/10"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-12 w-full py-20 md:py-0">

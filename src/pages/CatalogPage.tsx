@@ -90,7 +90,7 @@ const CatalogPage = () => {
                 onClick={() => setSelected(book)}
               >
                 <div className="aspect-[3/4] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 mb-3 bg-slate-100 rounded-sm">
-                  <img src={book.cover} alt={book.title}
+                  <img src={book.cover} alt={`Capa do livro "${book.title}" de ${book.author}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer" />
                 </div>

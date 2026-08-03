@@ -44,7 +44,7 @@ const BookModal = ({ book, onClose }: BookModalProps) => {
 
             <div className="flex flex-col md:flex-row flex-1 overflow-y-auto">
               <div className="md:w-72 shrink-0">
-                <img src={book.cover} alt={book.title}
+                <img src={book.cover} alt={`Capa do livro "${book.title}" de ${book.author} - ${book.genero || 'Literatura'}`}
                   className="w-full md:h-full object-cover aspect-[3/4] md:aspect-auto"
                   referrerPolicy="no-referrer" />
               </div>

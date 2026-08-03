@@ -1,4 +1,26 @@
+# Robots.txt for Editora Vértice Literário
+# Allow all bots to crawl the site
+
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /private
 
+# Allow crawling of data directories
+Allow: /data/
+
+# Sitemap location
 Sitemap: https://editoraverticeliterario.vercel.app/sitemap.xml
+
+# Crawl delay (in seconds) - be nice to servers
+Crawl-delay: 1
+
+# Google specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# Bing specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
