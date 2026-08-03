@@ -5,19 +5,57 @@
 
 ## ✅ FASE 1: Configuração Inicial (30 minutos)
 
-### Tarefa 1.1: Criar Conta Google Search Console
+### Tarefa 1.1: Verificar Propriedade no Google Search Console
 **O que é:** Ferramenta do Google para monitorar como seu site aparece nos resultados de busca.
 
-**Passos:**
-1. Acesse: https://search.google.com/search-console/
-2. Clique em "Começar"
-3. Selecione "Propriedade URL" e digite: `https://editoraverticeliterario.vercel.app/`
-4. Escolha método de verificação: **Opção HTML (recomendado)**
-5. Copie a meta tag fornecida
-6. No arquivo `index.html`, cole a meta tag dentro da tag `<head>` (já deve estar lá)
-7. Clique em "Verificar" no Search Console
+**Situação Atual:** Validação por TXT falhou. Vamos usar **Meta Tag HTML** (mais rápido).
 
-**Resultado esperado:** ✅ Propriedade verificada
+**Passos:**
+
+1. Volte ao Google Search Console: https://search.google.com/search-console/
+2. Você verá a mensagem de erro "Falha ao validar a propriedade"
+3. Clique em **"Voltar para a propriedade"**
+4. Procure por **"Verificação"** no menu esquerdo
+5. Procure pela aba **"Meta tag"** (se não estiver visível, clique em "Mais métodos")
+6. Google fornecerá uma linha assim:
+   ```html
+   <meta name="google-site-verification" content="MX88WnSMn1U_0W5a4IKbcdkXXXXXXX" />
+   ```
+
+7. **Copie o valor do "content"** (apenas o código, não a tag inteira)
+   - Exemplo: `MX88WnSMn1U_0W5a4IKbcdkXXXXXXX`
+
+8. **No seu projeto:**
+   - Abra: `index.html`
+   - Procure por: `<meta name="google-site-verification"`
+   - Substitua `ADICIONE_SEU_CODIGO_AQUI` pelo código que copiou
+   
+9. **Exemplo após a mudança:**
+   ```html
+   <meta name="google-site-verification" content="MX88WnSMn1U_0W5a4IKbcdkXXXXXXX" />
+   ```
+
+10. **Salve e faça push:**
+    ```bash
+    git add index.html
+    git commit -m "Add Google Search Console verification meta tag"
+    git push
+    ```
+
+11. **Aguarde 30 segundos** para Vercel fazer deploy
+
+12. **Volte ao Google Search Console** e clique **"Verificar"**
+
+**Resultado esperado:** ✅ "Propriedade verificada com sucesso"
+
+---
+
+**SE NÃO FUNCIONAR:**
+- Aguarde 5 minutos (pode ser cache)
+- Limpe cache do navegador (Ctrl+Shift+Del)
+- Tente novamente
+
+**NOTA PARA VOCÊ:** O código do Google muda para cada propriedade. Se você me disser qual é o código que o Google forneceu, posso colocar direto no arquivo!
 
 ---
 
@@ -81,7 +119,7 @@
 2. Observe os status (Verde = Bom, Laranja = Precisa melhorar, Vermelho = Crítico)
 3. Se algum estiver vermelho, clique para detalhes
 4. Vá a: https://pagespeed.web.dev/
-5. Digite: `https://editoraverticeliterario.vercel.app/`
+5. Digite: `https://editora-vertice-literario.vercel.app/`
 6. Aguarde análise (1-2 minutos)
 7. Observe scores em Desktop e Mobile
 8. Se score < 50: Há problemas de performance
@@ -194,7 +232,7 @@ Somos a Editora Vértice Literário, baseada em Tete, Moçambique.
 Publicamos literatura de qualidade e gostávamos de parceria.
 Pode mencionarmos no seu blog/site?
 
-Nosso site: https://editoraverticeliterario.vercel.app/
+Nosso site: https://editora-vertice-literario.vercel.app/
 
 Obrigado,
 [Seu Nome]
@@ -220,7 +258,7 @@ Obrigado,
    - Título: "Editora Vértice Literário - Publicação de Livros"
    - Descrição: "Editora moçambicana dedicada à publicação profissional..."
    - Categoria: "Editoras" ou "Negócios/Publicação"
-   - URL: https://editoraverticeliterario.vercel.app/
+   - URL: https://editora-vertice-literario.vercel.app/
 
 **Impacto:** Cada diretório = +1-2 backlinks valiosos
 
@@ -331,3 +369,4 @@ Se tiver dúvidas em algum passo, consulte:
 ---
 
 **Boa sorte! 🚀 SEO é uma maratona, não um sprint. Siga este guia consistentemente e verá resultados em 3-6 meses.**
+
