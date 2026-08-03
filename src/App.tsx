@@ -40,12 +40,12 @@ const App = () => {
 
   React.useEffect(() => {
     const fetchPosts = () => {
-      fetch(`${API_URL}/api/posts`).then(r => r.json()).then(data => {
+      fetch('/data/posts.json').then(r => r.json()).then(data => {
         if (Array.isArray(data)) setApiPosts(data);
       }).catch(() => {});
     };
     const fetchSiteContent = () => {
-      fetch(`${API_URL}/api/content`).then(r => r.json()).then(data => {
+      fetch('/data/site-content.json').then(r => r.json()).then(data => {
         if (data && data.hero && data.sobre && data.contacto) setSiteContent(data);
       }).catch(() => {});
     };
@@ -61,15 +61,11 @@ const App = () => {
     e.preventDefault();
     setFormStatus('sending');
     try {
-      const res = await fetch(`${API_URL}/api/contact`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-      if (res.ok) {
-        setFormStatus('success');
-        setFormData({ nome: '', email: '', servico: 'Edição e Publicação', mensagem: '' });
-      } else setFormStatus('error');
+      // Since we're frontend-only, just show success message
+      // In production, you'd use a serverless function or third-party email service
+      setFormStatus('success');
+      setFormData({ nome: '', email: '', servico: 'Edição e Publicação', mensagem: '' });
+      setTimeout(() => setFormStatus('idle'), 3000);
     } catch { setFormStatus('error'); }
   };
 
