@@ -1,6 +1,6 @@
 
 [
-  { "id": 1, "title": "O Talento que a Crise Releva", "author": "Moséstia Machava", "cover": "/covers/O Talento que a Crise Revela.jpeg", "genero": "Não-Ficção", "ano": "2025", "sinopse": "Um testemunho vivo sobre reinvenção, coragem e transformação de crises em oportunidades de crescimento." },
+  { "id": 1, "title": "O Talento que a Crise Revela", "author": "Moséstia Machava", "cover": "/covers/O Talento que a Crise Revela.jpeg", "genero": "Não-Ficção", "ano": "2025", "sinopse": "Um testemunho vivo sobre reinvenção, coragem e transformação de crises em oportunidades de crescimento." },
   { "id": 2, "title": "O Canto do Planeta Ferido", "author": "Bonifácio B. Fabião", "cover": "/covers/O canto do planeta ferido.png", "genero": "Poesia", "sinopse": "Uma obra poética de forte consciência ambiental." },
   { "id": 3, "title": "Sons de Liberdade", "author": "Famas Redol Arne", "cover": "/covers/Sons de Liberdade.jpeg", "genero": "Poesia", "preco": 850, "sinopse": "Uma coleção de poemas que ecoa vozes de resistência." },
   { "id": 4, "title": "O Pranto das Palavras", "author": "Issa Tarmamade Júnior", "cover": "/covers/pranto-das-palavras.png", "genero": "Poesia", "sinopse": "Uma obra poética que mergulha nas profundezas da memória." },
