@@ -8,54 +8,52 @@
 ### Tarefa 1.1: Verificar Propriedade no Google Search Console
 **O que é:** Ferramenta do Google para monitorar como seu site aparece nos resultados de busca.
 
-**Situação Atual:** Validação por TXT falhou. Vamos usar **Meta Tag HTML** (mais rápido).
+**Situação Atual:** Vamos usar o método mais simples: **Propriedade de Prefixo de URL**
 
 **Passos:**
 
-1. Volte ao Google Search Console: https://search.google.com/search-console/
-2. Você verá a mensagem de erro "Falha ao validar a propriedade"
-3. Clique em **"Voltar para a propriedade"**
-4. Procure por **"Verificação"** no menu esquerdo
-5. Procure pela aba **"Meta tag"** (se não estiver visível, clique em "Mais métodos")
-6. Google fornecerá uma linha assim:
-   ```html
-   <meta name="google-site-verification" content="MX88WnSMn1U_0W5a4IKbcdkXXXXXXX" />
-   ```
+1. No Google Search Console, clique em **"Experimenta uma propriedade do prefixo do URL"** (como diz na mensagem de erro)
 
-7. **Copie o valor do "content"** (apenas o código, não a tag inteira)
-   - Exemplo: `MX88WnSMn1U_0W5a4IKbcdkXXXXXXX`
+2. Na nova página, digite EXATAMENTE: `https://editora-vertice-literario.vercel.app/`
+   - Cuidado com espaços!
+   - Deve ser HTTPS (com S)
+   - Termina com barra /
 
-8. **No seu projeto:**
-   - Abra: `index.html`
-   - Procure por: `<meta name="google-site-verification"`
-   - Substitua `ADICIONE_SEU_CODIGO_AQUI` pelo código que copiou
-   
-9. **Exemplo após a mudança:**
-   ```html
-   <meta name="google-site-verification" content="MX88WnSMn1U_0W5a4IKbcdkXXXXXXX" />
-   ```
+3. Clique em **"Continuar"**
 
-10. **Salve e faça push:**
-    ```bash
-    git add index.html
-    git commit -m "Add Google Search Console verification meta tag"
-    git push
-    ```
+4. Google oferecerá várias opções de verificação. Procure por:
+   - **"Arquivo HTML"** ← Escolha esta
+   - Ele fornecerá um arquivo chamado algo como `google1234567.html`
 
-11. **Aguarde 30 segundos** para Vercel fazer deploy
+5. **Para adicionar o arquivo:**
+   - Faça download do arquivo
+   - Coloque na pasta `public/` do seu projeto
+   - Commit e push
+   - Aguarde Vercel fazer deploy (2-3 minutos)
 
-12. **Volte ao Google Search Console** e clique **"Verificar"**
+6. **Depois volte ao Google Search Console** e clique **"Verificar"**
 
 **Resultado esperado:** ✅ "Propriedade verificada com sucesso"
 
 ---
 
-**SE NÃO FUNCIONAR:**
-- Aguarde 5 minutos (pode ser cache)
-- Limpe cache do navegador (Ctrl+Shift+Del)
-- Tente novamente
+**ALTERNATIVA SE NÃO CONSEGUIR COM ARQUIVO HTML:**
 
-**NOTA PARA VOCÊ:** O código do Google muda para cada propriedade. Se você me disser qual é o código que o Google forneceu, posso colocar direto no arquivo!
+Se o arquivo HTML não funcionar, siga para próxima opção:
+
+1. Na mesma página de verificação, procure por **"Google Analytics"**
+2. Se você tiver código Google Analytics no site, ele verifica automaticamente
+3. Nosso site já tem Google Analytics no index.html
+4. Pode levar 24h para reconhecer
+
+---
+
+**RESUMO:**
+1. Clique "Propriedade do prefixo de URL"
+2. Digite: `https://editora-vertice-literario.vercel.app/`
+3. Escolha "Arquivo HTML"
+4. Coloque arquivo em `public/`
+5. Clique "Verificar"
 
 ---
 
