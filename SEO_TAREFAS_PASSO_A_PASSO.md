@@ -14,7 +14,7 @@
 
 1. No Google Search Console, clique em **"Experimenta uma propriedade do prefixo do URL"** (como diz na mensagem de erro)
 
-2. Na nova página, digite EXATAMENTE: `https://editora-vertice-literario.vercel.app/`
+2. Na nova página, digite EXATAMENTE: `https://editoraverticeliterario.vercel.app/`
    - Cuidado com espaços!
    - Deve ser HTTPS (com S)
    - Termina com barra /
@@ -50,7 +50,7 @@ Se o arquivo HTML não funcionar, siga para próxima opção:
 
 **RESUMO:**
 1. Clique "Propriedade do prefixo de URL"
-2. Digite: `https://editora-vertice-literario.vercel.app/`
+2. Digite: `https://editoraverticeliterario.vercel.app/`
 3. Escolha "Arquivo HTML"
 4. Coloque arquivo em `public/`
 5. Clique "Verificar"
@@ -117,7 +117,7 @@ Se o arquivo HTML não funcionar, siga para próxima opção:
 2. Observe os status (Verde = Bom, Laranja = Precisa melhorar, Vermelho = Crítico)
 3. Se algum estiver vermelho, clique para detalhes
 4. Vá a: https://pagespeed.web.dev/
-5. Digite: `https://editora-vertice-literario.vercel.app/`
+5. Digite: `https://editoraverticeliterario.vercel.app/`
 6. Aguarde análise (1-2 minutos)
 7. Observe scores em Desktop e Mobile
 8. Se score < 50: Há problemas de performance
@@ -230,7 +230,7 @@ Somos a Editora Vértice Literário, baseada em Tete, Moçambique.
 Publicamos literatura de qualidade e gostávamos de parceria.
 Pode mencionarmos no seu blog/site?
 
-Nosso site: https://editora-vertice-literario.vercel.app/
+Nosso site: https://editoraverticeliterario.vercel.app/
 
 Obrigado,
 [Seu Nome]
@@ -256,7 +256,7 @@ Obrigado,
    - Título: "Editora Vértice Literário - Publicação de Livros"
    - Descrição: "Editora moçambicana dedicada à publicação profissional..."
    - Categoria: "Editoras" ou "Negócios/Publicação"
-   - URL: https://editora-vertice-literario.vercel.app/
+   - URL: https://editoraverticeliterario.vercel.app/
 
 **Impacto:** Cada diretório = +1-2 backlinks valiosos
 
