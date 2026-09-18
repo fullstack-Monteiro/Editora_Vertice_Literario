@@ -174,5 +174,69 @@
     "genero": "Não-Ficção",
     "bio": "Nasceu a 21 de março de 1992 na vila de Songo, distrito de Cahora-Bassa, província de Tete (Moçambique). É sacerdote católico da Diocese de Tete. Estudou Filosofia no Seminário Interdiocesano Santo Agostinho da Matola e Teologia no Seminário Teológico Interdiocesano São Pio X de Maputo. É licenciado em Filosofia pela Universidade São Tomás de Moçambique (USTM) e mestre em Gestão e Administração Educacional pela Universidade Católica de Moçambique (UCM).",
     "obras": ["Sem Verba Não se Anuncia o Verbo"]
+  },
+  {
+    "id": 24,
+    "nome": "Abílho Mohomede",
+    "foto": "/authors/abilho-mohamede.jpg",
+    "genero": "Não-Ficção",
+    "bio": "Natural do distrito de Quissanga, província de Cabo Delgado, Moçambique, Abílho Mohomede é filho de Mohomede Somar e de Muanaune Warivano. Formado em Aquacultura e Pescas pelo Instituto Politécnico Mártir Cipriano de Nacuxa, dedica-se ao desenvolvimento pessoal, à escrita e à partilha de conhecimentos orientados para o crescimento humano e profissional.",
+    "obras": []
+  },
+  {
+    "id": 25,
+    "nome": "Joaquim Afonso António",
+    "foto": "/authors/joaquim_afonso.jpg",
+    "genero": "Não-Ficção",
+    "bio": "Nasceu a 5 de Agosto de 1981, no distrito de Ribaué, Província de Nampula. Passou a sua infância e adolescência no distrito de Malema, onde realizou os seus estudos primários e iniciou a sua formação académica. É formado em Odontoestomatologia pelo Instituto de Ciências de Saúde da Beira, curso concluído em 2004. Em Janeiro de 2005, ingressou no Ministério da Saúde como Técnico de Odontoestomatologia, exercendo funções no Serviço Distrital de Saúde de Nacala-Porto até 2017. Concluiu a Licenciatura em Administração e Gestão de Empresas, tendo frequentado formações complementares nas áreas de teologia, informática, comunicação social e língua inglesa. Ao longo da sua trajectória, desenvolveu actividades de carácter social, religioso e comunitário, destacando-se como catequista e apresentador do programa Justiça e Paz na Rádio Watana, em Nacala-Porto. Desde 2017, dedica-se de forma mais intensa à vida espiritual, área que considera fundamental para o desenvolvimento humano e para a construção de uma sociedade assente em valores éticos, morais e espirituais.",
+    "obras": []
+  },
+  {
+    "id": 26,
+    "nome": "Salé Abrão Buque",
+    "foto": "/authors/sale-abrao.jpg",
+    "genero": "Não-Ficção",
+    "bio": "Nasceu a 24 de setembro de 1986, no Distrito de Inharrime, Província de Inhambane, Moçambique. É Mestre em Gestão de Relações Públicas e Marketing Estratégico pela Universidade Católica de Moçambique, Licenciado em Relações Públicas pela Escola Superior de Jornalismo e formado em Jornalismo pela Escola de Jornalismo. Ao longo da sua trajetória académica e profissional, tem-se dedicado às áreas da comunicação, relações públicas, marketing estratégico e jornalismo, contribuindo para o fortalecimento da comunicação institucional e do desenvolvimento profissional no seu campo de atuação.",
+    "obras": []
+  },
+  {
+    "id": 27,
+    "nome": "Celeste Jafete Mavuie",
+    "foto": "/authors/celeste-jafete.jpg",
+    "genero": "Educação",
+    "bio": "Moçambicana, natural da província de Gaza, Mestranda em Pedagogia e Didáctica. Licenciada em Pedagogia, especializada em Planificação, Coordenação e Administração (PCA) e em Psicopedagogia pelo ISET-One World. Realizou cursos complementares em Gestão de Recursos Humanos, Relações Públicas e Liderança, Marketing e Técnica de Venda e Informática Básica. Foi professora no Instituto Superior de Educação e Tecnologia – One World. Participou na implementação do Projecto TIPOTE, voltado à formação de formadores para a Educação Inclusiva. Dedica o seu tempo à investigação científica no desenvolvimento e implementação de material de ensino para as Escolas de Professores do Futuro de ADPP, de acordo com a evolução das necessidades contemporâneas.",
+    "obras": []
+  },
+  {
+    "id": 28,
+    "nome": "Suzana Rita Jeremias",
+    "foto": "/authors/suzana-rita.jpg",
+    "genero": "Educação",
+    "bio": "Nasceu a 24 de Agosto de 1961, na cidade da Maxixe, província de Inhambane, Moçambique. É licenciada em Antropologia pela Universidade Eduardo Mondlane (UEM). Iniciou a sua carreira na comunicação social, integrando os quadros da Rádio Moçambique como produtora de programas infantis e chefe do Sector do Programa da Criança. Foi também apresentadora de programas infantis na Televisão Experimental de Moçambique (TVE). Participou em diversas formações e programas de intercâmbio nas áreas de comunicação e desenvolvimento, tendo coordenado o Fórum das ONG Moçambicanas em Prol da Criança, projecto apoiado pelo UNICEF. No sector da educação, destacou-se pela liderança do Colégio Nyamunda durante mais de duas décadas. Actualmente, é Directora do Colégio Educare, Directora-Geral do Colégio Enko Sekeleka, em Vilankulo, e Administradora da Sekeleka Investimentos, Limitada.",
+    "obras": []
+  },
+  {
+    "id": 29,
+    "nome": "Harolde Radelec Langa",
+    "foto": "/authors/herolde.jpg",
+    "genero": "Literatura",
+    "bio": "Natural de Maputo, é professor formado pelo Instituto de Formação de Professores de Namaacha. Apaixonado pela escrita, dedica-se à promoção da literatura e do conhecimento, encontrando nas palavras uma forma de expressão, reflexão e transformação social. O seu interesse pelas letras acompanha a sua vocação educativa, unindo o ensino e a produção literária como instrumentos de desenvolvimento humano e cultural. Em breve lançará o seu primeiro livro pela Editora Vértice Literário, dando início à sua trajetória no universo literário e partilhando com o público a sua visão, criatividade e sensibilidade através da escrita.",
+    "obras": []
+  },
+  {
+    "id": 30,
+    "nome": "Vânia Eusébio Rufai",
+    "foto": "/authors/vania-eusebio.jpg",
+    "genero": "Literatura",
+    "bio": "Técnica de Medicina Geral, formada pelo Instituto Técnico de Saúde Lugenda. Atua na área da saúde como profissional dedicada ao cuidado e bem-estar da comunidade, conciliando a prática médica com a paixão pela literatura. Além da sua formação académica, destaca-se como jovem escritora, utilizando a escrita como instrumento de expressão, reflexão e sensibilização social, abordando temas humanos, emocionais e sociais nas suas obras.",
+    "obras": []
+  },
+  {
+    "id": 31,
+    "nome": "Jorge Eusébio Chagaca Gulambondo",
+    "foto": "/authors/jorge-eusebio.jpg",
+    "genero": "Não-Ficção",
+    "bio": "Professor, investigador e activista social, ambiental e climático, natural da cidade de Tete, Moçambique. É mestrando em Gestão de Emergências e Desastres pela Universidade Púnguè e licenciado em Ensino de Geografia, com habilitações em História, pela extinta Universidade Pedagógica – Delegação de Tete. É consultor de Geotecnologias, agente cultural e rapper, desempenhando igualmente funções de liderança em organizações juvenis e sociais. Coordena projectos ligados à educação ambiental, mudanças climáticas, empregabilidade e inserção socioprofissional de jovens. É autor de mais de cinco artigos científicos publicados em revistas internacionais, com pesquisas centradas em riscos socioambientais, alterações climáticas, geotecnologias, queimadas, inundações e dinâmica ambiental urbana.",
+    "obras": []
   }
 ]
