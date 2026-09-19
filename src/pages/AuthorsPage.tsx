@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import AuthorModal from '../components/AuthorModal';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import SEOHead from '../components/SEOHead';
 import authorsData from '../data/authors.json';
@@ -16,7 +16,7 @@ type Author = {
 
 const AuthorsPage = () => {
   const [authors] = useState<Author[]>(authorsData as Author[]);
-  const [selected, setSelected] = useState<Author | null>(null);
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-[#f5f0e8]">
@@ -27,7 +27,6 @@ const AuthorsPage = () => {
         url="https://overticeliterario.com/autores"
       />
       <Navbar forceScrolled />
-      <AuthorModal author={selected} onClose={() => setSelected(null)} />
 
       <div className="pt-24 sm:pt-32 pb-8 px-4 sm:px-12 text-center">
         <h1 className="text-3xl sm:text-4xl font-serif font-bold text-navy mb-3">Os Nossos Autores</h1>
@@ -43,7 +42,7 @@ const AuthorsPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.08 }}
               className="text-center cursor-pointer group"
-              onClick={() => setSelected(author)}
+              onClick={() => navigate(`/autor/${author.id}`)}
             >
               <div className="w-32 h-32 sm:w-44 sm:h-44 mx-auto mb-5 rounded-full overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 border-4 border-white">
                 {author.foto ? (

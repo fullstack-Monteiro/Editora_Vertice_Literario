@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Users } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import BlogModal from '../components/BlogModal';
 import SEOHead from '../components/SEOHead';
 import { Facebook, Instagram } from 'lucide-react';
 import ShareButton from '../components/ShareButton';
@@ -19,7 +19,7 @@ type Post = {
 
 const BlogPage = () => {
   const [posts] = useState<Post[]>(postsData as Post[]);
-  const [selected, setSelected] = useState<Post | null>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -59,7 +59,6 @@ const BlogPage = () => {
         } : undefined}
       />
       <Navbar forceScrolled />
-      <BlogModal post={selected} onClose={() => setSelected(null)} />
 
       {/* Header */}
       <div className="pt-24 sm:pt-32 pb-8 px-5 md:px-12 text-center">
@@ -84,7 +83,7 @@ const BlogPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.08 }}
                 className="bg-white rounded-sm shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer group overflow-hidden"
-                onClick={() => setSelected(post)}
+                onClick={() => navigate(`/blog/${post.id}`)}
               >
                 <div className="relative overflow-hidden aspect-video">
                   <img src={post.image} alt={`Artigo: "${post.title}" - Blog Editora Vértice Literário`}
@@ -106,7 +105,7 @@ const BlogPage = () => {
                     <div className="flex gap-2 text-slate-400">
                       <a href="https://www.facebook.com/profile.php?id=61569927223809" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors"><Facebook size={14} /></a>
                       <a href="https://www.instagram.com/edit.oraverticeliterario/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors"><Instagram size={14} /></a>
-                      <ShareButton url={`${window.location.origin}/blog`} title={post.title} />
+                      <ShareButton url={`${window.location.origin}/blog/${post.id}`} title={post.title} />
                     </div>
                   </div>
                 </div>

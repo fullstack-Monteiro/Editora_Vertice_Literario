@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import { motion } from 'motion/react';
 import { Search } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import BookModal from '../components/BookModal';
 import SEOHead from '../components/SEOHead';
 import { generateBookSchema } from '../utils/seoSchema';
 import booksData from '../data/books.json';
@@ -21,7 +21,7 @@ type Book = {
 const CatalogPage = () => {
   const [books] = useState<Book[]>(booksData as Book[]);
   const [search, setSearch] = useState('');
-  const [selected, setSelected] = useState<Book | null>(null);
+  const navigate = useNavigate();
 
   const filtered = useMemo(() => {
     const normalize = (s: string) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -55,7 +55,6 @@ const CatalogPage = () => {
         } : undefined}
       />
       <Navbar forceScrolled />
-      <BookModal book={selected} onClose={() => setSelected(null)} />
 
       {/* Header */}
       <div className="pt-24 sm:pt-32 pb-8 px-5 md:px-12 text-center">
@@ -100,7 +99,7 @@ const CatalogPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05 }}
                 className="cursor-pointer group text-center"
-                onClick={() => setSelected(book)}
+                onClick={() => navigate(`/livro/${book.id}`)}
               >
                 <div className="aspect-[3/4] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 mb-3 bg-slate-100 rounded-sm">
                   <img src={book.cover} alt={`Capa do livro "${book.title}" de ${book.author}`}
