@@ -2,11 +2,20 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Users } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import SEOHead from '../components/SEOHead';
+import { generateOrganizationSchema } from '../utils/seoSchema';
 import { VALUES } from '../constants';
 
 const AboutPage = () => {
   return (
     <div className="min-h-screen bg-white">
+      <SEOHead
+        title="Sobre a Editora Vértice Literário"
+        description="Conheça a Editora Vértice Literário — instituição moçambicana sediada em Tete, dedicada à publicação, revisão e promoção de autores e da literatura lusófona. Registo nº 185809."
+        keywords="sobre editora vértice literário, editora tete moçambique, história editora moçambicana, missão visão editorial, publicação livros tete, registo 185809"
+        url="https://overticeliterario.com/sobre"
+        schema={generateOrganizationSchema()}
+      />
       <Navbar forceScrolled />
 
       {/* Hero */}
@@ -24,7 +33,7 @@ const AboutPage = () => {
           <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="relative">
             <div className="relative z-10">
               <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&q=80&w=1000"
-                alt="Office" className="rounded-sm shadow-2xl" referrerPolicy="no-referrer" />
+                alt="Biblioteca com livros — sede da Editora Vértice Literário em Tete, Moçambique" className="rounded-sm shadow-2xl" referrerPolicy="no-referrer" />
             </div>
             <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-gold/10 -z-0 hidden lg:block"></div>
             <div className="absolute -top-10 -left-10 p-8 bg-navy text-white z-20 hidden lg:block">

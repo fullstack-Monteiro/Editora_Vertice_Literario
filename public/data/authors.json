@@ -1,0 +1,244 @@
+[
+  {
+    "id": 1,
+    "nome": "Moséstia David Machava",
+    "foto": "/authors/Mosestia.jpeg",
+    "genero": "Não-Ficção",
+    "bio": "Nascida a 11 de outubro de 1990 em Maputo, Moséstia Machava é médica licenciada em Medicina Geral e mestre em Saúde Pública pela Universidade Eduardo Mondlane e Pós-Graduanda em One Health (Saúde Única) pela Universidade de Nova Lisboa. Com uma carreira consolidada que abrange a prática clínica, investigação científica, consultoria em saúde pública e saúde & bem-estar corporativo, é também empreendedora e fundadora da MM CONSULTY e da SATTIS. Ao longo da sua trajectória, combina o rigor científico com uma visão prática, humanizada e integral do cuidado à pessoa.",
+    "obras": []
+  },
+  {
+    "id": 2,
+    "nome": "Vasco Adérito Castigo Sambo",
+    "foto": "/authors/Vasco.jpeg",
+    "genero": "Autobiografia",
+    "bio": "Nascido a 2 de Novembro de 1990, na Cidade de Maputo. Terminou o curso de Enfermagem Geral em 2018 no Instituto de Ciências de Saúde de Maputo. Trabalhou com vários grupos corais dentro da Igreja Congregacional Unida de Moçambique. Actualmente, enfermeiro geral no Hospital Provincial da Matola, estudante na Universidade Pedagógica de Maputo, Maestro e Professor domiciliar de Música.",
+    "obras": []
+  },
+  {
+    "id": 3,
+    "nome": "Katia Robledo Querol",
+    "foto": "/authors/Katia.jpeg",
+    "genero": "Biografia",
+    "bio": "Cidadã cubana, nascida a 23 de setembro de 1996. Médica especialista em Medicina Legal, exerce também a docência como professora auxiliar na Universidade de Ciências Médicas de Matanzas, em Cuba. Dedica-se ao ensino e à investigação na área da Medicina Legal. Actualmente, desempenha funções docentes no Hospital Central da Beira, em Moçambique, onde contribui para a formação de profissionais de saúde e para o fortalecimento do ensino médico na região.",
+    "obras": []
+  },
+  {
+    "id": 4,
+    "nome": "Lídia Codo",
+    "foto": "/authors/Lidia.jpeg",
+    "genero": "Poesia",
+    "bio": "Poeta e escritora, cuja relação com a palavra se constrói desde cedo como gesto de escuta, elaboração e transfiguração do sensível. Em 2016 publica Verossímil, obra de poesia concreta. A maturação da sua voz poética manifesta-se na trilogia Carente (2017), Patente (2019) e Ululante (2023). Em 2025 lança Escandalossíssima, obra em que se debruça sobre o Haikai. Ao longo do seu percurso integrou diversas antologias, participou de eventos literários e desenvolveu acções formativas em escolas, reafirmando a poesia como prática de partilha, escuta e permanência.",
+    "obras": ["Verossímil", "Carente", "Patente", "Ululante", "Escandalossíssima"]
+  },
+  {
+    "id": 5,
+    "nome": "Assmá Aridás",
+    "foto": "/authors/Assma.jpeg",
+    "genero": "Psicologia",
+    "bio": "Psicóloga clínica interventiva, evolutiva e educacional, docente universitária e especialista em prevenção do burnout e parentalidade positiva. Actua na área da saúde mental com experiência em diagnóstico e intervenção psicológica, dedicando-se à promoção do equilíbrio emocional e do desenvolvimento pessoal. A sua prática profissional combina conhecimento científico e uma abordagem humanizada, valorizando a escuta activa e a singularidade de cada indivíduo. Reconhecida como psicóloga anti-burnout, tem centrado a sua actuação na prevenção do esgotamento profissional e na promoção de uma relação saudável com o trabalho.",
+    "obras": []
+  },
+  {
+    "id": 6,
+    "nome": "Bonifácio B. Fabião",
+    "foto": "/authors/Bonifacio.jpeg",
+    "genero": "Literatura",
+    "bio": "Natural da vila de Songo, distrito de Cahora Bassa, província de Tete, em Moçambique. Licenciado em Ensino de Biologia, com habilitações em Química, conjugando o rigor da ciência com a sensibilidade da arte literária. Autor de A Juventude e as Mídias Sociais e O Canto do Planeta Ferido, publicado no Brasil. Tem textos publicados em diversas antologias nacionais e internacionais. Em 2024, sagrou-se vencedor da 1.ª Edição das Olimpíadas Camonianas. Tornou-se o primeiro estudante licenciado em Ensino de Biologia pela Universidade Púnguè — Extensão de Tete a publicar um livro. É membro da Associação dos Poetas da Província de Tete e vice-presidente da Associação Humanitária Tafika.",
+    "obras": ["A Juventude e as Mídias Sociais", "O Canto do Planeta Ferido"]
+  },
+  {
+    "id": 7,
+    "nome": "Samila Simões Manuel António",
+    "foto": "/authors/Samila.jpeg",
+    "genero": "Poesia",
+    "bio": "Nascida a 28 de maio de 2001, de nacionalidade moçambicana e natural da província de Tete. Usa o pseudónimo literário Samy da Sandra. Formada em Gestão Ambiental e Desenvolvimento Comunitário, com competências em Ecoturismo, pela Universidade Púnguè. Autora de A Carpintaria dos Meus Sonhos (2023) e Tudo o que Sobra de um Coração Intenso (2025). É membro da Associação Provincial dos Poetas da Província de Tete e do Clube de Leitura e Livros da mesma província.",
+    "obras": ["A Carpintaria dos Meus Sonhos", "Tudo o que Sobra de um Coração Intenso"]
+  },
+  {
+    "id": 8,
+    "nome": "Arquilito Maurício André Silambo",
+    "foto": "/authors/Arquilito.jpeg",
+    "genero": "Literatura",
+    "bio": "Nascido a 11 de março de 1998, natural da província de Inhambane, tendo crescido nas cidades da Maxixe e de Inhambane. Licenciado em Contabilidade e Auditoria pela Universidade Save. Empreendedor por vocação, concilia a actividade empresarial com uma profunda paixão pela literatura. Foi finalista do Prémio Literário Carlos Morgado – III Edição (2025) e participou da coletânea Novas Vozes, Novas Estórias com o texto 'Sonhos não se Medem pela Origem', publicado pela Fundação Carlos Morgado em 2025.",
+    "obras": ["Sonhos não se Medem pela Origem"]
+  },
+  {
+    "id": 9,
+    "nome": "Franklin Alberto Gravata",
+    "foto": "/authors/Franklin.jpeg",
+    "genero": "Literatura",
+    "bio": "Nasceu em 1991, na cidade de Chimoio. Licenciado em Relações Internacionais e Diplomacia (2014) pela Universidade Joaquim Chissano. Autor de A Sereia do Zambeze, publicada pela Kulera em 2020, e de Oxigéniozia, publicada em 2025 pela Mapeta Editora.",
+    "obras": ["A Sereia do Zambeze", "Oxigéniozia"]
+  },
+  {
+    "id": 10,
+    "nome": "Pérola da Celina Levene",
+    "foto": "/authors/Perola.jpeg",
+    "genero": "Poesia",
+    "bio": "Nasceu a 24 de fevereiro de 1990, na cidade de Chimoio, província de Manica. Funcionária bancária há 16 anos, vive dentro dela uma alma literária — uma mulher que transforma sentimentos em palavras e emoções em poesia. Sensível e intensamente romântica, destaca-se pela sua forma poética de sentir e interpretar a vida. O seu maior sonho é tornar-se uma grande escritora, tocar corações, despertar sentimentos e eternizar pensamentos através da arte da palavra.",
+    "obras": []
+  },
+  {
+    "id": 11,
+    "nome": "Ernesto Levene Nhamande",
+    "foto": "/authors/Ernesto.jpeg",
+    "genero": "Biografia",
+    "bio": "Nasceu a 2 de maio de 1962, em Báruè. Eletrotécnico de profissão, dedicou grande parte da sua vida profissional à Hidroeléctrica de Cahora Bassa. Em 1979 partiu para Cuba, onde frequentou o ensino básico no âmbito de uma bolsa de estudos, formando-se em manutenção de equipamentos de produção elétrica e especializando-se em eletrotécnica. Para além do profissional exemplar, é acima de tudo homem de família — amoroso, de coração puro, defensor da união e da harmonia familiar. Reformado, permanece activo naquilo que realmente importa: o amor, a presença e o exemplo.",
+    "obras": []
+  },
+  {
+    "id": 13,
+    "nome": "José Bechane",
+    "foto": "/authors/jose.jpeg",
+    "genero": "Não-Ficção",
+    "bio": "José Bechane é graduado em Ensino de Língua Portuguesa pela Universidade Pedagógica (2010), Mestre em Educação pela Universidade Europeia de Atlântica (2017) e Mestre em Letras pela Universidade Licungo – Extensão da Beira (2025). Foi Instrutor Técnico Pedagógico no Instituto Médio de Geologia e Minas em Moatize e no Instituto de Formação de Professores em Tete (2022). É docente e membro da AMOREL (Associação Moçambicana de Revisores Linguísticos) desde 2025. É escritor com uma obra publicada, Maré do Amor (2025). Pesquisa e escreve sobre os seguintes temas: Didáctica, Formação pedagógica de professores e análise da produção de conhecimentos sobre formação de professores no contexto moçambicano. Actualmente desenvolve pesquisas sobre profissionalização dos professores do ensino médio, com ênfase no diagnóstico de necessidades formativas de carácter didáctico-pedagógicas, bem como sobre o lugar da leitura e escrita.",
+    "obras": ["Maré do Amor"]
+  },
+  {
+    "id": 12,
+    "nome": "Carimo Francisco Gome",
+    "foto": "/authors/Camiro.jpeg",
+    "genero": "Literatura",
+    "bio": "Conhecido pelo pseudónimo Carimo Escritor Sem Limites, nasceu a 2 de julho de 2003, no distrito de Inharrime, província de Inhambane. Frequentou o Ensino Superior em Gestão de Recursos Humanos na Universidade Save. Activista comunitário na área de saúde sexual e reprodutiva de jovens. Em 2025, foi vencedor do Concurso Literário Sonhos de Natal, realizado em Lisboa, Portugal. Coautor de Sombra da Violência e Poemas do Fim do Mundo. Publicou em 2025 a obra Entre Ruínas e Renascença.",
+    "obras": ["Entre Ruínas e Renascença", "Sombra da Violência", "Poemas do Fim do Mundo"]
+  },
+  {
+    "id": 14,
+    "nome": "Hassane Bacião Raúl",
+    "foto": "/authors/Hassane Raul.png",
+    "genero": "Poesia",
+    "bio": "Pseudónimo: Farmacêutico Poeta. Nascido a 12 de agosto de 1990, natural da cidade da Beira, província de Sofala. Funcionário do Ministério da Saúde (MISAU), exercendo a função de Farmacêutico Formador no Serviço Provincial de Saúde de Tete e afeto ao Instituto de Ciências de Saúde de Tete (ICSTETE). Membro da Associação dos Farmacêuticos de Moçambique e Formador Sénior em Procedimentos de Gestão e Cadeia de Abastecimento de Medicamentos. Licenciado em Farmácia pela Universidade Lúrio (UniLúrio). No campo literário, é Escritor, Poeta e Presidente do Conselho Fiscal da Associação Provincial dos Poetas de Tete. Participa em diversos movimentos e grupos literários e poéticos internacionais.",
+    "obras": ["Bacião do Mundo"]
+  },
+  {
+    "id": 15,
+    "nome": "Dalton Xavier João",
+    "foto": "/authors/Dalton Xavier Joao.png",
+    "genero": "Poesia",
+    "bio": "Nascido aos 17 de Maio, natural de Moatize, Professor, licenciando-se em Ensino de Geografia. Com o pseudónimo DALTON ALFÂNDEGA, participou em várias antologias nacionais e internacionais, entre as quais: Centenário de Eduardo Mondlane, O Centenário de José Craveirinha; Poema za Kwathu; A Sombra da Violência; Poemas do Fim da Humanidade; Antologia Poética Mista: Tete, Terra dos Seis Cs; Antologia Vozes do Ensino; e África Novos Poetas 2021. Possui manuscritos não publicados em novela, romance e contos.",
+    "obras": ["África te Mata e te Nasce"]
+  },
+  {
+    "id": 16,
+    "nome": "João Bartolomeu Sixpence",
+    "foto": "/authors/Joao Bartolomeu.png",
+    "genero": "Biografia",
+    "bio": "Nasceu a 25 de fevereiro de 1972, na cidade da Beira. É Mestre em Saúde Pública, com especialização em Ciências da Saúde e Saúde da Criança e do Adolescente pela Universidade Federal de Minas Gerais, no Brasil. Graduado em Ciências Agrárias, com especialização em Sociologia e Comunicação Rural, pela Universidade Eduardo Mondlane. Fundador e CEO do Grupo Nunisa. Possui certificação em Business Edge pelo IFC – International Finance Corporation. Membro do Conselho Empresarial Nacional (CEN), da APME e do Conselho Empresarial Provincial. Já foi funcionário das Nações Unidas e conferencista em fóruns internacionais.",
+    "obras": ["A Resiliência: A Jornada de Quem Não Desiste"]
+  },
+  {
+    "id": 17,
+    "nome": "Guido Basílio Awir",
+    "foto": "/authors/Guido Basilio.png",
+    "genero": "Literatura",
+    "bio": "Mais conhecido como Guy Awir, nasceu em 7 de setembro de 1997, no distrito de Cuamba, província do Niassa. Desde jovem demonstrou forte paixão pela leitura e pela tecnologia. Formou-se como técnico informático. Em 2016, iniciou a sua jornada como escritor, partilhando frases motivacionais nas redes sociais. A boa receção das suas mensagens encorajou-o a aprofundar-se na escrita literária, produzindo obras que abordam temas como resiliência, superação, consciência social e crescimento pessoal.",
+    "obras": ["Me Enterrem Logo"]
+  },
+  {
+    "id": 18,
+    "nome": "Profeta Carlos Goba",
+    "foto": "/authors/Carlos Adelino.png",
+    "genero": "Biografia",
+    "bio": "Carlos Adelino Raul Manuel Goba, natural da cidade de Chimoio, Província de Manica, é o missionário fundador da Igreja Ministerial de Deus Impactando Nações, a serviço de Deus e da sua igreja desde 2017. Pai de quatro filhos, casado, dedicado ao ministério e à família. Realizou cruzadas por Moçambique, Zimbabué, África do Sul, Angola e Brasil, com igrejas nas cidades de Tete, Chimoio, Maputo e Beira. Acredita que somente Deus tem o poder de transformar vidas.",
+    "obras": ["Vida e Obra do Profeta Goba"]
+  },
+  {
+    "id": 19,
+    "nome": "Florescêncio Luís Tumbo",
+    "foto": "/authors/Florescencio Luis Tumbo.png",
+    "genero": "Não-Ficção",
+    "bio": "Natural de Xai-Xai (Gaza), é Mestre em Educação de Adultos pela Universidade Eduardo Mondlane e licenciado em Psicologia pela Universidade Pedagógica de Maputo. Professor desde 2005, atuou em vários níveis de ensino e na formação de professores. Participou em projetos sobre qualidade da educação e alfabetização de adultos. É docente na Universidade Eduardo Mondlane e no Instituto Superior de Gestão e Empreendedorismo Gwaza Muthini, sendo membro da Associação de Psicologia de Moçambique e autor de artigos científicos.",
+    "obras": ["Jovens e Adultos"]
+  },
+  {
+    "id": 20,
+    "nome": "Jacinto Nhancale",
+    "foto": "/authors/Jacinto Nhancale.png",
+    "genero": "Literatura",
+    "bio": "Nascido a 31 de Janeiro de 1984, é licenciado em História e mestre em Saúde Pública, com experiência nas áreas de comunicação corporativa e pesquisa qualitativa. Residente na cidade de Maputo, destaca-se como um verdadeiro contador de histórias vivas, dedicando-se à preservação de memórias e vivências que espelham a riqueza humana e social do seu tempo. Com sensibilidade e compromisso, constrói pontes entre o passado e o presente, revelando a profundidade das experiências humanas.",
+    "obras": ["A Dor da Escolha"]
+  },
+  {
+    "id": 21,
+    "nome": "Sara Anselmo",
+    "foto": "/authors/Sara Anselmo.png",
+    "genero": "Literatura",
+    "bio": "Nascida a 12 de maio de 1999, em Nacala-Porto, província de Nampula, Moçambique, é médica-dentista, pesquisadora em Saúde, docente e escritora. Autora do romance \"O Amor da Bata Branca\", destaca-se pela sensibilidade com que entrelaça ciência, arte e humanidade no seu percurso profissional e literário. Atualmente reside na cidade de Tete, onde exerce com dedicação as suas funções clínicas, académicas e criativas.",
+    "obras": ["A Dor da Escolha"]
+  },
+  {
+    "id": 23,
+    "nome": "Ananias Combe Milissão",
+    "foto": "/authors/Ananias.png",
+    "genero": "Não-Ficção",
+    "bio": "Nasceu a 21 de março de 1992 na vila de Songo, distrito de Cahora-Bassa, província de Tete (Moçambique). É sacerdote católico da Diocese de Tete. Estudou Filosofia no Seminário Interdiocesano Santo Agostinho da Matola e Teologia no Seminário Teológico Interdiocesano São Pio X de Maputo. É licenciado em Filosofia pela Universidade São Tomás de Moçambique (USTM) e mestre em Gestão e Administração Educacional pela Universidade Católica de Moçambique (UCM).",
+    "obras": ["Sem Verba Não se Anuncia o Verbo"]
+  }
+]
+,
+  {
+    "id": 24,
+    "nome": "Abílho Mohomede",
+    "foto": "/authors/Abílho Mohomede.png",
+    "genero": "Literatura",
+    "bio": "Natural do distrito de Quissanga, província de Cabo Delgado, Moçambique, é filho de Mohomede Somar e de Muanaune Warivano. Formado em Aquacultura e Pescas pelo Instituto Politécnico Mártir Cipriano de Nacuxa, dedica-se ao desenvolvimento pessoal, à escrita e à partilha de conhecimentos orientados para o crescimento humano e profissional.",
+    "obras": []
+  },
+  {
+    "id": 25,
+    "nome": "Celeste Jafete Mavuie",
+    "foto": "/authors/Celeste Jafete Mavuie .png",
+    "genero": "Educação",
+    "bio": "Moçambicana, natural da província de Gaza. Mestranda em Pedagogia e Didáctica. Licenciada em Pedagogia, especializada em Planificação, Coordenação e Administração (PCA) e em Psicopedagogia pelo ISET-One World. Formada em Gestão dos Recursos Humanos, Relações Públicas, Liderança, Marketing, Técnica de Venda e Informática Básica. Foi professora no Instituto Superior de Educação e Tecnologia - One World. Participou na implementação do Projecto TIPOTE para formação de formadores em Educação Inclusiva. Dedica-se à Investigação Científica no desenvolvimento e implementação de material de ensino para as Escolas de Professores do Futuro de ADPP, de acordo com a evolução das necessidades contemporâneas.",
+    "obras": []
+  },
+  {
+    "id": 26,
+    "nome": "Harolde Radelec Langa",
+    "foto": "/authors/Harolde Radelec Langa.png",
+    "genero": "Literatura",
+    "bio": "Natural de Maputo, professor formado pelo Instituto de Formação de Professores de Namaacha. Apaixonado pela escrita, dedica-se à promoção da literatura e do conhecimento, encontrando nas palavras uma forma de expressão, reflexão e transformação social. O seu interesse pelas letras acompanha a sua vocação educativa, unindo o ensino e a produção literária como instrumentos de desenvolvimento humano e cultural. Em breve, lançará o seu primeiro livro pela Editora Vértice Literário, dando início à sua trajetória no universo literário e partilhando com o público a sua visão, criatividade e sensibilidade através da escrita.",
+    "obras": []
+  },
+  {
+    "id": 27,
+    "nome": "Joaquim Afonso António",
+    "foto": "/authors/Joaquim Afonso António .png",
+    "genero": "Espiritualidade",
+    "bio": "Nasceu a 5 de Agosto de 1981, no distrito de Ribaué, Província de Nampula. Passou a sua infância e adolescência no distrito de Malema. É formado em Odontoestomatologia pelo Instituto de Ciências de Saúde da Beira, curso concluído em 2004. Em Janeiro de 2005, ingressou no Ministério da Saúde como Técnico de Odontoestomatologia, exercendo funções no Serviço Distrital de Saúde de Nacala-Porto até 2017. Concluiu a Licenciatura em Administração e Gestão de Empresas, frequentando formações em teologia, informática, comunicação social e língua inglesa. Desenvolveu actividades sociais, religiosas e comunitárias, desempenhando diversas funções de responsabilidade. Desde 2017, dedica-se de forma intensa à vida espiritual, considerando-a fundamental para o desenvolvimento humano e construção de uma sociedade assente em valores éticos, morais e espirituais.",
+    "obras": []
+  },
+  {
+    "id": 28,
+    "nome": "Jorge Eusébio Chagaca Gulambondo",
+    "foto": "/authors/Jorge Eusébio Chagaca Gulambondo.png",
+    "genero": "Educação e Ambiente",
+    "bio": "Professor, investigador e activista social, ambiental e climático, natural da cidade de Tete, Moçambique. Mestrando em Gestão de Emergências e Desastres pela Universidade Púngué e licenciado em Ensino de Geografia, com habilitações em História, pela Universidade Pedagógica – Delegação de Tete. É consultor de Geotecnologias, agente cultural e rapper, desempenhando funções de liderança em organizações juvenis e sociais. Coordena projectos ligados à educação ambiental, mudanças climáticas, empregabilidade e inserção socioprofissional de jovens. Autor de mais de cinco artigos científicos publicados em revistas internacionais, com pesquisas centradas em riscos socioambientais, alterações climáticas, geotecnologias, queimadas, inundações e dinâmica ambiental urbana.",
+    "obras": []
+  },
+  {
+    "id": 29,
+    "nome": "Salé Abrão Buque",
+    "foto": "/authors/Salé Abrão Buque.png",
+    "genero": "Comunicação",
+    "bio": "Nasceu a 24 de setembro de 1986, no Distrito de Inharrime, Província de Inhambane, Moçambique. É Mestre em Gestão de Relações Públicas e Marketing Estratégico pela Universidade Católica de Moçambique, Licenciado em Relações Públicas pela Escola Superior de Jornalismo e formado em Jornalismo pela Escola de Jornalismo. Ao longo da sua trajetória académica e profissional, tem-se dedicado às áreas da comunicação, relações públicas, marketing estratégico e jornalismo, contribuindo para o fortalecimento da comunicação institucional e do desenvolvimento profissional no seu campo de atuação.",
+    "obras": []
+  },
+  {
+    "id": 30,
+    "nome": "Suzana Rita Jeremias",
+    "foto": "/authors/Suzana Rita Jeremias.png",
+    "genero": "Educação e Comunicação",
+    "bio": "Nasceu a 24 de Agosto de 1961, na cidade da Maxixe, província de Inhambane, Moçambique. Licenciada em Antropologia pela Universidade Eduardo Mondlane (UEM). Iniciou a sua carreira na comunicação social, integrando os quadros da Rádio Moçambique como produtora de programas infantis e chefe do Sector do Programa da Criança. Foi apresentadora de programas infantis na Televisão Experimental de Moçambique (TVE). Participou em diversas formações e programas de intercâmbio nas áreas de comunicação e desenvolvimento, coordenando o Fórum das ONG Moçambicanas em Prol da Criança, apoiado pelo UNICEF. Na educação, destacou-se pela liderança do Colégio Nyamunda durante mais de duas décadas. Actualmente, é Directora do Colégio Educare, Directora-Geral do Colégio Enko Sekeleka, em Vilankulo, e Administradora da Sekeleka Investimentos.",
+    "obras": []
+  },
+  {
+    "id": 31,
+    "nome": "Vânia Eusébio Rufai",
+    "foto": "/authors/Vânia Eusébio Rufai.png",
+    "genero": "Saúde e Literatura",
+    "bio": "Técnica de Medicina Geral, formada pelo Instituto Técnico de Saúde Lugenda. Atua na área da saúde como profissional dedicada ao cuidado e bem-estar da comunidade, conciliando a prática médica com a paixão pela literatura. Além da sua formação académica, destaca-se como jovem escritora, utilizando a escrita como instrumento de expressão, reflexão e sensibilização social, abordando temas humanos, emocionais e sociais nas suas obras.",
+    "obras": []
+  }
+]

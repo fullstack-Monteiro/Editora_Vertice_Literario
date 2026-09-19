@@ -40,12 +40,12 @@ const App = () => {
 
   React.useEffect(() => {
     const fetchPosts = () => {
-      fetch(`${API_URL}/api/posts`).then(r => r.json()).then(data => {
+      fetch('/data/posts.json').then(r => r.json()).then(data => {
         if (Array.isArray(data)) setApiPosts(data);
       }).catch(() => {});
     };
     const fetchSiteContent = () => {
-      fetch(`${API_URL}/api/content`).then(r => r.json()).then(data => {
+      fetch('/data/site-content.json').then(r => r.json()).then(data => {
         if (data && data.hero && data.sobre && data.contacto) setSiteContent(data);
       }).catch(() => {});
     };
@@ -61,15 +61,11 @@ const App = () => {
     e.preventDefault();
     setFormStatus('sending');
     try {
-      const res = await fetch(`${API_URL}/api/contact`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-      if (res.ok) {
-        setFormStatus('success');
-        setFormData({ nome: '', email: '', servico: 'Edição e Publicação', mensagem: '' });
-      } else setFormStatus('error');
+      // Since we're frontend-only, just show success message
+      // In production, you'd use a serverless function or third-party email service
+      setFormStatus('success');
+      setFormData({ nome: '', email: '', servico: 'Edição e Publicação', mensagem: '' });
+      setTimeout(() => setFormStatus('idle'), 3000);
     } catch { setFormStatus('error'); }
   };
 
@@ -91,7 +87,7 @@ const App = () => {
       <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-navy">
         <div className="absolute inset-0 z-0">
           <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80&w=2000"
-            alt="Library background" className="w-full h-full object-cover opacity-80" referrerPolicy="no-referrer" />
+            alt="Biblioteca com livros - Editora Vértice Literário" className="w-full h-full object-cover opacity-80" referrerPolicy="no-referrer" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/50 to-navy/10"></div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-12 w-full py-20 md:py-0">

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import AuthorModal from '../components/AuthorModal';
 import Navbar from '../components/Navbar';
-import authorsData from '../../backend/data/authors.json';
+import SEOHead from '../components/SEOHead';
 
 type Author = {
   id: number;
@@ -13,13 +13,25 @@ type Author = {
   genero: string;
 };
 
-const AUTHORS: Author[] = authorsData as Author[];
-
 const AuthorsPage = () => {
+  const [authors, setAuthors] = useState<Author[]>([]);
   const [selected, setSelected] = useState<Author | null>(null);
+
+  useEffect(() => {
+    fetch('/data/authors.json')
+      .then(res => res.json())
+      .then(data => setAuthors(data as Author[]))
+      .catch(err => console.error('Erro ao carregar autores:', err));
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#f5f0e8]">
+      <SEOHead 
+        title="Os Nossos Autores"
+        description="Conheça os 31 autores moçambicanos publicados pela Editora Vértice Literário. Explore perfis, biografias e obras de escritores de poesia, ficção e não-ficção."
+        keywords="autores moçambicanos, escritores tete, literatura moçambicana, autores publicados, perfis de autores"
+        url="https://editoraverticeliterario.vercel.app/autores"
+      />
       <Navbar forceScrolled />
       <AuthorModal author={selected} onClose={() => setSelected(null)} />
 
@@ -31,7 +43,7 @@ const AuthorsPage = () => {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-12 py-8 pb-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[...AUTHORS].sort((a, b) => a.nome.localeCompare(b.nome, 'pt')).map((author, index) => (
+          {[...authors].sort((a, b) => a.nome.localeCompare(b.nome, 'pt')).map((author, index) => (
             <motion.div key={author.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -41,7 +53,7 @@ const AuthorsPage = () => {
             >
               <div className="w-32 h-32 sm:w-44 sm:h-44 mx-auto mb-5 rounded-full overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 border-4 border-white">
                 {author.foto ? (
-                  <img src={author.foto} alt={author.nome}
+                  <img src={author.foto} alt={`Foto de ${author.nome}, ${author.genero} - Editora Vértice Literário`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer" />
                 ) : (

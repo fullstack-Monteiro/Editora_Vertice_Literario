@@ -1,4 +1,26 @@
+# Robots.txt for Editora Vértice Literário
+# Allow all bots to crawl the site
+
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /private
 
-Sitemap: https://editoraverticeliterario.vercel.app/sitemap.xml
+# Allow crawling of data directories
+Allow: /data/
+Allow: /covers/
+Allow: /authors/
+Allow: /blog/
+
+# Sitemap location
+Sitemap: https://overticeliterario.com/sitemap.xml
+
+# Google specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# Bing specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

@@ -1,2 +1,863 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns=
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ===== Páginas Principais ===== -->
+  <url>
+    <loc>https://overticeliterario.com/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/logo.png</image:loc>
+      <image:title>Editora Vértice Literário — Editora moçambicana sediada em Tete</image:title>
+      <image:caption>Logótipo da Editora Vértice Literário, editora moçambicana dedicada à publicação e promoção de autores</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/catalogo</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autores</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/sobre</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/submissao</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/contacto</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ===== Livros (28 títulos) ===== -->
+  <url>
+    <loc>https://overticeliterario.com/livro/3</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Mare%20Amor.jpeg</image:loc>
+      <image:title>Maré do Amor — José Bechane</image:title>
+      <image:caption>Capa do livro Maré do Amor, de José Bechane, publicado pela Editora Vértice Literário. Literatura moçambicana.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/4</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Amor%20e%20Dor.jpeg</image:loc>
+      <image:title>Amor e Dor em Terras Feridas — Gabriel M'Swache (BigaM)</image:title>
+      <image:caption>Capa do livro Amor e Dor em Terras Feridas, de Gabriel M'Swache, poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/5</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Ecos%20horizonte.jpeg</image:loc>
+      <image:title>Ecos do Horizonte — Octávio Cumbe</image:title>
+      <image:caption>Capa do livro Ecos do Horizonte, de Octávio Cumbe, poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/6</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/A%20Sombra%20da%20violencia.jpeg</image:loc>
+      <image:title>A Sombra da Violência — Antologia</image:title>
+      <image:caption>Capa da antologia A Sombra da Violência, coletânea poética publicada pela Editora Vértice Literário com 26 autores moçambicanos.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/7</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Kugumana%20Kwa%20anyungwe.jpeg</image:loc>
+      <image:title>Kugumana Kwa Anyungwe — Antologia Mista</image:title>
+      <image:caption>Capa da antologia poética Kugumana Kwa Anyungwe, reunindo 38 autores, publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/8</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/A%20vida%20atravez%20da%20capa.jpeg</image:loc>
+      <image:title>A Vida Atrás da Capa — Albino P. Sitoe</image:title>
+      <image:caption>Capa do livro A Vida Atrás da Capa, de Albino P. Sitoe, literatura publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/10</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/A%20Juventude%20e%20as%20midias%20sociais.jpeg</image:loc>
+      <image:title>A Juventude e as Mídias Sociais — Bonifácio B. Fabião</image:title>
+      <image:caption>Capa do livro A Juventude e as Mídias Sociais, de Bonifácio B. Fabião, obra de não-ficção publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/11</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/A%20Veracidade%20do%20islao.jpeg</image:loc>
+      <image:title>O Islão: Sua Veracidade — Issa Júnior</image:title>
+      <image:caption>Capa do livro O Islão: Sua Veracidade e os Caminhos dos seus Fiéis, de Issa Júnior, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/12</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/A%20dor%20da%20escolha.jpeg</image:loc>
+      <image:title>A Dor da Escolha — Jacinto Nhancale e Sara Anselmo</image:title>
+      <image:caption>Capa do livro A Dor da Escolha, de Jacinto Nhancale e Sara Anselmo, romance publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/14</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Resiliencia.jpeg</image:loc>
+      <image:title>A Resiliência: A Jornada de Quem Não Desiste — João Bartolomeu</image:title>
+      <image:caption>Capa do livro A Resiliência: A Jornada de Quem Não Desiste, de João Bartolomeu Sixpence, biografia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/15</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Africa%20te%20nascem%20e%20le%20matam.jpeg</image:loc>
+      <image:title>África te Mata e te Nasce — Dalton Alfândega</image:title>
+      <image:caption>Capa do livro África te Mata e te Nasce, de Dalton Alfândega, literatura publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/16</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Entre%20Ruinas%20e%20renascenca.jpeg</image:loc>
+      <image:title>Entre Ruínas e Renascença — Carimo Francisco Gome</image:title>
+      <image:caption>Capa do livro Entre Ruínas e Renascença, de Carimo Francisco Gome, poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/17</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Sem%20verba%20nao%20se%20anunciam%20o%20verbo.jpeg</image:loc>
+      <image:title>Sem Verba Não se Anuncia o Verbo — Ananias Combe</image:title>
+      <image:caption>Capa do livro Sem Verba Não se Anuncia o Verbo, de Ananias Combe, não-ficção publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/20</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Baciao%20do%20mundo.jpeg</image:loc>
+      <image:title>Bacião do Mundo — Hassane Raúl</image:title>
+      <image:caption>Capa do livro Bacião do Mundo, de Hassane Raúl (Farmacêutico Poeta), poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/21</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Cantar%20para%20Evandelizar.jpeg</image:loc>
+      <image:title>Cantar para Evangelizar — Maestro Floyd</image:title>
+      <image:caption>Capa do livro Cantar para Evangelizar, de Maestro Floyd, não-ficção sobre música religiosa, publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/22</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Agencias%20Educativas%20y%20su%20ROL.jpeg</image:loc>
+      <image:title>Agencias Educativas y su Rol — Katia Robledo Querol</image:title>
+      <image:caption>Capa do livro Agencias Educativas y su Rol, de Katia Robledo Querol, não-ficção publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/23</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Alguns%20Episodios.jpeg</image:loc>
+      <image:title>Alguns Episódios — Editora Vértice Literário</image:title>
+      <image:caption>Capa do livro Alguns Episódios, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/24</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Jovens%20e%20Adultos.jpeg</image:loc>
+      <image:title>Jovens e Adultos — Florescêncio Luís Tumbo</image:title>
+      <image:caption>Capa do livro Jovens e Adultos, de Florescêncio Luís Tumbo, não-ficção sobre educação publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/25</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Me%20enterrem%20logo.jpeg</image:loc>
+      <image:title>Me Enterrem Logo — Guido Basilio Awir</image:title>
+      <image:caption>Capa do livro Me Enterrem Logo, de Guido Basilio Awir (Guy Awir), literatura publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/26</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/O%20Canto%20da%20Adolescencia.jpeg</image:loc>
+      <image:title>O Canto da Adolescência — Pérola da Celina Levene e Ernesto Levene Nhamande</image:title>
+      <image:caption>Capa do livro O Canto da Adolescência, de Pérola da Celina Levene e Ernesto Levene Nhamande, poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/27</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/PRODUTIVIDADE%20NAO%20PRECISA.jpeg</image:loc>
+      <image:title>Produtividade Não Precisa — Assmá Aridás</image:title>
+      <image:caption>Capa do livro Produtividade Não Precisa de Adoecimento, de Assmá Aridás, não-ficção publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/28</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Vida%20e%20Obra%20do%20Profeta%20Goba.jpeg</image:loc>
+      <image:title>Vida e Obra do Profeta Goba — Editora Vértice Literário</image:title>
+      <image:caption>Capa do livro Vida e Obra do Profeta Goba, biografia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/29</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/pranto-das-palavras.png</image:loc>
+      <image:title>O Pranto das Palavras — Issa Tarmamade Júnior</image:title>
+      <image:caption>Capa do livro O Pranto das Palavras, de Issa Tarmamade Júnior, poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/30</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Carente-patente-ululante.png</image:loc>
+      <image:title>Carente / Patente / Ululante — Lídia Codo</image:title>
+      <image:caption>Capa da trilogia poética Carente, Patente e Ululante, de Lídia Codo, publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/31</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/O%20Talento%20que%20a%20Crise%20Revela.jpeg</image:loc>
+      <image:title>O Talento que a Crise Revela — Moséstia Machava</image:title>
+      <image:caption>Capa do livro O Talento que a Crise Revela, de Moséstia Machava, não-ficção publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/32</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Riscos-e-remedios.png</image:loc>
+      <image:title>Riscos e Remédios — Maurício Arquilito Silambo</image:title>
+      <image:caption>Capa do livro Riscos e Remédios, de Maurício Arquilito Silambo, literatura publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/33</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/O%20canto%20do%20planeta%20ferido.png</image:loc>
+      <image:title>O Canto do Planeta Ferido — Bonifácio B. Fabião</image:title>
+      <image:caption>Capa do livro O Canto do Planeta Ferido, de Bonifácio B. Fabião, poesia ambiental publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/34</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Sons%20de%20Liberdade.jpeg</image:loc>
+      <image:title>Sons de Liberdade — Famas Redol Arne</image:title>
+      <image:caption>Capa do livro Sons de Liberdade, de Famas Redol Arne, poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ===== Autores (30 autores) com foto indexada ===== -->
+  <url>
+    <loc>https://overticeliterario.com/autor/1</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Mosestia.jpeg</image:loc>
+      <image:title>Moséstia David Machava — autora de Não-Ficção, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Moséstia David Machava, médica e escritora, autora publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/2</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Vasco.jpeg</image:loc>
+      <image:title>Vasco Adérito Castigo Sambo — autor de Autobiografia, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Vasco Adérito Castigo Sambo, enfermeiro e escritor moçambicano, autor publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/3</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Katia.jpeg</image:loc>
+      <image:title>Katia Robledo Querol — autora de Biografia, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Katia Robledo Querol, médica especialista em Medicina Legal e autora publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/4</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Lidia.jpeg</image:loc>
+      <image:title>Lídia Codo — poetisa, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Lídia Codo, poetisa autora de Verossímil, Carente, Patente, Ululante e Escandalossíssima, publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/5</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Assma.jpeg</image:loc>
+      <image:title>Assmá Aridás — autora de Psicologia, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Assmá Aridás, psicóloga clínica e escritora, autora de Produtividade Não Precisa de Adoecimento, Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/6</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Bonifacio.jpeg</image:loc>
+      <image:title>Bonifácio B. Fabião — autor de Literatura, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Bonifácio B. Fabião, escritor natural de Songo, autor de A Juventude e as Mídias Sociais, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/7</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Samila.jpeg</image:loc>
+      <image:title>Samila Simões Manuel António — poetisa, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Samila Simões Manuel António (pseudónimo Samy da Sandra), poetisa de Tete, autora publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/8</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Arquilito.jpeg</image:loc>
+      <image:title>Arquilito Maurício André Silambo — autor de Literatura, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Arquilito Maurício André Silambo, escritor de Inhambane, autor publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/9</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Franklin.jpeg</image:loc>
+      <image:title>Franklin Alberto Gravata — autor de Literatura, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Franklin Alberto Gravata, escritor de Chimoio, autor de A Sereia do Zambeze, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/10</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Perola.jpeg</image:loc>
+      <image:title>Pérola da Celina Levene — poetisa, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Pérola da Celina Levene, poetisa de Chimoio, autora publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/11</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Ernesto.jpeg</image:loc>
+      <image:title>Ernesto Levene Nhamande — autor de Biografia, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Ernesto Levene Nhamande, eletrotécnico e escritor, autor publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/12</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Camiro.jpeg</image:loc>
+      <image:title>Carimo Francisco Gome — autor de Literatura, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Carimo Francisco Gome (Carimo Escritor Sem Limites), autor de Entre Ruínas e Renascença, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/13</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/jose.jpeg</image:loc>
+      <image:title>José Bechane — autor de Não-Ficção, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de José Bechane, docente e escritor, autor de Maré do Amor, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/14</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Hassane%20Raul.png</image:loc>
+      <image:title>Hassane Bacião Raúl — poeta, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Hassane Bacião Raúl (Farmacêutico Poeta), autor de Bacião do Mundo, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/15</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Dalton%20Xavier%20Joao.png</image:loc>
+      <image:title>Dalton Xavier João — poeta, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Dalton Xavier João (Dalton Alfândega), professor e poeta de Moatize, autor publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/16</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Joao%20Bartolomeu.png</image:loc>
+      <image:title>João Bartolomeu Sixpence — autor de Biografia, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de João Bartolomeu Sixpence, CEO do Grupo Nunisa e autor de A Resiliência, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/17</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Guido%20Basilio.png</image:loc>
+      <image:title>Guido Basílio Awir — autor de Literatura, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Guido Basílio Awir (Guy Awir), escritor de Cuamba, autor de Me Enterrem Logo, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/18</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Carlos%20Adelino.png</image:loc>
+      <image:title>Profeta Carlos Goba — autor de Biografia, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Carlos Adelino Raul Manuel Goba, missionário fundador da Igreja Ministerial de Deus, autor publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/19</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Florescencio%20Luis%20Tumbo.png</image:loc>
+      <image:title>Florescêncio Luís Tumbo — autor de Não-Ficção, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Florescêncio Luís Tumbo, psicólogo e docente, autor de Jovens e Adultos, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/20</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Jacinto%20Nhancale.png</image:loc>
+      <image:title>Jacinto Nhancale — autor de Literatura, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Jacinto Nhancale, historiador e escritor, coautor de A Dor da Escolha, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/21</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Sara%20Anselmo.png</image:loc>
+      <image:title>Sara Anselmo — autora de Literatura, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Sara Anselmo, médica-dentista e escritora de Nacala-Porto, coautora de A Dor da Escolha, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/23</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/Ananias.png</image:loc>
+      <image:title>Ananias Combe Milissão — autor de Não-Ficção, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Ananias Combe Milissão, sacerdote católico da Diocese de Tete, autor de Sem Verba Não se Anuncia o Verbo, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/24</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/abilho-mohamede.jpg</image:loc>
+      <image:title>Abílho Mohomede — autor de Não-Ficção, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Abílho Mohomede, escritor natural de Quissanga, Cabo Delgado, autor publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/25</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/joaquim_afonso.jpg</image:loc>
+      <image:title>Joaquim Afonso António — autor, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Joaquim Afonso António, técnico de saúde e escritor de Ribaué, Nampula, autor publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/26</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/sale-abrao.jpg</image:loc>
+      <image:title>Salé Abrão Buque — autor de Não-Ficção, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Salé Abrão Buque, mestre em Relações Públicas e Marketing, autor publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/27</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/celeste-jafete.jpg</image:loc>
+      <image:title>Celeste Jafete Mavuie — autora de Educação, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Celeste Jafete Mavuie, pedagoga e investigadora de Gaza, autora publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/28</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/suzana-rita.jpg</image:loc>
+      <image:title>Suzana Rita Jeremias — autora de Educação, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Suzana Rita Jeremias, directora de educação e escritora de Inhambane, autora publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/29</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/herolde.jpg</image:loc>
+      <image:title>Harolde Radelec Langa — autor de Literatura, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Harolde Radelec Langa, professor e escritor de Maputo, autor publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/30</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/vania-eusebio.jpg</image:loc>
+      <image:title>Vânia Eusébio Rufai — autora de Literatura, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Vânia Eusébio Rufai, técnica de medicina e escritora, autora publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/autor/31</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/authors/jorge-eusebio.jpg</image:loc>
+      <image:title>Jorge Eusébio Chagaca Gulambondo — autor de Não-Ficção, Editora Vértice Literário</image:title>
+      <image:caption>Fotografia de Jorge Eusébio Chagaca Gulambondo, professor, investigador e activista ambiental de Tete, autor publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ===== Posts do Blog (15 posts) com imagem indexada ===== -->
+  <url>
+    <loc>https://overticeliterario.com/blog/1</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/Imagem%201.jpeg</image:loc>
+      <image:title>XII Festival Nacional da Cultura em Tete — Editora Vértice Literário</image:title>
+      <image:caption>Registo da participação da Editora Vértice no XII Festival Nacional da Cultura, na província de Tete, Moçambique.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/2</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%202.jpeg</image:loc>
+      <image:title>Lançamento de Maré do Amor — Editora Vértice Literário</image:title>
+      <image:caption>Registo do evento de lançamento do livro Maré do Amor, de José Bechane, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/3</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%203.jpeg</image:loc>
+      <image:title>Lançamento de A Juventude e as Mídias Sociais na Univ. Púnguè – Tete</image:title>
+      <image:caption>Registo do lançamento da obra A Juventude e as Mídias Sociais na Universidade Púnguè, Tete, pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/4</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%204.jpeg</image:loc>
+      <image:title>Lançamento de A Juventude e as Mídias Sociais em Chimoio</image:title>
+      <image:caption>Apresentação do livro A Juventude e as Mídias Sociais na Universidade Púnguè – Chimoio, pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/5</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%205.jpeg</image:loc>
+      <image:title>Lançamento de A Juventude e as Mídias Sociais na Escola Secundária do Songo</image:title>
+      <image:caption>A Editora Vértice apresentou A Juventude e as Mídias Sociais na Escola Secundária do Songo, promovendo o diálogo digital com estudantes.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/6</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%206.jpeg</image:loc>
+      <image:title>Debate em torno de A Juventude e as Mídias Sociais no Songo</image:title>
+      <image:caption>O auditório da Escola Secundária do Songo acolheu o debate sobre A Juventude e as Mídias Sociais, numa iniciativa da Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/7</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%207.jpeg</image:loc>
+      <image:title>Visita à Biblioteca Pública Provincial de Tete — Editora Vértice Literário</image:title>
+      <image:caption>A Editora Vértice Literário visitou a Biblioteca Pública Provincial de Tete, reforçando parcerias para a promoção da leitura em Moçambique.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/8</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%208.jpeg</image:loc>
+      <image:title>Lançamento de Entre Ruínas e Renascença em Inhambane</image:title>
+      <image:caption>Registo do lançamento de Entre Ruínas e Renascença, de Carimo Francisco Gome, publicado pela Editora Vértice Literário em Inhambane.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/9</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%209.jpeg</image:loc>
+      <image:title>Lançamento de Ecos do Horizonte e Maré do Amor na Praça Samora Machel, Tete</image:title>
+      <image:caption>Lançamento conjunto de Ecos do Horizonte e Maré do Amor na Praça Samora Machel, Tete, pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/10</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%2010.jpeg</image:loc>
+      <image:title>Sessão de A Juventude e as Mídias Sociais na Univ. Púnguè – Tete</image:title>
+      <image:caption>Participantes durante a sessão de apresentação de A Juventude e as Mídias Sociais na Universidade Púnguè – Tete, Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/11</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%2011.jpeg</image:loc>
+      <image:title>Da Estante para as Mãos do Leitor — Editora Vértice Literário</image:title>
+      <image:caption>Leitor com o livro A Juventude e as Mídias Sociais, publicado pela Editora Vértice Literário. A literatura moçambicana nas mãos do povo.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/12</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%2012.jpeg</image:loc>
+      <image:title>XII Festival Nacional da Cultura – Visita Institucional ao Stand da Editora Vértice</image:title>
+      <image:caption>Visita da comitiva institucional ao stand da Editora Vértice Literário durante o XII Festival Nacional da Cultura em Tete.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/13</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%2013.jpeg</image:loc>
+      <image:title>Sessão de Autógrafos — Entre Ruínas e Renascença de Carimo Francisco</image:title>
+      <image:caption>Momento de autógrafos durante o lançamento de Entre Ruínas e Renascença, de Carimo Francisco Gome, Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/14</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%2014.jpeg</image:loc>
+      <image:title>XII Festival Nacional da Cultura – Exposição do Acervo da Editora Vértice</image:title>
+      <image:caption>Exposição do acervo literário da Editora Vértice Literário no XII Festival Nacional da Cultura, Tete, com interação directa com leitores.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/blog/15</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/blog/imagem%2015.jpeg</image:loc>
+      <image:title>Plateia na Universidade Púnguè — Lançamento de A Juventude e as Mídias Sociais</image:title>
+      <image:caption>Vista da plateia durante a apresentação de A Juventude e as Mídias Sociais na Universidade Púnguè, pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

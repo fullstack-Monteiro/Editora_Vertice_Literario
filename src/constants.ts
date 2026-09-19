@@ -101,10 +101,10 @@ export const ARCHIVED_BOOKS = [
 ];
 
 export const FEATURED_BOOKS = [
-  { title: "O Pranto das Palavras", author: "Issa Tarmamade Júnior", cover: "/covers/pranto-das-palavras.png", genero: "Poesia", ano: "2025" },
-  { title: "Carente / Patente / Ululante", author: "Lídia Codo", cover: "/covers/Carente-patente-ululante.png", genero: "Poesia", ano: "2023" },
-  { title: "O Talento que a Crise Releva", author: "Moséstia Machava", cover: "/covers/O-talento-que-a-crise-revela.png", genero: "Não-Ficção", ano: "2025" },
-  { title: "Riscos e Remédios", author: "Maurício Arquilito Silambo", cover: "/covers/Riscos-e-remedios.png", genero: "Literatura", ano: "2025" },
+  { title: "O Pranto das Palavras", author: "Issa Tarmamade Júnior", cover: "/covers/pranto-das-palavras.png", genero: "Poesia", ano: "2025", sinopse: "Uma obra poética que mergulha nas profundezas da memória." },
+  { title: "Carente / Patente / Ululante", author: "Lídia Codo", cover: "/covers/Carente-patente-ululante.png", genero: "Poesia", ano: "2023", sinopse: "Uma trilogia de profunda densidade estética." },
+  { title: "O Talento que a Crise Revela", author: "Moséstia Machava", cover: "/covers/Talento que a Crise Revela.png", genero: "Não-Ficção", ano: "2025", sinopse: "Um testemunho vivo sobre reinvenção, coragem e transformação de crises em oportunidades de crescimento." },
+  { title: "Riscos e Remédios", author: "Maurício Arquilito Silambo", cover: "/covers/Riscos-e-remedios.png", genero: "Literatura", ano: "2025", sinopse: "Um romance que cruza o humor e a dor." },
 ];
 
 export const AUTHORS = [

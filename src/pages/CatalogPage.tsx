@@ -1,10 +1,10 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Search } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import BookModal from '../components/BookModal';
-import booksData from '../../backend/data/books.json';
-
+import SEOHead from '../components/SEOHead';
+import { generateBookSchema } from '../utils/seoSchema';
 type Book = {
   id: number;
   title: string;
@@ -17,25 +17,49 @@ type Book = {
   isbn?: string;
 };
 
-const ALL_BOOKS: Book[] = booksData as Book[];
-
 const CatalogPage = () => {
+  const [books, setBooks] = useState<Book[]>([]);
   const [search, setSearch] = useState('');
   const [selected, setSelected] = useState<Book | null>(null);
+
+  useEffect(() => {
+    fetch('/data/books.json')
+      .then(res => res.json())
+      .then(data => setBooks(data as Book[]))
+      .catch(err => console.error('Erro ao carregar livros:', err));
+  }, []);
 
   const filtered = useMemo(() => {
     const normalize = (s: string) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
     const q = normalize(search.trim());
-    if (!q) return ALL_BOOKS;
-    return ALL_BOOKS.filter(b =>
+    if (!q) return books;
+    return books.filter(b =>
       normalize(b.title).includes(q) ||
       normalize(b.author).includes(q) ||
       normalize(b.genero || '').includes(q)
     );
-  }, [search]);
+  }, [search, books]);
 
   return (
     <div className="min-h-screen bg-[#f5f0e8]">
+      <SEOHead 
+        title="Catálogo de Obras Publicadas"
+        description="Explore o catálogo com 28 obras publicadas pela Editora Vértice Literário. Literatura moçambicana, poesia, ficção e não-ficção. Descubra novos autores e histórias de Moçambique."
+        keywords="catálogo de livros, obras publicadas, literatura moçambicana, poesia, ficção, não-ficção, editora tete, livros moçambicanos"
+        url="https://overticeliterario.com/catalogo"
+        schema={books.length > 0 ? {
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          name: 'Catálogo de Obras — Editora Vértice Literário',
+          description: 'Lista de obras publicadas pela Editora Vértice Literário, editora moçambicana sediada em Tete.',
+          numberOfItems: books.length,
+          itemListElement: books.map((book, index) => ({
+            '@type': 'ListItem',
+            position: index + 1,
+            item: generateBookSchema(book)
+          }))
+        } : undefined}
+      />
       <Navbar forceScrolled />
       <BookModal book={selected} onClose={() => setSelected(null)} />
 
@@ -85,7 +109,7 @@ const CatalogPage = () => {
                 onClick={() => setSelected(book)}
               >
                 <div className="aspect-[3/4] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 mb-3 bg-slate-100 rounded-sm">
-                  <img src={book.cover} alt={book.title}
+                  <img src={book.cover} alt={`Capa do livro "${book.title}" de ${book.author}`}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     referrerPolicy="no-referrer" />
                 </div>
