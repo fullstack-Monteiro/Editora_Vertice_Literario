@@ -1,10 +1,11 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion } from 'motion/react';
 import { Search } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import BookModal from '../components/BookModal';
 import SEOHead from '../components/SEOHead';
 import { generateBookSchema } from '../utils/seoSchema';
+import booksData from '../data/books.json';
 type Book = {
   id: number;
   title: string;
@@ -18,16 +19,9 @@ type Book = {
 };
 
 const CatalogPage = () => {
-  const [books, setBooks] = useState<Book[]>([]);
+  const [books] = useState<Book[]>(booksData as Book[]);
   const [search, setSearch] = useState('');
   const [selected, setSelected] = useState<Book | null>(null);
-
-  useEffect(() => {
-    fetch('/data/books.json')
-      .then(res => res.json())
-      .then(data => setBooks(data as Book[]))
-      .catch(err => console.error('Erro ao carregar livros:', err));
-  }, []);
 
   const filtered = useMemo(() => {
     const normalize = (s: string) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');

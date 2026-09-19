@@ -6,6 +6,7 @@ import BlogModal from '../components/BlogModal';
 import SEOHead from '../components/SEOHead';
 import { Facebook, Instagram } from 'lucide-react';
 import ShareButton from '../components/ShareButton';
+import postsData from '../data/posts.json';
 type Post = {
   id: number;
   title: string;
@@ -17,14 +18,11 @@ type Post = {
 };
 
 const BlogPage = () => {
-  const [posts, setPosts] = useState<Post[]>([]);
+  const [posts] = useState<Post[]>(postsData as Post[]);
   const [selected, setSelected] = useState<Post | null>(null);
 
   useEffect(() => {
-    fetch('/data/posts.json')
-      .then(res => res.json())
-      .then(data => setPosts(data as Post[]))
-      .catch(err => console.error('Erro ao carregar posts:', err));
+    window.scrollTo(0, 0);
   }, []);
 
   useEffect(() => {

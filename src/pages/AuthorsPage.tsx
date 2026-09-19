@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import AuthorModal from '../components/AuthorModal';
 import Navbar from '../components/Navbar';
 import SEOHead from '../components/SEOHead';
+import authorsData from '../data/authors.json';
 
 type Author = {
   id: number;
@@ -14,15 +15,8 @@ type Author = {
 };
 
 const AuthorsPage = () => {
-  const [authors, setAuthors] = useState<Author[]>([]);
+  const [authors] = useState<Author[]>(authorsData as Author[]);
   const [selected, setSelected] = useState<Author | null>(null);
-
-  useEffect(() => {
-    fetch('/data/authors.json')
-      .then(res => res.json())
-      .then(data => setAuthors(data as Author[]))
-      .catch(err => console.error('Erro ao carregar autores:', err));
-  }, []);
 
   return (
     <div className="min-h-screen bg-[#f5f0e8]">
@@ -30,7 +24,7 @@ const AuthorsPage = () => {
         title="Os Nossos Autores"
         description="Conheça os 31 autores moçambicanos publicados pela Editora Vértice Literário. Explore perfis, biografias e obras de escritores de poesia, ficção e não-ficção."
         keywords="autores moçambicanos, escritores tete, literatura moçambicana, autores publicados, perfis de autores"
-        url="https://editoraverticeliterario.vercel.app/autores"
+        url="https://overticeliterario.com/autores"
       />
       <Navbar forceScrolled />
       <AuthorModal author={selected} onClose={() => setSelected(null)} />
