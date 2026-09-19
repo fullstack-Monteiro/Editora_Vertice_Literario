@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import SEOHead from '../components/SEOHead';
 import ShareButton from '../components/ShareButton';
 import { generateArticleSchema } from '../utils/seoSchema';
+import { slugify } from '../utils/slugify';
 import postsData from '../data/posts.json';
 
 type Post = {
@@ -19,14 +20,14 @@ type Post = {
 };
 
 const PostDetailPage = () => {
-  const { id } = useParams<{ id: string }>();
+  const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const posts = postsData as Post[];
-  const post = posts.find(p => p.id === Number(id));
+  const post = posts.find(p => slugify(p.title) === slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [id]);
+  }, [slug]);
 
   if (!post) {
     return (
@@ -40,7 +41,7 @@ const PostDetailPage = () => {
     );
   }
 
-  const url = `https://overticeliterario.com/blog/${post.id}`;
+  const url = `https://overticeliterario.com/blog/${slugify(post.title)}`;
 
   return (
     <div className="min-h-screen bg-[#f5f0e8]">
@@ -113,7 +114,7 @@ const PostDetailPage = () => {
           <h3 className="text-sm font-bold tracking-widest text-navy uppercase mb-6">Outros Artigos</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {posts.filter(p => p.id !== post.id).slice(0, 4).map(p => (
-              <Link key={p.id} to={`/blog/${p.id}`}
+              <Link key={p.id} to={`/blog/${slugify(p.title)}`}
                 className="flex gap-3 bg-white p-4 rounded-sm shadow-sm hover:shadow-md transition-all group">
                 <img src={p.image} alt={p.title}
                   className="w-16 h-16 object-cover rounded-sm shrink-0" />

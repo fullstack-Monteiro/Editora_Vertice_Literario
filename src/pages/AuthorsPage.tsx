@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import SEOHead from '../components/SEOHead';
+import { slugify } from '../utils/slugify';
 import authorsData from '../data/authors.json';
 
 type Author = {
@@ -42,7 +43,7 @@ const AuthorsPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.08 }}
               className="text-center cursor-pointer group"
-              onClick={() => navigate(`/autor/${author.id}`)}
+              onClick={() => navigate(`/autor/${slugify(author.nome)}`)}
             >
               <div className="w-32 h-32 sm:w-44 sm:h-44 mx-auto mb-5 rounded-full overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 border-4 border-white">
                 {author.foto ? (

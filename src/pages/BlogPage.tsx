@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar';
 import SEOHead from '../components/SEOHead';
 import { Facebook, Instagram } from 'lucide-react';
 import ShareButton from '../components/ShareButton';
+import { slugify } from '../utils/slugify';
 import postsData from '../data/posts.json';
 type Post = {
   id: number;
@@ -83,7 +84,7 @@ const BlogPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.08 }}
                 className="bg-white rounded-sm shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer group overflow-hidden"
-                onClick={() => navigate(`/blog/${post.id}`)}
+                onClick={() => navigate(`/blog/${slugify(post.title)}`)}
               >
                 <div className="relative overflow-hidden aspect-video">
                   <img src={post.image} alt={`Artigo: "${post.title}" - Blog Editora Vértice Literário`}
@@ -105,7 +106,7 @@ const BlogPage = () => {
                     <div className="flex gap-2 text-slate-400">
                       <a href="https://www.facebook.com/profile.php?id=61569927223809" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors"><Facebook size={14} /></a>
                       <a href="https://www.instagram.com/edit.oraverticeliterario/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors"><Instagram size={14} /></a>
-                      <ShareButton url={`${window.location.origin}/blog/${post.id}`} title={post.title} />
+                      <ShareButton url={`${window.location.origin}/blog/${slugify(post.title)}`} title={post.title} />
                     </div>
                   </div>
                 </div>

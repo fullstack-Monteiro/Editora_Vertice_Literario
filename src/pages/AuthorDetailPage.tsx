@@ -5,6 +5,7 @@ import { ArrowLeft, BookOpen } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import SEOHead from '../components/SEOHead';
 import { generateAuthorSchema } from '../utils/seoSchema';
+import { slugify } from '../utils/slugify';
 import authorsData from '../data/authors.json';
 
 type Author = {
@@ -17,14 +18,14 @@ type Author = {
 };
 
 const AuthorDetailPage = () => {
-  const { id } = useParams<{ id: string }>();
+  const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const authors = authorsData as Author[];
-  const author = authors.find(a => a.id === Number(id));
+  const author = authors.find(a => slugify(a.nome) === slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [id]);
+  }, [slug]);
 
   if (!author) {
     return (
@@ -38,7 +39,7 @@ const AuthorDetailPage = () => {
     );
   }
 
-  const url = `https://overticeliterario.com/autor/${author.id}`;
+  const url = `https://overticeliterario.com/autor/${slugify(author.nome)}`;
   // Primeira frase da bio como description
   const description = author.bio.split('.')[0] + '. Autor publicado pela Editora Vértice Literário.';
 
@@ -128,7 +129,7 @@ const AuthorDetailPage = () => {
           <h3 className="text-sm font-bold tracking-widest text-navy uppercase mb-6">Outros Autores</h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {authors.filter(a => a.id !== author.id).slice(0, 4).map(a => (
-              <Link key={a.id} to={`/autor/${a.id}`}
+              <Link key={a.id} to={`/autor/${slugify(a.nome)}`}
                 className="flex flex-col items-center text-center bg-white p-4 rounded-sm shadow-sm hover:shadow-md transition-all group">
                 <div className="w-16 h-16 rounded-full overflow-hidden mb-3 border-2 border-[#f5f0e8]">
                   {a.foto ? (

@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import SEOHead from '../components/SEOHead';
 import { generateBookSchema } from '../utils/seoSchema';
+import { slugify } from '../utils/slugify';
 import booksData from '../data/books.json';
 type Book = {
   id: number;
@@ -99,7 +100,7 @@ const CatalogPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05 }}
                 className="cursor-pointer group text-center"
-                onClick={() => navigate(`/livro/${book.id}`)}
+                onClick={() => navigate(`/livro/${slugify(book.title)}`)}
               >
                 <div className="aspect-[3/4] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 mb-3 bg-slate-100 rounded-sm">
                   <img src={book.cover} alt={`Capa do livro "${book.title}" de ${book.author}`}

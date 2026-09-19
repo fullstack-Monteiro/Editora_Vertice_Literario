@@ -19,12 +19,12 @@ createRoot(document.getElementById('root')!).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/autores" element={<AuthorsPage />} />
-          <Route path="/autor/:id" element={<AuthorDetailPage />} />
+          <Route path="/autor/:slug" element={<AuthorDetailPage />} />
           <Route path="/catalogo" element={<CatalogPage />} />
-          <Route path="/livro/:id" element={<BookDetailPage />} />
+          <Route path="/livro/:slug" element={<BookDetailPage />} />
           <Route path="/sobre" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/:id" element={<PostDetailPage />} />
+          <Route path="/blog/:slug" element={<PostDetailPage />} />
         </Routes>
       </BrowserRouter>
     </ErrorBoundary>

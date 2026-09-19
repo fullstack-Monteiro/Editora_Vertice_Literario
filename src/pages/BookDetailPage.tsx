@@ -5,6 +5,7 @@ import { ArrowLeft, ShoppingCart, BookOpen } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import SEOHead from '../components/SEOHead';
 import { generateBookSchema } from '../utils/seoSchema';
+import { slugify } from '../utils/slugify';
 import booksData from '../data/books.json';
 
 type Book = {
@@ -20,14 +21,14 @@ type Book = {
 };
 
 const BookDetailPage = () => {
-  const { id } = useParams<{ id: string }>();
+  const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
   const books = booksData as Book[];
-  const book = books.find(b => b.id === Number(id));
+  const book = books.find(b => slugify(b.title) === slug);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [id]);
+  }, [slug]);
 
   if (!book) {
     return (
@@ -41,7 +42,7 @@ const BookDetailPage = () => {
     );
   }
 
-  const url = `https://overticeliterario.com/livro/${book.id}`;
+  const url = `https://overticeliterario.com/livro/${slugify(book.title)}`;
   const description = book.sinopse
     ? book.sinopse.slice(0, 160)
     : `${book.title}, de ${book.author}. ${book.genero || 'Literatura'} publicado pela Editora Vértice Literário.`;
@@ -137,7 +138,7 @@ const BookDetailPage = () => {
           <h3 className="text-sm font-bold tracking-widest text-navy uppercase mb-6">Outras Obras</h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {books.filter(b => b.id !== book.id).slice(0, 4).map(b => (
-              <Link key={b.id} to={`/livro/${b.id}`}
+              <Link key={b.id} to={`/livro/${slugify(b.title)}`}
                 className="group text-center cursor-pointer">
                 <div className="aspect-[3/4] overflow-hidden shadow-md group-hover:shadow-xl transition-all duration-300 mb-2 bg-slate-100 rounded-sm">
                   <img src={b.cover} alt={`Capa de ${b.title}`}
