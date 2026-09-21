@@ -5,7 +5,7 @@
   <!-- ===== Páginas Principais ===== -->
   <url>
     <loc>https://overticeliterario.com/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -16,331 +16,45 @@
   </url>
   <url>
     <loc>https://overticeliterario.com/catalogo</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://overticeliterario.com/autores</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://overticeliterario.com/blog</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://overticeliterario.com/sobre</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://overticeliterario.com/submissao</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://overticeliterario.com/contacto</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- ===== Livros (28 títulos) ===== -->
   <url>
-    <loc>https://overticeliterario.com/livro/3</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Mare%20Amor.jpeg</image:loc>
-      <image:title>Maré do Amor — José Bechane</image:title>
-      <image:caption>Capa do livro Maré do Amor, de José Bechane, publicado pela Editora Vértice Literário. Literatura moçambicana.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/4</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Amor%20e%20Dor.jpeg</image:loc>
-      <image:title>Amor e Dor em Terras Feridas — Gabriel M'Swache (BigaM)</image:title>
-      <image:caption>Capa do livro Amor e Dor em Terras Feridas, de Gabriel M'Swache, poesia publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/5</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Ecos%20horizonte.jpeg</image:loc>
-      <image:title>Ecos do Horizonte — Octávio Cumbe</image:title>
-      <image:caption>Capa do livro Ecos do Horizonte, de Octávio Cumbe, poesia publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/6</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/A%20Sombra%20da%20violencia.jpeg</image:loc>
-      <image:title>A Sombra da Violência — Antologia</image:title>
-      <image:caption>Capa da antologia A Sombra da Violência, coletânea poética publicada pela Editora Vértice Literário com 26 autores moçambicanos.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/7</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Kugumana%20Kwa%20anyungwe.jpeg</image:loc>
-      <image:title>Kugumana Kwa Anyungwe — Antologia Mista</image:title>
-      <image:caption>Capa da antologia poética Kugumana Kwa Anyungwe, reunindo 38 autores, publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/8</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/A%20vida%20atravez%20da%20capa.jpeg</image:loc>
-      <image:title>A Vida Atrás da Capa — Albino P. Sitoe</image:title>
-      <image:caption>Capa do livro A Vida Atrás da Capa, de Albino P. Sitoe, literatura publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/10</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/A%20Juventude%20e%20as%20midias%20sociais.jpeg</image:loc>
-      <image:title>A Juventude e as Mídias Sociais — Bonifácio B. Fabião</image:title>
-      <image:caption>Capa do livro A Juventude e as Mídias Sociais, de Bonifácio B. Fabião, obra de não-ficção publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/11</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/A%20Veracidade%20do%20islao.jpeg</image:loc>
-      <image:title>O Islão: Sua Veracidade — Issa Júnior</image:title>
-      <image:caption>Capa do livro O Islão: Sua Veracidade e os Caminhos dos seus Fiéis, de Issa Júnior, publicado pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/12</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/A%20dor%20da%20escolha.jpeg</image:loc>
-      <image:title>A Dor da Escolha — Jacinto Nhancale e Sara Anselmo</image:title>
-      <image:caption>Capa do livro A Dor da Escolha, de Jacinto Nhancale e Sara Anselmo, romance publicado pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/14</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Resiliencia.jpeg</image:loc>
-      <image:title>A Resiliência: A Jornada de Quem Não Desiste — João Bartolomeu</image:title>
-      <image:caption>Capa do livro A Resiliência: A Jornada de Quem Não Desiste, de João Bartolomeu Sixpence, biografia publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/15</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Africa%20te%20nascem%20e%20le%20matam.jpeg</image:loc>
-      <image:title>África te Mata e te Nasce — Dalton Alfândega</image:title>
-      <image:caption>Capa do livro África te Mata e te Nasce, de Dalton Alfândega, literatura publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/16</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Entre%20Ruinas%20e%20renascenca.jpeg</image:loc>
-      <image:title>Entre Ruínas e Renascença — Carimo Francisco Gome</image:title>
-      <image:caption>Capa do livro Entre Ruínas e Renascença, de Carimo Francisco Gome, poesia publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/17</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Sem%20verba%20nao%20se%20anunciam%20o%20verbo.jpeg</image:loc>
-      <image:title>Sem Verba Não se Anuncia o Verbo — Ananias Combe</image:title>
-      <image:caption>Capa do livro Sem Verba Não se Anuncia o Verbo, de Ananias Combe, não-ficção publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/20</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Baciao%20do%20mundo.jpeg</image:loc>
-      <image:title>Bacião do Mundo — Hassane Raúl</image:title>
-      <image:caption>Capa do livro Bacião do Mundo, de Hassane Raúl (Farmacêutico Poeta), poesia publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/21</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Cantar%20para%20Evandelizar.jpeg</image:loc>
-      <image:title>Cantar para Evangelizar — Maestro Floyd</image:title>
-      <image:caption>Capa do livro Cantar para Evangelizar, de Maestro Floyd, não-ficção sobre música religiosa, publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/22</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Agencias%20Educativas%20y%20su%20ROL.jpeg</image:loc>
-      <image:title>Agencias Educativas y su Rol — Katia Robledo Querol</image:title>
-      <image:caption>Capa do livro Agencias Educativas y su Rol, de Katia Robledo Querol, não-ficção publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/23</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Alguns%20Episodios.jpeg</image:loc>
-      <image:title>Alguns Episódios — Editora Vértice Literário</image:title>
-      <image:caption>Capa do livro Alguns Episódios, publicado pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/24</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Jovens%20e%20Adultos.jpeg</image:loc>
-      <image:title>Jovens e Adultos — Florescêncio Luís Tumbo</image:title>
-      <image:caption>Capa do livro Jovens e Adultos, de Florescêncio Luís Tumbo, não-ficção sobre educação publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/25</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Me%20enterrem%20logo.jpeg</image:loc>
-      <image:title>Me Enterrem Logo — Guido Basilio Awir</image:title>
-      <image:caption>Capa do livro Me Enterrem Logo, de Guido Basilio Awir (Guy Awir), literatura publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/26</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/O%20Canto%20da%20Adolescencia.jpeg</image:loc>
-      <image:title>O Canto da Adolescência — Pérola da Celina Levene e Ernesto Levene Nhamande</image:title>
-      <image:caption>Capa do livro O Canto da Adolescência, de Pérola da Celina Levene e Ernesto Levene Nhamande, poesia publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/27</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/PRODUTIVIDADE%20NAO%20PRECISA.jpeg</image:loc>
-      <image:title>Produtividade Não Precisa — Assmá Aridás</image:title>
-      <image:caption>Capa do livro Produtividade Não Precisa de Adoecimento, de Assmá Aridás, não-ficção publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/28</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Vida%20e%20Obra%20do%20Profeta%20Goba.jpeg</image:loc>
-      <image:title>Vida e Obra do Profeta Goba — Editora Vértice Literário</image:title>
-      <image:caption>Capa do livro Vida e Obra do Profeta Goba, biografia publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/29</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/pranto-das-palavras.png</image:loc>
-      <image:title>O Pranto das Palavras — Issa Tarmamade Júnior</image:title>
-      <image:caption>Capa do livro O Pranto das Palavras, de Issa Tarmamade Júnior, poesia publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/30</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Carente-patente-ululante.png</image:loc>
-      <image:title>Carente / Patente / Ululante — Lídia Codo</image:title>
-      <image:caption>Capa da trilogia poética Carente, Patente e Ululante, de Lídia Codo, publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/31</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/O%20Talento%20que%20a%20Crise%20Revela.jpeg</image:loc>
-      <image:title>O Talento que a Crise Revela — Moséstia Machava</image:title>
-      <image:caption>Capa do livro O Talento que a Crise Revela, de Moséstia Machava, não-ficção publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/32</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <image:image>
-      <image:loc>https://overticeliterario.com/covers/Riscos-e-remedios.png</image:loc>
-      <image:title>Riscos e Remédios — Maurício Arquilito Silambo</image:title>
-      <image:caption>Capa do livro Riscos e Remédios, de Maurício Arquilito Silambo, literatura publicada pela Editora Vértice Literário.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://overticeliterario.com/livro/33</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/livro/o-canto-do-planeta-ferido</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -350,8 +64,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/livro/34</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/livro/sons-de-liberdade</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
@@ -360,11 +74,297 @@
       <image:caption>Capa do livro Sons de Liberdade, de Famas Redol Arne, poesia publicada pela Editora Vértice Literário.</image:caption>
     </image:image>
   </url>
-
-  <!-- ===== Autores (30 autores) com foto indexada ===== -->
   <url>
-    <loc>https://overticeliterario.com/autor/1</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/livro/o-pranto-das-palavras</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/pranto-das-palavras.png</image:loc>
+      <image:title>O Pranto das Palavras — Issa Tarmamade Júnior</image:title>
+      <image:caption>Capa do livro O Pranto das Palavras, de Issa Tarmamade Júnior, poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/carente-patente-ululante</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Carente-patente-ululante.png</image:loc>
+      <image:title>Carente / Patente / Ululante — Lídia Codo</image:title>
+      <image:caption>Capa da trilogia poética Carente, Patente e Ululante, de Lídia Codo, publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/o-talento-que-a-crise-revela</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/O%20Talento%20que%20a%20Crise%20Revela.jpeg</image:loc>
+      <image:title>O Talento que a Crise Revela — Moséstia Machava</image:title>
+      <image:caption>Capa do livro O Talento que a Crise Revela, de Moséstia Machava, não-ficção publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/riscos-e-remedios</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Riscos-e-remedios.png</image:loc>
+      <image:title>Riscos e Remédios — Maurício Arquilito Silambo</image:title>
+      <image:caption>Capa do livro Riscos e Remédios, de Maurício Arquilito Silambo, literatura publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/mare-do-amor</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Mare%20Amor.jpeg</image:loc>
+      <image:title>Maré do Amor — José Bechane</image:title>
+      <image:caption>Capa do livro Maré do Amor, de José Bechane, publicado pela Editora Vértice Literário. Literatura moçambicana.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/amor-dor-em-terras-feridas</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Amor%20e%20Dor.jpeg</image:loc>
+      <image:title>Amor &amp; Dor em Terras Feridas — Gabriel M'Swache (BigaM)</image:title>
+      <image:caption>Capa do livro Amor e Dor em Terras Feridas, de Gabriel M'Swache, poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/ecos-do-horizonte</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Ecos%20horizonte.jpeg</image:loc>
+      <image:title>Ecos do Horizonte — Octávio Cumbe</image:title>
+      <image:caption>Capa do livro Ecos do Horizonte, de Octávio Cumbe, poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/a-sombra-da-violencia</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/A%20Sombra%20da%20violencia.jpeg</image:loc>
+      <image:title>A Sombra da Violência — Antologia</image:title>
+      <image:caption>Capa da antologia A Sombra da Violência, coletânea poética publicada pela Editora Vértice Literário com 26 autores moçambicanos.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/kugumana-kwa-anyungwe</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Kugumana%20Kwa%20anyungwe.jpeg</image:loc>
+      <image:title>Kugumana Kwa Anyungwe — Antologia Mista</image:title>
+      <image:caption>Capa da antologia poética Kugumana Kwa Anyungwe, reunindo 38 autores, publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/a-vida-atras-da-capa</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/A%20vida%20atravez%20da%20capa.jpeg</image:loc>
+      <image:title>A Vida Atrás da Capa — Albino P. Sitoe</image:title>
+      <image:caption>Capa do livro A Vida Atrás da Capa, de Albino P. Sitoe, literatura publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/a-juventude-e-as-midias-sociais</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/A%20Juventude%20e%20as%20midias%20sociais.jpeg</image:loc>
+      <image:title>A Juventude e as Mídias Sociais — Bonifácio B. Fabião</image:title>
+      <image:caption>Capa do livro A Juventude e as Mídias Sociais, de Bonifácio B. Fabião, obra de não-ficção publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/o-islao-sua-veracidade</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/A%20Veracidade%20do%20islao.jpeg</image:loc>
+      <image:title>O Islão: Sua Veracidade — Issa Júnior</image:title>
+      <image:caption>Capa do livro O Islão: Sua Veracidade e os Caminhos dos seus Fiéis, de Issa Júnior, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/a-dor-da-escolha</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/A%20dor%20da%20escolha.jpeg</image:loc>
+      <image:title>A Dor da Escolha — Jacinto Nhancale e Sara Anselmo</image:title>
+      <image:caption>Capa do livro A Dor da Escolha, de Jacinto Nhancale e Sara Anselmo, romance publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/a-resiliencia-a-jornada-de-quem-nao-desiste</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Resiliencia.jpeg</image:loc>
+      <image:title>A Resiliência: A Jornada de Quem Não Desiste — João Bartolomeu</image:title>
+      <image:caption>Capa do livro A Resiliência: A Jornada de Quem Não Desiste, de João Bartolomeu Sixpence, biografia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/africa-te-mata-e-te-nasce</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Africa%20te%20nascem%20e%20le%20matam.jpeg</image:loc>
+      <image:title>África te Mata e te Nasce — Dalton Alfândega</image:title>
+      <image:caption>Capa do livro África te Mata e te Nasce, de Dalton Alfândega, literatura publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/entre-ruinas-e-renascenca</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Entre%20Ruinas%20e%20renascenca.jpeg</image:loc>
+      <image:title>Entre Ruínas e Renascença — Carimo Francisco Gome</image:title>
+      <image:caption>Capa do livro Entre Ruínas e Renascença, de Carimo Francisco Gome, poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/sem-verba-nao-se-anuncia-o-verbo</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Sem%20verba%20nao%20se%20anunciam%20o%20verbo.jpeg</image:loc>
+      <image:title>Sem Verba Não se Anuncia o Verbo — Ananias Combe</image:title>
+      <image:caption>Capa do livro Sem Verba Não se Anuncia o Verbo, de Ananias Combe, não-ficção publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/baciao-do-mundo</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Baciao%20do%20mundo.jpeg</image:loc>
+      <image:title>Bacião do Mundo — Hassane Raúl</image:title>
+      <image:caption>Capa do livro Bacião do Mundo, de Hassane Raúl (Farmacêutico Poeta), poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/cantar-para-evangelizar</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Cantar%20para%20Evandelizar.jpeg</image:loc>
+      <image:title>Cantar para Evangelizar — Maestro Floyd</image:title>
+      <image:caption>Capa do livro Cantar para Evangelizar, de Maestro Floyd, não-ficção sobre música religiosa, publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/agencias-educativas-y-su-rol</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Agencias%20Educativas%20y%20su%20ROL.jpeg</image:loc>
+      <image:title>Agencias Educativas y su Rol — Katia Robledo Querol</image:title>
+      <image:caption>Capa do livro Agencias Educativas y su Rol, de Katia Robledo Querol, não-ficção publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/alguns-episodios</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Alguns%20Episodios.jpeg</image:loc>
+      <image:title>Alguns Episódios — Editora Vértice Literário</image:title>
+      <image:caption>Capa do livro Alguns Episódios, publicado pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/jovens-e-adultos</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Jovens%20e%20Adultos.jpeg</image:loc>
+      <image:title>Jovens e Adultos — Florescêncio Luís Tumbo</image:title>
+      <image:caption>Capa do livro Jovens e Adultos, de Florescêncio Luís Tumbo, não-ficção sobre educação publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/me-enterrem-logo</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Me%20enterrem%20logo.jpeg</image:loc>
+      <image:title>Me Enterrem Logo — Guido Basilio Awir</image:title>
+      <image:caption>Capa do livro Me Enterrem Logo, de Guido Basilio Awir (Guy Awir), literatura publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/o-canto-da-adolescencia</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/O%20Canto%20da%20Adolescencia.jpeg</image:loc>
+      <image:title>O Canto da Adolescência — Pérola da Celina Levene e Ernesto Levene Nhamande</image:title>
+      <image:caption>Capa do livro O Canto da Adolescência, de Pérola da Celina Levene e Ernesto Levene Nhamande, poesia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/produtividade-nao-precisa</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/PRODUTIVIDADE%20NAO%20PRECISA.jpeg</image:loc>
+      <image:title>Produtividade Não Precisa — Assmá Aridás</image:title>
+      <image:caption>Capa do livro Produtividade Não Precisa de Adoecimento, de Assmá Aridás, não-ficção publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://overticeliterario.com/livro/vida-e-obra-do-profeta-goba</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://overticeliterario.com/covers/Vida%20e%20Obra%20do%20Profeta%20Goba.jpeg</image:loc>
+      <image:title>Vida e Obra do Profeta Goba — Editora Vértice Literário</image:title>
+      <image:caption>Capa do livro Vida e Obra do Profeta Goba, biografia publicada pela Editora Vértice Literário.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ===== Autores (31 autores) com foto indexada ===== -->
+  <url>
+    <loc>https://overticeliterario.com/autor/mostestia-david-machava</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -374,8 +374,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/2</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/vasco-aderito-castigo-sambo</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -385,8 +385,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/3</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/katia-robledo-querol</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -396,8 +396,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/4</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/lidia-codo</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -407,8 +407,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/5</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/assma-aridas</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -418,8 +418,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/6</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/bonifacio-b-fabiao</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -429,8 +429,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/7</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/samila-simoes-manuel-antonio</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -440,8 +440,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/8</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/arquilito-mauricio-andre-silambo</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -451,8 +451,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/9</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/franklin-alberto-gravata</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -462,8 +462,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/10</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/perola-da-celina-levene</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -473,8 +473,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/11</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/ernesto-levene-nhamande</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -484,8 +484,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/12</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/carimo-francisco-gome</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -495,8 +495,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/13</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/jose-bechane</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -506,8 +506,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/14</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/hassane-baciao-raul</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -517,8 +517,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/15</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/dalton-xavier-joao</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -528,8 +528,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/16</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/joao-bartolomeu-sixpence</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -539,8 +539,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/17</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/guido-basilio-awir</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -550,8 +550,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/18</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/profeta-carlos-goba</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -561,8 +561,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/19</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/florescencio-luis-tumbo</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -572,8 +572,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/20</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/jacinto-nhancale</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -583,8 +583,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/21</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/sara-anselmo</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -594,8 +594,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/23</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/ananias-combe-milissao</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -605,30 +605,30 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/24</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/abilho-mohomede</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://overticeliterario.com/authors/abilho-mohamede.jpg</image:loc>
+      <image:loc>https://overticeliterario.com/authors/Abílho%20Mohomede.png</image:loc>
       <image:title>Abílho Mohomede — autor de Não-Ficção, Editora Vértice Literário</image:title>
       <image:caption>Fotografia de Abílho Mohomede, escritor natural de Quissanga, Cabo Delgado, autor publicado pela Editora Vértice Literário.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/25</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/joaquim-afonso-antonio</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://overticeliterario.com/authors/joaquim_afonso.jpg</image:loc>
+      <image:loc>https://overticeliterario.com/authors/Joaquim%20Afonso%20António%20.png</image:loc>
       <image:title>Joaquim Afonso António — autor, Editora Vértice Literário</image:title>
       <image:caption>Fotografia de Joaquim Afonso António, técnico de saúde e escritor de Ribaué, Nampula, autor publicado pela Editora Vértice Literário.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/26</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/sale-abrao-buque</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
@@ -638,56 +638,56 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/27</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/celeste-jafete-mavuie</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://overticeliterario.com/authors/celeste-jafete.jpg</image:loc>
+      <image:loc>https://overticeliterario.com/authors/Celeste%20Jafete%20Mavuie%20.png</image:loc>
       <image:title>Celeste Jafete Mavuie — autora de Educação, Editora Vértice Literário</image:title>
       <image:caption>Fotografia de Celeste Jafete Mavuie, pedagoga e investigadora de Gaza, autora publicada pela Editora Vértice Literário.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/28</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/suzana-rita-jeremias</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://overticeliterario.com/authors/suzana-rita.jpg</image:loc>
+      <image:loc>https://overticeliterario.com/authors/Suzana%20Rita%20Jeremias.png</image:loc>
       <image:title>Suzana Rita Jeremias — autora de Educação, Editora Vértice Literário</image:title>
       <image:caption>Fotografia de Suzana Rita Jeremias, directora de educação e escritora de Inhambane, autora publicada pela Editora Vértice Literário.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/29</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/harolde-radelec-langa</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://overticeliterario.com/authors/herolde.jpg</image:loc>
+      <image:loc>https://overticeliterario.com/authors/Harolde%20Radelec%20Langa.png</image:loc>
       <image:title>Harolde Radelec Langa — autor de Literatura, Editora Vértice Literário</image:title>
       <image:caption>Fotografia de Harolde Radelec Langa, professor e escritor de Maputo, autor publicado pela Editora Vértice Literário.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/30</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/vania-eusebio-rufai</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://overticeliterario.com/authors/vania-eusebio.jpg</image:loc>
+      <image:loc>https://overticeliterario.com/authors/Vânia%20Eusébio%20Rufai.png</image:loc>
       <image:title>Vânia Eusébio Rufai — autora de Literatura, Editora Vértice Literário</image:title>
       <image:caption>Fotografia de Vânia Eusébio Rufai, técnica de medicina e escritora, autora publicada pela Editora Vértice Literário.</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/autor/31</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/autor/jorge-eusebio-chagaca-gulambondo</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image>
-      <image:loc>https://overticeliterario.com/authors/jorge-eusebio.jpg</image:loc>
+      <image:loc>https://overticeliterario.com/authors/Jorge%20Eusébio%20Chagaca%20Gulambondo.png</image:loc>
       <image:title>Jorge Eusébio Chagaca Gulambondo — autor de Não-Ficção, Editora Vértice Literário</image:title>
       <image:caption>Fotografia de Jorge Eusébio Chagaca Gulambondo, professor, investigador e activista ambiental de Tete, autor publicado pela Editora Vértice Literário.</image:caption>
     </image:image>
@@ -695,8 +695,8 @@
 
   <!-- ===== Posts do Blog (15 posts) com imagem indexada ===== -->
   <url>
-    <loc>https://overticeliterario.com/blog/1</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/xii-festival-nacional-da-cultura-em-tete</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -706,8 +706,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/2</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/lancamento-de-mare-do-amor</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -717,8 +717,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/3</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/lancamento-de-a-juventude-e-as-midias-sociais-na-univ-pungue-tete</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -728,8 +728,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/4</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/lancamento-de-a-juventude-e-as-midias-sociais-em-chimoio</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -739,8 +739,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/5</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/lancamento-de-a-juventude-e-as-midias-sociais-na-esc-sec-do-songo</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -750,8 +750,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/6</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/lancamento-de-a-juventude-e-as-midias-sociais-no-songo</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -761,8 +761,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/7</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/visita-a-biblioteca-publica-provincial-de-tete</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -772,8 +772,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/8</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/lancamento-de-entre-ruinas-e-renascenca</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -783,8 +783,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/9</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/lancamento-de-ecos-do-horizonte-e-mare-do-amor</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -794,8 +794,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/10</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/lancamento-de-a-juventude-e-as-midias-sociais-na-univ-pungue-tete-2</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -805,8 +805,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/11</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/da-estante-para-as-maos-do-leitor</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -816,8 +816,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/12</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/xii-festival-nacional-da-cultura-tete</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -827,8 +827,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/13</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/lancamento-de-entre-ruinas-e-renascenca-autografos-e-partilha</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -838,8 +838,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/14</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/xii-festival-nacional-da-cultura-exposicao-do-acervo</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
@@ -849,8 +849,8 @@
     </image:image>
   </url>
   <url>
-    <loc>https://overticeliterario.com/blog/15</loc>
-    <lastmod>2026-09-17</lastmod>
+    <loc>https://overticeliterario.com/blog/lancamento-de-a-juventude-e-as-midias-sociais-na-univ-pungue</loc>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <image:image>
