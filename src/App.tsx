@@ -20,7 +20,8 @@ type Post = { id: number; title: string; author: string; date: string; image: st
 
 const App = () => {
   const navigate = useNavigate();
-  const allPosts: Post[] = postsData as Post[];  const [selectedBook, setSelectedBook] = React.useState<typeof FEATURED_BOOKS[0] | null>(null);
+  const allPosts: Post[] = postsData as Post[];
+  const [selectedBook, setSelectedBook] = React.useState<typeof FEATURED_BOOKS[0] | null>(null);
   const [showManuscript, setShowManuscript] = React.useState(false);
   const [formData, setFormData] = React.useState({ nome: '', email: '', servico: 'Edição e Publicação', mensagem: '' });
   const [formStatus, setFormStatus] = React.useState<'idle' | 'sending' | 'success' | 'error'>('idle');
@@ -32,7 +33,7 @@ const App = () => {
     }
   }, []);
 
-  const previewPosts = allPosts.slice(0, 2);
+  const previewPosts = allPosts.slice(0, 3);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
