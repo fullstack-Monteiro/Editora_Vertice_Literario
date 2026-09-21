@@ -9,24 +9,18 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import ShareButton from './components/ShareButton';
-import BlogModal from './components/BlogModal';
 import BookModal from './components/BookModal';
 import ManuscriptModal from './components/ManuscriptModal';
 import Newsletter from './components/Newsletter';
 import { SERVICES, FEATURED_BOOKS } from './constants';
+import postsData from './data/posts.json';
+import { slugify } from './utils/slugify';
 
-const API_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:3001';
+type Post = { id: number; title: string; author: string; date: string; image: string; excerpt: string; content: string };
 
 const App = () => {
   const navigate = useNavigate();
-  const [selectedPost, setSelectedPost] = React.useState<{id:number;title:string;author:string;date:string;image:string;excerpt:string;content:string} | null>(null);
-  const [apiPosts, setApiPosts] = React.useState<typeof selectedPost[]>([]);
-  const [selectedBook, setSelectedBook] = React.useState<typeof FEATURED_BOOKS[0] | null>(null);
-  const [siteContent, setSiteContent] = React.useState<{
-    hero: { titulo: string; subtitulo: string };
-    sobre: { texto: string; missao: string; visao: string };
-    contacto: { morada: string; telefone: string; email: string; facebook: string; instagram: string; whatsapp: string };
-  } | null>(null);
+  const allPosts: Post[] = postsData as Post[];  const [selectedBook, setSelectedBook] = React.useState<typeof FEATURED_BOOKS[0] | null>(null);
   const [showManuscript, setShowManuscript] = React.useState(false);
   const [formData, setFormData] = React.useState({ nome: '', email: '', servico: 'Edição e Publicação', mensagem: '' });
   const [formStatus, setFormStatus] = React.useState<'idle' | 'sending' | 'success' | 'error'>('idle');
@@ -38,24 +32,7 @@ const App = () => {
     }
   }, []);
 
-  React.useEffect(() => {
-    const fetchPosts = () => {
-      fetch('/data/posts.json').then(r => r.json()).then(data => {
-        if (Array.isArray(data)) setApiPosts(data);
-      }).catch(() => {});
-    };
-    const fetchSiteContent = () => {
-      fetch('/data/site-content.json').then(r => r.json()).then(data => {
-        if (data && data.hero && data.sobre && data.contacto) setSiteContent(data);
-      }).catch(() => {});
-    };
-    fetchPosts();
-    fetchSiteContent();
-    const interval = setInterval(() => { fetchPosts(); fetchSiteContent(); }, 30000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const previewPosts = apiPosts.slice(0, 2);
+  const previewPosts = allPosts.slice(0, 2);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -78,7 +55,6 @@ const App = () => {
   return (
     <div className="min-h-screen">
       <ManuscriptModal open={showManuscript} onClose={() => setShowManuscript(false)} />
-      <BlogModal post={selectedPost} onClose={() => setSelectedPost(null)} />
       <BookModal book={selectedBook} onClose={() => setSelectedBook(null)} />
       <Navbar />
       <WhatsAppButton />
@@ -93,11 +69,11 @@ const App = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-12 w-full py-20 md:py-0">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-3xl">
             <h1 className="text-3xl sm:text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
-              {siteContent?.hero?.titulo ? siteContent.hero.titulo.replace('florescer.', '') : 'A palavra é a semente, a nossa missão é fazê-la '}
+              {'A palavra é a semente, a nossa missão é fazê-la '}
               <span className="text-primary-blue">florescer.</span>
             </h1>
             <p className="text-base sm:text-xl text-slate-300 mb-8 leading-relaxed font-light">
-              {siteContent?.hero?.subtitulo ?? 'Apoiamos autores e transformamos palavras em obras publicadas com excelência, ética e sofisticação cultural.'}
+              {'Apoiamos autores e transformamos palavras em obras publicadas com excelência, ética e sofisticação cultural.'}
             </p>
             <div className="flex justify-center sm:justify-start">
               <motion.a href="#contacto" whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
@@ -197,7 +173,9 @@ const App = () => {
               </div>
             ) : previewPosts.map((post, index) => (
               <motion.article key={post.id} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2 }} viewport={{ once: true }} className="flex flex-col group">
+                transition={{ delay: index * 0.2 }} viewport={{ once: true }}
+                className="flex flex-col group cursor-pointer"
+                onClick={() => navigate(`/blog/${slugify(post.title)}`)}>
                 <div className="relative overflow-hidden aspect-video mb-6 shadow-lg">
                   <img src={post.image} alt={post.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer" />
@@ -209,13 +187,13 @@ const App = () => {
                 <h3 className="text-xl font-serif font-bold text-navy mb-4 group-hover:text-gold transition-colors duration-300 leading-snug">{post.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed mb-6 flex-grow">{post.excerpt}</p>
                 <div className="flex items-center justify-between pt-6 border-t border-slate-100">
-                  <button onClick={() => setSelectedPost(post)} className="text-xs font-bold tracking-widest text-navy hover:text-gold transition-colors flex items-center gap-2 uppercase">
+                  <span className="text-xs font-bold tracking-widest text-navy hover:text-gold transition-colors flex items-center gap-2 uppercase">
                     Ler Mais <ArrowRight size={14} />
-                  </button>
-                  <div className="flex gap-3 text-slate-400">
+                  </span>
+                  <div className="flex gap-3 text-slate-400" onClick={e => e.stopPropagation()}>
                     <a href="https://www.facebook.com/profile.php?id=61569927223809" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors"><Facebook size={16} /></a>
                     <a href="https://www.instagram.com/edit.oraverticeliterario/" target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors"><Instagram size={16} /></a>
-                    <ShareButton url={`${window.location.origin}/#blog`} title={post.title} />
+                    <ShareButton url={`${window.location.origin}/blog/${slugify(post.title)}`} title={post.title} />
                   </div>
                 </div>
               </motion.article>
@@ -296,7 +274,7 @@ const App = () => {
         </div>
       </section>
 
-      <Footer contacto={siteContent?.contacto} />
+      <Footer />
     </div>
   );
 };
